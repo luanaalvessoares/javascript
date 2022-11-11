@@ -1,14 +1,14 @@
-.container {
+#container {
     position: relative;
     max-width: 640px;
     max-height: 360px;
 }
 
-.video {
+#video {
     width: 100%;
 }
 
-.controls {
+#controls {
     display: flex;
     position: absolute;
     top: 0;
@@ -16,31 +16,47 @@
     height: 100%;
 }
 
-.rewind, .fast-forward, .close, .play,
-.pause, .volumes {
+#rewind, #fast-forward, #close, #play,
+#pause, #volumes, #fast-forward-time, #rewind-time {
     position: absolute;
     width: 40px;
+    cursor: pointer;
 }
 
-.close {
+#close {
     right: 0;
 }
 
-.rewind {
+#rewind {
     top: 160px;
     left: 100px;
 }
 
-.play, .pause {
+#play {
+    top: 160px;
+    left: 240px;
+}
+
+#pause {
     top: 160px;
     left: 300px;
 }
 
-.fast-forward {
+#fast-forward {
     top: 160px;
     left: 500px;
 }
 
-.volumes > img {
+#volumes > img {
     width: 40px;
+}
+
+#fast-forward-time {
+    top: 310px;
+    right: 10px;
+}
+
+#rewind-time {
+    top: 310px;
+    right: 70px;
 }
