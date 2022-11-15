@@ -1,3 +1,7 @@
+:root {
+    --margin-center-controls: 180px;
+}
+
 body {
     background-color: #cdffbb;
 }
@@ -38,22 +42,22 @@ body {
 }
 
 #rewind {
-    top: 180px;
+    top: var(--margin-center-controls);
     left: 120px;
 }
 
 #play {
-    top: 180px;
+    top: var(--margin-center-controls);
     left: 280px;
 }
 
 #pause {
-    top: 180px;
+    top: var(--margin-center-controls);
     left: 340px;
 }
 
 #fast-forward {
-    top: 180px;
+    top: var(--margin-center-controls);
     left: 500px;
 }
 
