@@ -1,21 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     let squares = document.querySelectorAll('.square');
 
-    squares.forEach(square => {
-        square.addEventListener('click', handleClick);
+    squares.forEach(element => {
+        element.addEventListener('click', handleClick);
     })
 })
 
 function handleClick(event) {
-    let square = event.target;
-    let position = square.id;
-
-    if(handleMove(position)) {
+    if(handleMove(event.target.id)) {
         setTimeout(() => {
             alert(`The game end. The win is ${player}`)
         }, 50);
     };
-    updateSquare(position);
+    updateSquare(event.target.id);
 }
 
 function updateSquare(position) {
