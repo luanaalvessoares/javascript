@@ -7,10 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function handleClick(event) {
-    let square = event.target;
-    let position = square.id;
-
-    handleMove(position);
+    handleMove(event.target.id);
     updateSquares();
 }
 
@@ -21,6 +18,6 @@ function updateSquares() {
         let position = element.id;
         let piece = stage[position];
 
-        if (piece !== '') { element.innerHTML = `<div class="${piece}"></div>`; }
+        if(piece !== '') element.innerHTML = `<div class="${piece}"></div>`;
     })
 }
