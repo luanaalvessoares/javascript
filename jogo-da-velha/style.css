@@ -1,0 +1,46 @@
+.container {
+    max-width: max-content;
+    display: grid;
+    justify-items: center;
+    margin: auto;
+}
+
+.stage {
+    display: flex;
+}
+
+.square {
+    background-color: #ffd5c7;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.brb { 
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.bb { border-bottom: 1px solid #000000; }
+
+.br { border-right: 1px solid #000000; }
+
+.x {
+
+}
+
+.x:after {
+    content: "\2694";
+    font-size: 55px;
+    line-height: 100px;
+}
+
+.o {
+
+}
+
+.o:after {
+    content: "\1F6E1";
+    font-size: 55px;
+    line-height: 100px;
+}
