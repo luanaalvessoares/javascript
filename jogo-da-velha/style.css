@@ -2,28 +2,23 @@
     max-width: max-content;
     display: grid;
     justify-items: center;
+    text-align: center;
     margin: auto;
 }
 
 .stage {
-    display: flex;
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4px;
 }
 
 .square {
-    background-color: #ffd5c7;
+    background-color: #dfdad9;
     width: 100px;
     height: 100px;
-    text-align: center;
+    margin-bottom: 4px;
 }
-
-.brb { 
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-}
-
-.bb { border-bottom: 1px solid #000000; }
-
-.br { border-right: 1px solid #000000; }
 
 .x {
 
