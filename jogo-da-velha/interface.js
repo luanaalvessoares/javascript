@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     let squares = document.querySelectorAll('.square');
 
-    squares.forEach(element => {
-        element.addEventListener('click', handleClick);
+    squares.forEach(square => {
+        square.addEventListener('click', handleClick);
     })
 })
+
+function updateSquare(position) {
+    let square = document.getElementById(position.toString());
+    let piece = stage[position];
+    square.innerHTML = `<div class="${piece}"></div>`;
+}
 
 function handleClick(event) {
     let square = event.target;
@@ -12,19 +18,8 @@ function handleClick(event) {
 
     if(handleMove(position)) {
         setTimeout(() => {
-            alert('The game end.')
-        }, 50)
+            alert(`The game end. The win is ${player}`)
+        }, 50);
     };
-    updateSquare();
-}
-
-function updateSquare() {
-    let squares = document.querySelectorAll('.square');
-
-    squares.forEach(element => {
-        let position = element.id;
-        let piece = stage[position];
-
-        if(piece !== '') element.innerHTML = `<div class="${piece}"></div>`;
-    })
+    updateSquare(position);
 }
