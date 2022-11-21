@@ -9,7 +9,7 @@ body { text-align: center; }
 
 .x, .o { position: relative; }
 
-.x:after {
+.x::after {
     position: absolute;
     content: "\2694";
     font-size: 55px;
@@ -20,7 +20,7 @@ body { text-align: center; }
     right: 0;
 }
 
-.o:after {
+.o::after {
     position: absolute;
     content: "\1F6E1";
     font-size: 55px;

@@ -6,12 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-function updateSquare(position) {
-    let square = document.getElementById(position.toString());
-    let piece = stage[position];
-    square.innerHTML = `<div class="${piece}"></div>`;
-}
-
 function handleClick(event) {
     let square = event.target;
     let position = square.id;
@@ -23,3 +17,10 @@ function handleClick(event) {
     };
     updateSquare(position);
 }
+
+function updateSquare(position) {
+    let square = document.getElementById(position.toString());
+    let piece = board[position];
+    square.innerHTML = `<div class="${piece}"></div>`;
+}
+
