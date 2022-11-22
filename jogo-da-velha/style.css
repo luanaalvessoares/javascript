@@ -2,6 +2,11 @@
 
 body { text-align: center; }
 
+.container {
+    display: grid;
+    justify-items: center;
+}
+
 .square {
     background-color: #dfdad9;
     width: 100px;
@@ -35,11 +40,6 @@ body { text-align: center; }
 
 /* modal */
 
-.modalBtn {
-    padding: 20px;
-    font-size: 20px;
-}
-
 .modal {
     display: none;
     position: fixed;
@@ -55,10 +55,18 @@ body { text-align: center; }
 .modal .content {
     background-color: #D3D3D3;
     margin: 15% auto;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     width: 26%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.closeModal, .showModal {
+    background-color: #dfdad9;
+    width: 150px;
+    border: none;
+    margin-top: 15px;
+    padding: 18px;
 }

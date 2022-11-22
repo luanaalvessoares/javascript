@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function handleClick(event) {
     if(handleMove(event.target.id)) {
         setTimeout(() => {
-            alert(`The game end. The win is ${player()}`)
+            alert(`The game end. The win is ${player}`)
         }, 50);
     };
     updateSquare(event.target.id);
