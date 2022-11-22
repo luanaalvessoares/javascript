@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let squares = document.querySelectorAll('.square');
+    const squares = document.querySelectorAll('.square');
 
     squares.forEach(element => {
         element.addEventListener('click', handleClick);
@@ -16,8 +16,8 @@ function handleClick(event) {
 }
 
 function updateSquare(position) {
-    let square = document.getElementById(position.toString());
-    let piece = board[position];
+    const square = document.getElementById(position.toString());
+    const piece = board[position];
     square.innerHTML = `<div class="${piece}"></div>`;
 }
 

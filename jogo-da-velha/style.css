@@ -1,3 +1,5 @@
+/* board */
+
 body { text-align: center; }
 
 .square {
@@ -29,4 +31,34 @@ body { text-align: center; }
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+/* modal */
+
+.modalBtn {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #00000066;
+}
+
+.modal .content {
+    background-color: #D3D3D3;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
