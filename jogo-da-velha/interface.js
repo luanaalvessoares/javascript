@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 function handleClick(event) {
     if(handleMove(event.target.id)) {
         setTimeout(() => {
-            alert(`The game end. The win is ${player}`)
+            alert(`The game end. The win is ${player()}`)
         }, 50);
     };
     updateSquare(event.target.id);
 }
 
 function updateSquare(position) {
-    const square = document.getElementById(position.toString());
-    const piece = board[position];
+    let square = document.getElementById(position.toString());
+    let piece = board[position];
     square.innerHTML = `<div class="${piece}"></div>`;
 }
 
