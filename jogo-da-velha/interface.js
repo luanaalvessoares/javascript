@@ -21,3 +21,11 @@ function updateSquare(position) {
     square.innerHTML = `<div class="${piece}"></div>`;
 }
 
+function restart() {
+    let squares = document.querySelectorAll(".square");
+
+    squares.forEach(() => {
+        let symbol = "";
+        squares.innerHTML = `<div class='${symbol}'></div>`
+    });
+}

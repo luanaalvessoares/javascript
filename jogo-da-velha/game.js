@@ -1,4 +1,4 @@
-let board = ['', '', '', '', '', '', '', '', '', '',];
+let board = ['', '', '', '', '', '', '', '', ''];
 let player = Math.floor(2* Math.random());
 let pieces = ['o', 'x'];
 let gameOver = false;
@@ -48,3 +48,10 @@ showModal.addEventListener('click', () => {
 
 const closeModal = document.querySelector('.closeModal');
 closeModal.addEventListener('click', () => modal.style.display = 'none')
+
+function resetGame(){
+    board = ['', '', '', '', '', '', '', '', ''];
+    pieces = ['o', 'x'];
+    gameOver = false;
+    restart();
+}
