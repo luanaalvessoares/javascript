@@ -40,11 +40,20 @@ function isWin() {
 const modal = document.querySelector('.modal');
 
 const showModal = document.querySelector('.showModal');
-showModal.addEventListener('click', () => {
-    modal.style.display = 'block';
-    const firstPlayer = document.querySelector('.firstPlayer');
-    firstPlayer.innerHTML = `Who starts the game is the player ${player}`;  
-})
+showModal.onclick = function gameStatus() {
+    board.forEach((element) => {
+        if(element == '') {
+            modal.style.display = 'block';
+            const firstPlayer = document.querySelector('.firstPlayer');
+            firstPlayer.innerHTML = `Who starts the game is the player ${player}`;  
+            console.log('O board está vazio');
+        } else if(element == 'x' || element == 'o') {
+            console.log('O board não está vazio');
+            resetGame();
+        };
+    });
+};
+
 
 const closeModal = document.querySelector('.closeModal');
 closeModal.addEventListener('click', () => modal.style.display = 'none')

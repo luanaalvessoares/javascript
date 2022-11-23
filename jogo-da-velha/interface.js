@@ -11,6 +11,8 @@ function handleClick(event) {
         setTimeout(() => {
             alert(`The game end. The win is ${player}`)
         }, 50);
+
+        
     };
     updateSquare(event.target.id);
 }
@@ -22,7 +24,7 @@ function updateSquare(position) {
 }
 
 function restart() {
-    let squares = document.querySelectorAll(".square");
+    let squares = document.querySelectorAll('.square');
 
     squares.forEach(() => {
         let symbol = "";
