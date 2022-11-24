@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.square');
 
-    let restart = document.getElementById("restart");
-    restart.addEventListener("click", resetGame);
-
     squares.forEach(element => {
         element.addEventListener('click', handleClick);
     })

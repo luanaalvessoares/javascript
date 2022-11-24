@@ -39,23 +39,19 @@ function isWin() {
 
 const modal = document.querySelector('.modal');
 
-// const showModal = document.querySelector('.showModal');
-// showModal.onclick = resetGame;
-
-// // onclick = function gameStatus() {
-// //     board.forEach((element) => {
-// //         if(element == '') {
-// //             modal.style.display = 'block';
-// //             const firstPlayer = document.querySelector('.firstPlayer');
-// //             firstPlayer.innerHTML = `Who starts the game is the player ${player}`;  
-// //             console.log('O board está vazio');
-// //         } else {
-// //             console.log('O board não está vazio');
-// //             resetGame();
-// //         };
-// //     });
-// // };
-
+const showModal = document.querySelector('.showModal');
+showModal.addEventListener('click', function gameStatus() {
+    for(let content of board) {
+        if(content == '') {
+            modal.style.display = 'block';
+            const firstPlayer = document.querySelector('.firstPlayer');
+            firstPlayer.innerHTML = `Who starts the game is the player ${player}`;           
+        } else {
+            modal.style.display = 'none';
+            resetGame();            
+        }
+    }
+});
 
 const closeModal = document.querySelector('.closeModal');
 closeModal.addEventListener('click', () => modal.style.display = 'none')
