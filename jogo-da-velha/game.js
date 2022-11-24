@@ -1,6 +1,7 @@
 let board = ['', '', '', '', '', '', '', '', ''];
 let player = Math.floor(2* Math.random());
 let pieces = ['o', 'x'];
+let gameStatus = false;
 let gameOver = false;
 
 function handleMove(position) {
@@ -45,7 +46,8 @@ function resetGame() {
 const modal = document.querySelector('.modal');
 
 const showModal = document.querySelector('.showModal');
-showModal.addEventListener('click', function gameStatus() {
+showModal.addEventListener('click', function() {
+    gameStatus = true;
     for(let content of board) {
         if(content == '') {
             modal.style.display = 'block';
