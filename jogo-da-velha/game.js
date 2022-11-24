@@ -3,8 +3,6 @@ let player = Math.floor(2* Math.random());
 let pieces = ['o', 'x'];
 let gameOver = false;
 
-
-
 function handleMove(position) {
     if(gameOver) { return; }
 
@@ -37,6 +35,13 @@ function isWin() {
     return false;
 }
 
+function resetGame() {
+    board = ['', '', '', '', '', '', '', '', ''];
+    pieces = ['o', 'x'];
+    gameOver = false;
+    restart();
+}
+
 const modal = document.querySelector('.modal');
 
 const showModal = document.querySelector('.showModal');
@@ -45,8 +50,10 @@ showModal.addEventListener('click', function gameStatus() {
         if(content == '') {
             modal.style.display = 'block';
             const firstPlayer = document.querySelector('.firstPlayer');
-            firstPlayer.innerHTML = `Who starts the game is the player ${player}`;           
+            firstPlayer.innerHTML = `Who starts the game is the player ${player}`;   
         } else {
+            let start = document.getElementById('start');
+            start.value = 'Start';
             modal.style.display = 'none';
             resetGame();            
         }
@@ -54,12 +61,4 @@ showModal.addEventListener('click', function gameStatus() {
 });
 
 const closeModal = document.querySelector('.closeModal');
-closeModal.addEventListener('click', () => modal.style.display = 'none')
-
-function resetGame() {
-    board = ['', '', '', '', '', '', '', '', ''];
-    pieces = ['o', 'x'];
-    gameOver = false;
-    restart();
-    console.log('reset chamado no start button')
-}
+closeModal.addEventListener('click', () => modal.style.display = 'none');

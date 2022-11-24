@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function handleClick(event) {
+    let start = document.getElementById('start');
+    start.value = 'Restart';
     if(handleMove(event.target.id)) {
         setTimeout(() => {
             alert(`The game end. The win is ${player}`)
@@ -18,9 +20,9 @@ function handleClick(event) {
 }
 
 function updateSquare(position) {
-    let square = document.getElementById(position.toString());
-    let piece = board[position];
-    square.innerHTML = `<div class="${piece}"></div>`;
+            let square = document.getElementById(position.toString());
+            let piece = board[position];
+            square.innerHTML = `<div class="${piece}"></div>`;
 }
 
 function restart() {
