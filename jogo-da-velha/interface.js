@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.square');
 
+    let restart = document.getElementById("restart");
+    restart.addEventListener("click", resetGame);
+
     squares.forEach(element => {
         element.addEventListener('click', handleClick);
     })
@@ -26,8 +29,10 @@ function updateSquare(position) {
 function restart() {
     let squares = document.querySelectorAll('.square');
 
-    squares.forEach(() => {
+    squares.forEach((element) => {
+        let position = element.id;
         let symbol = "";
-        squares.innerHTML = `<div class='${symbol}'></div>`
+
+        element.innerHTML = `<div class='${symbol}'></div>`
     });
 }
