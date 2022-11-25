@@ -3,6 +3,8 @@
 body { 
     text-align: center;
     font-family: 'Rubik-Regular';
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -10,12 +12,31 @@ body {
     justify-items: center;
 }
 
+.container > h1 {
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .square {
-    background-color: #dfdad9;
     width: 100px;
     height: 100px;
-    display: inline-block;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    transition: all 235ms ease-in-out;
 }
+
+/* pieces */
 
 .x, .o { position: relative; }
 
@@ -67,28 +88,42 @@ body {
     align-items: center;
 }
 
-.closeModal, .showModal {
-    background-color: #dfdad9;
-    border-radius: 5px;
-    width: 150px;
-    border: none;
-    margin-top: 15px;
-    padding: 18px;
-    cursor: pointer;
-}
+/* buttons */
 
-#start {
-    border: none;
-    background: none;
+.showModal, .closeModal {
+    font-family: 'Rubik-Medium';
+    margin-top: 20px;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 23px;
+    padding: .75rem;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
 }
 
 .showModal:hover, .closeModal:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
 }
 
-#start, .closeModal {
-    font-family: 'Rubik-Medium';
+.showModal:focus, .closeModal:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
+
 
 @font-face {
     font-family: 'Rubik-Medium';
