@@ -22,8 +22,7 @@ function updateSquare(position) {
         start.value = 'Restart'; 
         let square = document.getElementById(position.toString());
         let piece = board[position];
-        square.innerHTML = `<div class="${piece}"></div>`;
-        console.log(piece, position)      
+        square.innerHTML = `<div class="${piece}"></div>`;      
     }
 }
 
