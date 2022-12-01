@@ -26,6 +26,24 @@ function createCardsFromTechs() {
     return cards;
 }
 
+function createPairFromTech(tech) {
+    return [{
+        id: createIdWithTech(tech),
+        icon: tech,
+        flipped: false,
+    }, {
+        id: createIdWithTech(tech),
+        icon: tech,
+        flipped: false,
+    }]
+}
+
+
+function createIdWithTech(tech) {
+    return tech + parseInt(Math.random() * 1000);
+}
+
+
 function shuffleCards(cards) {
     let currentIndex = cards.length;
     let randomIndex = 0;
@@ -37,5 +55,4 @@ function shuffleCards(cards) {
 
         [cards[randomIndex], cards[currentIndex]] = [cards[currentIndex], cards[randomIndex]]
     }
-
 }
