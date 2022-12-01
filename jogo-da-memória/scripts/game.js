@@ -36,6 +36,15 @@ function setCard(id) {
     }
 }
 
+
+function checkMatch() {
+    if (!this.firstCard || !this.secondCard) {
+        return false;
+    }
+    return this.firstCard.icon === this.secondCard.icon;
+}
+
+
 function createCardsFromTechs() {
     cards = [];
 
