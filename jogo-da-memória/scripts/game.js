@@ -38,12 +38,17 @@ function setCard(id) {
 
 
 function checkMatch() {
-    if (!this.firstCard || !this.secondCard) {
+    if (!firstCard || !secondCard) {
         return false;
     }
-    return this.firstCard.icon === this.secondCard.icon;
+    return firstCard.icon === secondCard.icon;
 }
 
+function clearCards() {
+    firstCard = null;
+    secondCard = null;
+    lockMode = false;
+}
 
 function createCardsFromTechs() {
     cards = [];
