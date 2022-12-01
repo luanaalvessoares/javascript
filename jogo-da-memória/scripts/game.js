@@ -50,6 +50,12 @@ function clearCards() {
     lockMode = false;
 }
 
+function unflipCards() {
+    firstCard.flipped = false;
+    secondCard.flipped = false;
+    clearCards();
+}
+
 function createCardsFromTechs() {
     cards = [];
 
