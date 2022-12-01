@@ -2,8 +2,6 @@ lockMode = false;
 firstCard = null;
 secondCard = null;
 
-cards = null;
-
 techs = ['bootstrap', 
          'css',
          'electron',
@@ -34,7 +32,7 @@ function setCard(id) {
         lockMode = true;
         return true;
     }
-}
+};
 
 
 function checkMatch() {
@@ -42,19 +40,27 @@ function checkMatch() {
         return false;
     }
     return firstCard.icon === secondCard.icon;
-}
+};
+
 
 function clearCards() {
     firstCard = null;
     secondCard = null;
     lockMode = false;
-}
+};
+
 
 function unflipCards() {
     firstCard.flipped = false;
     secondCard.flipped = false;
     clearCards();
-}
+};
+
+
+function checkGameOver() {
+    return cards.filter(card => !card.flipped).length == 0;
+};
+
 
 function createCardsFromTechs() {
     cards = [];
@@ -65,7 +71,8 @@ function createCardsFromTechs() {
     cards = cards.flatMap(pair => pair);
     shuffleCards();
     return cards;
-}
+};
+
 
 function createPairFromTech(tech) {
     return [{
@@ -77,7 +84,7 @@ function createPairFromTech(tech) {
         icon: tech,
         flipped: false,
     }]
-}
+};
 
 
 function createIdWithTech(tech) {
