@@ -15,7 +15,18 @@ techs = ['bootstrap',
 
 cards = null;
 
-function shuffleCards (cards) {
+function createCardsFromTechs() {
+    cards = [];
+
+    techs.forEach((tech) => {
+        cards.push(createPairFromTech(tech));
+    })
+    cards = cards.flatMap(pair => pair);
+    shuffleCards();
+    return cards;
+}
+
+function shuffleCards(cards) {
     let currentIndex = cards.length;
     let randomIndex = 0;
 
