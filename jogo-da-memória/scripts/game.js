@@ -2,6 +2,8 @@ lockMode = false;
 firstCard = null;
 secondCard = null;
 
+cards = null;
+
 techs = ['bootstrap', 
          'css',
          'electron',
@@ -14,6 +16,25 @@ techs = ['bootstrap',
          'react'];
 
 cards = null;
+
+function setCard(id) {
+    let card = cards.filter(card => card.id === id)[0];
+    console.log(card);
+    if (card.flipped || lockMode) {
+        return false;
+    }
+
+    if (!firstCard) {
+        firstCard = card;
+        firstCard.flipped = true;
+        return true;
+    } else {
+        secondCard = card;
+        secondCard.flipped = true;
+        lockMode = true;
+        return true;
+    }
+}
 
 function createCardsFromTechs() {
     cards = [];
