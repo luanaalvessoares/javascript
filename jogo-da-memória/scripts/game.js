@@ -16,7 +16,7 @@ techs = ['bootstrap',
 cards = null;
 
 function shuffleCards (cards) {
-    let currentIndex = this.cards.length;
+    let currentIndex = cards.length;
     let randomIndex = 0;
 
     while (currentIndex !== 0) {
@@ -24,7 +24,7 @@ function shuffleCards (cards) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
 
-        [this.cards[randomIndex], this.cards[currentIndex]] = [this.cards[currentIndex], this.cards[randomIndex]]
+        [cards[randomIndex], cards[currentIndex]] = [cards[currentIndex], cards[randomIndex]]
     }
 
 }
