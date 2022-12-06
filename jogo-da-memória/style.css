@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Righteous', sans-serif;
     display:flex;
     justify-content: center;
@@ -13,3 +13,7 @@ body{
     height: 100vh;
     background-color: #c7cdd3;
 }
+
+.banner { margin-top: 25px; }
+
+.banner>img { max-width: 300px; }
