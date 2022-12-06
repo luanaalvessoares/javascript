@@ -18,7 +18,6 @@ let game = {
 
     setCard: function(id) {
         let card = this.cards.filter(card => card.id === id)[0];
-        console.log(card);
         if (card.flipped || this.lockMode) {
             return false;
         };
@@ -35,7 +34,6 @@ let game = {
         };
     },
 
-
     checkMatch: function() {
         if (!this.firstCard || !this.secondCard) {
             return false;
@@ -43,13 +41,11 @@ let game = {
         return this.firstCard.icon === this.secondCard.icon;
     },
 
-
     clearCards: function() {
         this.firstCard = null;
         this.secondCard = null;
         this.lockMode = false;
     },
-
 
     unflipCards() {
         this.firstCard.flipped = false;
@@ -57,15 +53,12 @@ let game = {
         this.clearCards();
     },
 
-
     checkGameOver: function() {
         return this.cards.filter(card => !card.flipped).length == 0;
     },
 
-
     createCardsFromTechs: function() {
         this.cards = [];
-
         this.techs.forEach((tech) => {
             this.cards.push(this.createPairFromTech(tech));
         });
@@ -73,7 +66,6 @@ let game = {
         this.shuffleCards();
         return this.cards;
     },
-
 
     createPairFromTech: function(tech) {
         return [{
@@ -84,25 +76,21 @@ let game = {
             id: this.createIdWithTech(tech),
             icon: tech,
             flipped: false,
-        }]
+        }];
     },
-
 
     createIdWithTech: function(tech) {
         return tech + parseInt(Math.random() * 1000);
     },
-
 
     shuffleCards: function(cards) {
         let currentIndex = this.cards.length;
         let randomIndex = 0;
 
         while (currentIndex !== 0) {
-
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex--;
-
             [this.cards[randomIndex], this.cards[currentIndex]] = [this.cards[currentIndex], this.cards[randomIndex]]
-        }
-    }    
+        };
+    }
 }
