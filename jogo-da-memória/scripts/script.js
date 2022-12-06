@@ -61,3 +61,10 @@ function flipCard() {
         }
     }
 }
+
+function restart() {
+    game.clearCards();
+    startGame();
+    let gameOverLayer = document.getElementById("gameOver");
+    gameOverLayer.style.display = 'none';
+}
