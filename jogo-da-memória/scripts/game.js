@@ -1,9 +1,9 @@
 let game = {
-    lockMode = false;
-    firstCard = null;
-    secondCard = null;
+    lockMode: false,
+    firstCard: null,
+    secondCard: null,
 
-    techs = ['bootstrap', 
+    techs: ['bootstrap', 
             'css',
             'electron',
             'firebase',
@@ -12,89 +12,89 @@ let game = {
             'jquery',
             'mongo',
             'node',
-            'react'];
+            'react'],
 
-    cards = null;
+    cards: null,
 
-    function setCard(id) {
-        let card = cards.filter(card => card.id === id)[0];
+    setCard: function(id) {
+        let card = this.cards.filter(card => card.id === id)[0];
         console.log(card);
-        if (card.flipped || lockMode) {
+        if (card.flipped || this.lockMode) {
             return false;
-        }
+        };
 
-        if (!firstCard) {
-            firstCard = card;
-            firstCard.flipped = true;
+        if (!this.firstCard) {
+            this.firstCard = card;
+            this.firstCard.flipped = true;
             return true;
         } else {
-            secondCard = card;
-            secondCard.flipped = true;
-            lockMode = true;
+            this.secondCard = card;
+            this.secondCard.flipped = true;
+            this.lockMode = true;
             return true;
-        }
-    };
+        };
+    },
 
 
-    function checkMatch() {
-        if (!firstCard || !secondCard) {
+    checkMatch: function() {
+        if (!this.firstCard || !this.secondCard) {
             return false;
-        }
-        return firstCard.icon === secondCard.icon;
-    };
+        };
+        return this.firstCard.icon === this.secondCard.icon;
+    },
 
 
-    function clearCards() {
-        firstCard = null;
-        secondCard = null;
-        lockMode = false;
-    };
+    clearCards: function() {
+        this.firstCard = null;
+        this.secondCard = null;
+        this.lockMode = false;
+    },
 
 
-    function unflipCards() {
-        firstCard.flipped = false;
-        secondCard.flipped = false;
-        clearCards();
-    };
+    unflipCards() {
+        this.firstCard.flipped = false;
+        this.secondCard.flipped = false;
+        this.clearCards();
+    },
 
 
-    function checkGameOver() {
-        return cards.filter(card => !card.flipped).length == 0;
-    };
+    checkGameOver: function() {
+        return this.cards.filter(card => !card.flipped).length == 0;
+    },
 
 
-    function createCardsFromTechs() {
-        cards = [];
+    createCardsFromTechs: function() {
+        this.cards = [];
 
-        techs.forEach((tech) => {
-            cards.push(createPairFromTech(tech));
-        })
-        cards = cards.flatMap(pair => pair);
-        shuffleCards();
-        return cards;
-    };
+        this.techs.forEach((tech) => {
+            this.cards.push(this.createPairFromTech(tech));
+        });
+        this.cards = this.cards.flatMap(pair => pair);
+        this.shuffleCards();
+        return this.cards;
+    },
 
 
-    function createPairFromTech(tech) {
+    createPairFromTech: function(tech) {
         return [{
-            id: createIdWithTech(tech),
+            id: this.createIdWithTech(tech),
             icon: tech,
             flipped: false,
         }, {
-            id: createIdWithTech(tech),
+            id: this.createIdWithTech(tech),
             icon: tech,
             flipped: false,
         }]
-    };
+    },
 
 
-    function createIdWithTech(tech) {
+    createIdWithTech: function(tech) {
         return tech + parseInt(Math.random() * 1000);
-    }
+    },
 
 
-    function shuffleCards(cards) {
-        let currentIndex = cards.length;
+    shuffleCards: function(cards) {
+        let currentIndex = this.cards.length;
         let randomIndex = 0;
 
         while (currentIndex !== 0) {
@@ -102,7 +102,7 @@ let game = {
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex--;
 
-            [cards[randomIndex], cards[currentIndex]] = [cards[currentIndex], cards[randomIndex]]
+            [this.cards[randomIndex], this.cards[currentIndex]] = [this.cards[currentIndex], this.cards[randomIndex]]
         }
     }    
 }
