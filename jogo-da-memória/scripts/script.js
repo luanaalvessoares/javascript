@@ -3,6 +3,12 @@ const BACK = "card_back"
 const CARD = "card"
 const ICON = "icon"
 
+startGame();
+
+function startGame() {
+    initializeCards(game.createCardsFromTechs());
+}
+
 function initializeCards(cards) {
     let gameBoard = document.getElementById("gameBoard");
     gameBoard.innerHTML = '';
@@ -58,8 +64,8 @@ function flipCard() {
                     game.unflipCards();
                 }, 1000);
             };
-        }
-    }
+        };
+    };
 }
 
 function restart() {
