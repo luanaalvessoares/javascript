@@ -4,7 +4,7 @@ Existem diversos tipos de operadores que podemos usar em javascript, desde os op
 <br>
 
 ### Adição
-A adição em javascript tem como símbolo o `+` e é usado para adicionar dois valores numéricos ou concatenar strings. Veja o exemplo:
+A adição em javascript tem como símbolo o `+` e é usada para adicionar dois valores numéricos ou concatenar strings. Veja o exemplo:
 
 ```
 const num1 = 5;
@@ -14,5 +14,18 @@ const result = num1 + num2;
 console.log(result); // o resultado é 15
 ```
 <br><br><hr>
+
+### Subtração
+A subtração em javascript tem como símbolo o `-` e é usada para subtrair dois valores numéricos. Veja o exemplo:
+
+```
+const num1 = 10;
+const num2 = 5;
+const result = num1 - num2;
+
+console.log(result); // o resultado é 5
+```
+<br><br><hr>
+
 
 
