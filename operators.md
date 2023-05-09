@@ -27,5 +27,17 @@ console.log(result); // o resultado é 5
 ```
 <br><br><hr>
 
+### Multiplicação
+A multiplicação em javascript tem como símbolo o `*` e é usada para multiplicar dois valores numéricos. Veja o exemplo:
+
+```
+const num1 = 5;
+const num2 = 10;
+const result = num1 * num2;
+
+console.log(result); // 50
+```
+<br><br><hr>
+
 
 
