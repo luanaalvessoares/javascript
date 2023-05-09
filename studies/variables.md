@@ -14,3 +14,20 @@ if (true) {
 console.log(x); // retorna 2
 ```
 <br><br><br><hr>
+
+
+### Let
+
+Otipo de variável `let` declara variáveis com escopo de bloco (entre chaves {}). Não pode ser acessada antes de ser declarada (hoisting) e não permite redeclaração dentro do mesmo escopo, mas permite reatribuição de valores. É recomendado utilizar `let` em vez de `var` para evitar problemas de escopo. Veja o exemplo:
+
+```
+let x = 1;
+
+if (true) {
+  let x = 2;
+}
+
+console.log(x); // retorna 1
+```
+<br><br><br><hr>
+
