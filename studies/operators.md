@@ -173,6 +173,8 @@ console.log(a <= 10); // true
 ```
 <br><br>
 
+**_Esses operadores são comumente usados em condicionais e loops para controlar o fluxo do programa com base em comparações de valores._**
+<br><br><hr>
 
 
 
