@@ -177,4 +177,5 @@ console.log(a <= 10); // true
 <br><br><hr>
 
 
-
+## Operadores lógicos
+Em javascript, existem três operadores lógicos: AND (&&), OR (||) e NOT (!). Abaixo uma descrição de cada um deles:
