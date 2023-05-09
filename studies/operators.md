@@ -123,6 +123,19 @@ console.log(a !== 10); // false
 _Já nesse caso o operador considerou o tipo de variável e imprimiu que a comparação entre um `number` e uma `string` é diferente._
 <br><br><hr>
 
+### >
+O operador `>` verifica se o valor à esquerda é maior que o valor à direita. Veja o exemplo:
+
+```
+const a = 10;
+const b = 5;
+
+console.log(a > b); // true
+console.log(b > a); // false
+```
+<br><br><hr>
+
+
 
 
 
