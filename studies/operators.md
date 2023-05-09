@@ -206,3 +206,15 @@ if (a > 0 || b < 5) {
 ```
 <br><br><hr>
 
+### NOT
+O operador lógico `NOT` tem como símbolo `!`. Ele inverte o valor da expressão. Se a expressão é verdadeira, retorna `false`; se a expressão é falsa, retorna `true`. Veja o exemplo:
+
+```
+let z = true;
+
+if (!z) {
+  console.log("Isso nunca será executado");
+} else {
+  console.log("A expressão é verdadeira, porque o valor de z é true");
+}
+```
