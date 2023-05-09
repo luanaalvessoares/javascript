@@ -61,8 +61,11 @@ const result = num1 % num2;
 
 console.log(result); // 1
 ```
-<br><br><hr>
+<br><br><br>
 
+**_É importante lembrar que esses operadores podem ser usados não apenas em números, mas também em variáveis que armazenam valores numéricos. Além disso, a ordem de precedência dos operadores matemáticos segue a mesma ordem da matemática convencional (parênteses, multiplicação/divisão, adição/subtração)._**
+
+<br><br><br><hr>
 
 
 
