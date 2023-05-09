@@ -40,3 +40,5 @@ const PI = 3.14;
 PI = 2; // gera um erro
 ```
 <br><br><br><hr>
+
+**_Em resumo, `var` é mais flexível, mas pode causar problemas de escopo, `let` é mais seguro em relação ao escopo, mas ainda permite reatribuição de valores, e `const` é a mais segura, porém imutável. A escolha entre eles dependerá do contexto e necessidades específicas do projeto._**
