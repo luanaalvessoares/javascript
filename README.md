@@ -1,2 +1,1 @@
-
-In this repository are allocated mini projects to practice the use of pure JS to understand the creation of MVC.
+Repository created to record my learning about JavaScript, an interpreted programming language used to develop web and mobile applications, as well as interacting with HTML and CSS elements on the page.
