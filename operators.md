@@ -11,7 +11,7 @@ const num1 = 5;
 const num2 = 10;
 const result = num1 + num2;
 
-console.log(result); // o resultado é 15
+console.log(result); // 15
 ```
 <br><br><hr>
 
@@ -23,7 +23,7 @@ const num1 = 10;
 const num2 = 5;
 const result = num1 - num2;
 
-console.log(result); // o resultado é 5
+console.log(result); // 5
 ```
 <br><br><hr>
 
@@ -38,6 +38,19 @@ const result = num1 * num2;
 console.log(result); // 50
 ```
 <br><br><hr>
+
+### Divisão
+A divisão em javascript tem como símbolo a `/` e é usada para  Veja o exemplo:
+
+```
+const num1 = 10;
+const num2 = 2;
+const result = num1 / num2;
+
+console.log(result); // 5
+```
+<br><br><hr>
+
 
 
 
