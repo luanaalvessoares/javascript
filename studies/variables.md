@@ -31,3 +31,12 @@ console.log(x); // retorna 1
 ```
 <br><br><br><hr>
 
+### Const
+O tipo de variável `const` declara variáveis com escopo de bloco e com valor constante que não pode ser reatribuído. Ela não pode ser acessada antes de ser declarada (hoisting) e não permite reatribuição de valores. É recomendado utilizar `const` sempre que possível, especialmente para valores que não devem ser alterados durante a execução do programa. Veja o exemplo:
+
+```
+const PI = 3.14;
+
+PI = 2; // gera um erro
+```
+<br><br><br><hr>
