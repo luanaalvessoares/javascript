@@ -61,12 +61,26 @@ const result = num1 % num2;
 
 console.log(result); // 1
 ```
-<br><br><br>
+<br><br>
 
 **_É importante lembrar que esses operadores podem ser usados não apenas em números, mas também em variáveis que armazenam valores numéricos. Além disso, a ordem de precedência dos operadores matemáticos segue a mesma ordem da matemática convencional (parênteses, multiplicação/divisão, adição/subtração)._**
 
-<br><br><br><hr>
+<br><br><hr>
 
+## Operadores relacionais
+Os operadores relacionais em javascript são usados ​​para comparar dois valores e retornar um valor booleano (verdadeiro ou falso).
+<br>
 
+### ==
+O operador `==` verifica se os valores são iguais, não considerando o tipo de dado. Veja o exemplo:
 
+```
+const a = 10;
+const b = '10';
+
+console.log(a == b); // true
+console.log(a == 15); // false
+```
+_Nesse caso o operador não considerou a variável b como sendo string por isso é impresso que a variável a é igual a variável b._
+<br><br><hr>
 
