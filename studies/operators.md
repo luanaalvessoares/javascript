@@ -160,6 +160,19 @@ console.log(b < a); // true
 ```
 <br><br><hr>
 
+### <=
+O operador `<=` verifica se o valor à esquerda é menor ou igual ao valor à direita. Veja o exemplo:
+
+```
+const a = 10;
+const b = 5;
+
+console.log(a <= b); // false
+console.log(b <= a); // true
+console.log(a <= 10); // true
+```
+<br><br>
+
 
 
 
