@@ -135,8 +135,17 @@ console.log(b > a); // false
 ```
 <br><br><hr>
 
+### >=
+O operador `>=` verifica se o valor à esquerda é maior ou igual ao valor à direita. Veja o exemplo:
 
+```
+const a = 10;
+const b = 5;
 
+console.log(a >= b); // true
+console.log(b >= a); // false
+console.log(a >= 10); // true
+```
 
 
 
