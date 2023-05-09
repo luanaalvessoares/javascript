@@ -110,5 +110,20 @@ console.log(a != 15); // true
 _Nesse caso o operador não considerou a variável b como sendo string por isso é impresso que a variável a não é diferente da variável b._
 <br><br><hr>
 
+### !==
+O operador `!==`` verifica se os valores são diferentes e/ou de tipos diferentes. Veja o exemplo:
+
+```
+const a = 10;
+const b = '10';
+
+console.log(a !== b); // true
+console.log(a !== 10); // false
+```
+_Já nesse caso o operador considerou o tipo de variável e imprimiu que a comparação entre um `number` e uma `string` é diferente._
+<br><br><hr>
+
+
+
 
 
