@@ -179,3 +179,16 @@ console.log(a <= 10); // true
 
 ## Operadores lógicos
 Em javascript, existem três operadores lógicos: AND (&&), OR (||) e NOT (!). Abaixo uma descrição de cada um deles:
+
+### AND
+O operador lógico `AND` tem como símbolo `&&`. Ele retorna `true` se duas expressões que estão sendo comparadas são verdadeiras, caso contrário, retorna `false`. Veja o exemplo:
+
+```
+let x = 5;
+let y = 10;
+
+if (x > 0 && y < 15) {
+  console.log("Ambas as condições são verdadeiras");
+}
+```
+<br><br><hr>
