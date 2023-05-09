@@ -192,3 +192,17 @@ if (x > 0 && y < 15) {
 }
 ```
 <br><br><hr>
+
+### OR
+O operador lógico `OR` tem como símbolo `||`. Ele retorna `true` se pelo menos uma das expressões que estão sendo comparadas for verdadeira, caso contrário, retorna `false`. Veja o exemplo:
+
+```
+let a = 5;
+let b = 10;
+
+if (a > 0 || b < 5) {
+  console.log("Pelo menos uma das condições é verdadeira");
+}
+```
+<br><br><hr>
+
