@@ -320,3 +320,16 @@ console.log(b); // Output: 6
 ```
 <br><br><hr>
 
+### Pós-incremento
+No pós-decremento o valor da variável é incrementado em 1 depois da sua utilização na expressão. Veja o exemplo:
+
+```
+let c = 10;
+let d = c++;
+
+console.log(c); // Output: 11
+console.log(d); // Output: 10
+```
+<br><br><hr>
+
+
