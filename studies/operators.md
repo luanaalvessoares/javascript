@@ -302,3 +302,8 @@ console.log(resultado1); // 25 (em binário: 0000000000011001)
 let resultado2 = num2 >>> 2; // desloca 2 bits para a direita e preenche com zeros à esquerda
 console.log(resultado2); // 1073741799 (em binário: 00111111111100111001111111111111)
 ```
+<br><br><hr>
+
+## Pré-incremento e pós-decremento
+O pré-incremento e o pós-decremento são operadores unários que são usados para aumentar ou diminuir o valor de uma variável em 1.
+<br>
