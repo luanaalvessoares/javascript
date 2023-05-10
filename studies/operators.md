@@ -332,4 +332,8 @@ console.log(d); // Output: 10
 ```
 <br><br><hr>
 
+## Pré-decremento e pós-decremento
+O pré-decremento e o pós-decremento são operadores unários que são usados para diminuir o valor de uma variável em 1.
+<br>
+
 
