@@ -244,3 +244,16 @@ let b = 3; // 3 em binário é 0011
 
 let result = a | b; // Resultado é 0111, ou seja, 7 em decimal
 ```
+<br><br><hr>
+
+### NOT Bit-a-Bit
+O operador `NOT bit-a-bit` é representado pelo símbolo `~`. Ele inverte todos os bits de um valor. Veja o exemplo:
+
+```
+let a = 5; // 5 em binário é 0101
+
+let result = ~a; // Resultado é -6 em decimal
+```
+<br><br><hr>
+
+
