@@ -268,12 +268,24 @@ let result = a ^ b; // Resultado é 0110, ou seja, 6 em decimal
 <br><br><hr>
 
 ### Left Shift
-O operador Left Shift é representado pelo símbolo "<<". Ele desloca os bits de um valor para a esquerda pelo número de posições especificado. Veja o exemplo:
+O operador `Left Shift` é representado pelo símbolo `<<`. Ele desloca os bits de um valor para a esquerda pelo número de posições especificado. Veja o exemplo:
 
 ```
 let a = 5; // 5 em binário é 0101
 
 let result = a << 2; // Resultado é 010100, ou seja, 20 em decimal
+```
+<br><br><hr>
+
+### Right Shift
+O operador `Right Shift` é representado pelo símbolo `>>`. Ele desloca os bits de um valor para a direita pelo número de posições especificado. Se o número for positivo, os bits serão deslocados para a direita e zeros serão adicionados ao início. Se for negativo, os bits serão deslocados para a direita e uns serão adicionados ao início. Veja o exemplo:
+
+```
+let a = 16; // 16 em binário é 10000
+
+let result1 = a >> 2; // Resultado é 00100, ou seja, 4 em decimal
+
+let result2 = a >> -2; // Resultado é 00100000, ou seja, 32 em decimal
 ```
 <br><br><hr>
 
