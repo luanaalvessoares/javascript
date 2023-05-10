@@ -218,3 +218,9 @@ if (!z) {
   console.log("A expressão é verdadeira, porque o valor de z é true");
 }
 ```
+<br><br><hr>
+
+## Operadores bitwise
+Os operadores bitwise em JavaScript são usados para realizar operações em nível de bits em números.
+<br>
+
