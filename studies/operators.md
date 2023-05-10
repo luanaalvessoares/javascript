@@ -375,3 +375,16 @@ numero % 2 === 0 ? console.log("O número é par") : console.log("O número é �
 _Nesse exemplo, a expressão `numero % 2 === 0` verifica se o número é par. Se for verdadeiro, a mensagem "O número é par" é exibida no console. Caso contrário, a mensagem "O número é ímpar" é exibida._
 <br><br><hr>
 
+## Typeof
+O operador `typeof` é usado para determinar o tipo de dado de uma variável em javascript. Ele retorna uma string que representa o tipo do dado da variável. O uso do operador `typeof` pode ser útil para garantir que o tipo de dado esteja correto antes de realizar determinadas operações ou manipulações. Veja o exemplo:
+
+```
+let x = 42;
+let y = "Olá, mundo!";
+
+console.log(typeof x); // "number"
+console.log(typeof y); // "string"
+```
+_Nesse exemplo, o operador `typeof` é usado para obter o tipo de dado das variáveis `x` e `y`. O resultado de `typeof x` é uma string `number` que representa o tipo de dado da variável `x`, que é um número. Da mesma forma, o resultado de `typeof y` é uma string `string` que representa o tipo de dado da variável `y`, que é uma string._
+<br><br><hr>
+
