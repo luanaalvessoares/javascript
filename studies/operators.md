@@ -224,3 +224,14 @@ if (!z) {
 Os operadores bitwise em JavaScript são usados para realizar operações em nível de bits em números.
 <br>
 
+### AND Bit-a-Bit
+O operador `AND bit-a-bit` é representado pelo símbolo `&`. Ele compara cada bit de um valor com o bit correspondente do outro valor. Se ambos os bits forem 1, o resultado será 1, caso contrário, será 0. Veja o exemplo:
+
+```
+let a = 5; // 5 em binário é 0101
+let b = 3; // 3 em binário é 0011
+
+let result = a & b; // Resultado é 0001, ou seja, 1 em decimal
+```
+<br><br><hr>
+
