@@ -256,4 +256,14 @@ let result = ~a; // Resultado é -6 em decimal
 ```
 <br><br><hr>
 
+### XOR Bit-a-Bit
+O operador `XOR bit-a-bit` é representado pelo símbolo `^`. Ele compara cada bit de um valor com o bit correspondente do outro valor. Se os bits comparados forem diferentes, o resultado será 1, caso contrário, será 0. Veja o exemplo:
+
+```
+let a = 5; // 5 em binário é 0101
+let b = 3; // 3 em binário é 0011
+
+let result = a ^ b; // Resultado é 0110, ou seja, 6 em decimal
+```
+<br><br><hr>
 
