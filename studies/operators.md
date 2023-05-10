@@ -307,3 +307,16 @@ console.log(resultado2); // 1073741799 (em binário: 001111111111001110011111111
 ## Pré-incremento e pós-decremento
 O pré-incremento e o pós-decremento são operadores unários que são usados para aumentar ou diminuir o valor de uma variável em 1.
 <br>
+
+### Pré-incremento
+No pré-incremento o valor da variável é incrementado em 1 antes da sua utilização na expressão. Veja o exemplo:
+
+```
+let a = 5;
+let b = ++a;
+
+console.log(a); // Output: 6
+console.log(b); // Output: 6
+```
+<br><br><hr>
+
