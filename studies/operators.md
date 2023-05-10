@@ -267,3 +267,13 @@ let result = a ^ b; // Resultado é 0110, ou seja, 6 em decimal
 ```
 <br><br><hr>
 
+### Left Shift
+O operador Left Shift é representado pelo símbolo "<<". Ele desloca os bits de um valor para a esquerda pelo número de posições especificado. Veja o exemplo:
+
+```
+let a = 5; // 5 em binário é 0101
+
+let result = a << 2; // Resultado é 010100, ou seja, 20 em decimal
+```
+<br><br><hr>
+
