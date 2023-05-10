@@ -364,3 +364,14 @@ console.log(h); // Output: 15
 
 <br><br><hr>
 
+## Operador ternário
+O operador ternário em javascript é uma forma simplificada de escrever uma estrutura condicional `if-else`. Ele é representado por `expressão ? valorSeVerdadeiro : valorSeFalso`. Veja o exemplo de como usá-lo:
+
+```
+const numero = 5;
+
+numero % 2 === 0 ? console.log("O número é par") : console.log("O número é ímpar");
+```
+_Nesse exemplo, a expressão `numero % 2 === 0` verifica se o número é par. Se for verdadeiro, a mensagem "O número é par" é exibida no console. Caso contrário, a mensagem "O número é ímpar" é exibida._
+<br><br><hr>
+
