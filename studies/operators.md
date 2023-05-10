@@ -289,3 +289,16 @@ let result2 = a >> -2; // Resultado é 00100000, ou seja, 32 em decimal
 ```
 <br><br><hr>
 
+### Zero-fill Right Shift
+O operador `Zero-fill Right Shift` é representado pelo símbolo `>>>`. Ele desloca os bits de um número para a direita e preenche os novos bits à esquerda com zeros. O resultado é sempre um número não negativo, independentemente do sinal do número original. Veja o exemplo:
+
+```
+let num1 = 100; // em binário: 0000000001100100
+let num2 = -100; // em binário: 1111111110011100
+
+let resultado1 = num1 >>> 2; // desloca 2 bits para a direita e preenche com zeros à esquerda
+console.log(resultado1); // 25 (em binário: 0000000000011001)
+
+let resultado2 = num2 >>> 2; // desloca 2 bits para a direita e preenche com zeros à esquerda
+console.log(resultado2); // 1073741799 (em binário: 00111111111100111001111111111111)
+```
