@@ -348,4 +348,19 @@ console.log(f); // Output: 7
 ```
 <br><br><hr>
 
+### Pós-decremento
+No pós-decremento o valor da variável é decrementado em 1 depois da sua utilização na expressão. Veja o exemplo:
+
+```
+let g = 15;
+let h = g--;
+
+console.log(g); // Output: 14
+console.log(h); // Output: 15
+```
+<br><br>
+
+**_É importante lembrar que o pré-incremento e o pós-incremento, assim como o pré-decremento e o pós-decremento, só funcionam em variáveis numéricas. Além disso, é necessário ter cuidado com o seu uso em expressões complexas, já que eles podem afetar o resultado final._**
+
+<br><br><hr>
 
