@@ -84,3 +84,42 @@ _Nesse exemplo, o loop `for...in` itera sobre todas as propriedades do objeto `p
 <br><br>
 
 **É importante ressaltar que o laço `for...in` itera apenas sobre as propriedades enumeráveis do objeto. Propriedades não enumeráveis, como as propriedades internas dos objetos nativos, não serão incluídas no loop.**
+<br><br><hr>
+
+## For of
+O loop `for...of` é uma forma de percorrer elementos iteráveis, como arrays, strings, mapas, sets, entre outros. Ao contrário do `for...in`, que itera sobre as chaves ou índices de um objeto, o `for...of` itera sobre os valores dos elementos. A sintaxe básica do `for...of` é a seguinte:
+
+```
+for (let valor of iteravel) {
+  // faça algo com o valor
+}
+```
+_Onde `iteravel` é o objeto iterável que você quer percorrer e `valor` é a variável que receberá cada valor do iterável a cada iteração._
+<br><br>
+
+Abaixo um exemplo de como usar o `for...of` para percorrer um array:
+
+```
+const frutas = ['maçã', 'banana', 'laranja'];
+
+for (let fruta of frutas) {
+  console.log(fruta);
+}
+```
+_Este código irá percorrer o array `frutas` e imprimir o valor de cada elemento na console._
+<br><br>
+
+Uma das vantagens do `for...of` é que ele pode ser usado com outros iteráveis além de arrays, como strings, mapas e sets. Por exemplo, para percorrer os caracteres de uma string, podemos fazer o seguinte:
+
+```
+const palavra = 'javascript';
+
+for (let letra of palavra) {
+  console.log(letra);
+}
+```
+_Este código irá imprimir cada letra da palavra "javascript" na console._
+<br><br>
+
+**É importante lembrar que o `for...of` não funciona em objetos comuns, pois eles não são iteráveis. Para iterar sobre as chaves ou índices de um objeto, ainda é necessário usar o `for...in`.**
+<br><br><hr>
