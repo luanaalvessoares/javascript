@@ -201,7 +201,7 @@ _Neste exemplo, o `do while` é usado para percorrer cada elemento do array `pal
 <br><br><hr>
 
 ### Break
-A declaração `break` é usada em loops (`for`, `while`, `do-while`) e no `switch-case` para interromper a execução do loop ou do switch-case. Quando o JavaScript encontra uma instrução `break`, ele sai imediatamente do bloco em que se encontra e continua a execução do programa na próxima instrução após o bloco. Sem o `break`, o código iria continuar executando os casos abaixo do caso correspondente e/ou a repetição do loop. 
+A declaração `break` é usada em loops (`for`, `while`, `do-while`) e no `switch-case` para interromper a execução do loop ou do switch-case. Quando o javascript encontra uma instrução `break`, ele sai imediatamente do bloco em que se encontra e continua a execução do programa na próxima instrução após o bloco. Sem o `break`, o código iria continuar executando os casos abaixo do caso correspondente e/ou a repetição do loop. 
 
 Veja um exemplo de uso do `break` em um loop `for`:
 
@@ -216,3 +216,17 @@ for (let i = 0; i < 5; i++) {
 ```
 <br><br><hr>
 
+### Continue
+A declaração `continue` é usada apenas em loops (`for`, `while`, `do-while`) para pular a iteração atual e continuar com a próxima. Quando o javascript encontra uma instrução `continue`, ele pula para a próxima iteração do loop, ignorando qualquer código abaixo dessa instrução no loop para essa iteração. 
+
+Veja um exemplo de uso do `continue` em um loop `for`:
+
+```
+for (let i = 0; i < 5; i++) {
+if (i === 3) {
+continue; // pula a iteração quando i for igual a 3
+}
+console.log(i);
+}
+// output: 0 1 2 4
+```
