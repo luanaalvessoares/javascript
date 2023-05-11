@@ -123,3 +123,42 @@ _Este código irá imprimir cada letra da palavra "javascript" na console._
 
 **É importante lembrar que o `for...of` não funciona em objetos comuns, pois eles não são iteráveis. Para iterar sobre as chaves ou índices de um objeto, ainda é necessário usar o `for...in`.**
 <br><br><hr>
+
+## While
+O `loop while` é uma estrutura de repetição em javascript que executa um bloco de código repetidamente enquanto a condição especificada for verdadeira. A sintaxe básica do `while` é a seguinte:
+
+```
+while (condição) {
+  // bloco de código a ser executado enquanto a condição for verdadeira
+}
+```
+
+_O bloco de código dentro do `while` só será executado se a condição especificada for verdadeira. A cada iteração do loop, a condição é avaliada novamente, e o bloco de código é executado novamente se a condição ainda for verdadeira. Se a condição se tornar falsa em qualquer ponto, o loop é interrompido e a execução continua com o código após o loop._
+<br><br>
+
+Veja um exemplo de código que faz uso do loop `while`:
+
+```
+let i = 1;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+```
+_Neste exemplo, o `while` é usado para imprimir os números de 1 a 10 no console. A variável `i` é inicializada com o valor 1, e o bloco de código dentro do loop é executado repetidamente enquanto `i` for menor ou igual a 10. A cada iteração do loop, o valor de `i` é incrementado em 1, de modo que a próxima iteração imprime o próximo número na sequência. Quando `i` atinge o valor 11, a condição se torna falsa, e o loop é interrompido._
+<br><br>
+
+Abaixo um exemplo do uso do `while` para iterar sobre uma string e imprimir cada caractere:
+
+```
+let palavra = "javascript";
+let i = 0;
+
+while (i < palavra.length) {
+  console.log(palavra[i]);
+  i++;
+}
+```
+_Nesse exemplo, a variável `i` é iniciada com 0 e o loop while executa enquanto `i` for menor que o comprimento da string `palavra`. A cada iteração, o caractere correspondente à posição `i` na string é impresso no console e a variável `i` é incrementada em 1._
+<br><br><hr>
+
