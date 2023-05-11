@@ -162,3 +162,41 @@ while (i < palavra.length) {
 _Nesse exemplo, a variável `i` é iniciada com 0 e o loop while executa enquanto `i` for menor que o comprimento da string `palavra`. A cada iteração, o caractere correspondente à posição `i` na string é impresso no console e a variável `i` é incrementada em 1._
 <br><br><hr>
 
+## Do while
+O loop `do-while` é usado para repetir um bloco de código enquanto a condição especificada for verdadeira. A diferença entre o `do-while` e o `while` é que o `do-while` executa o código pelo menos uma vez, mesmo que a condição seja falsa, enquanto o `while` executa o código somente se a condição for verdadeira. A sintaxe do `do-while` é a seguinte:
+
+```
+do {
+  // código a ser executado
+} while (condição);
+```
+_O bloco de código dentro das chaves é executado primeiro e depois a condição é verificada. Se a condição for verdadeira, o bloco de código será executado novamente. Isso continuará até que a condição seja falsa._
+<br><br>
+
+Abaixo um exemplo de uso do `do-while`:
+
+```
+let i = 0;
+
+do {
+  console.log("O valor de i é: " + i);
+  i++;
+} while (i < 5);
+```
+_Nesse exemplo, o `do-while` é usado para imprimir o valor de `i` enquanto ele for menor que 5. O bloco de código dentro das chaves será executado pelo menos uma vez, independentemente da condição. Se o valor de `i` for menor que 5, o bloco de código será executado novamente e o valor de `i` será incrementado em 1 a cada iteração. Quando `i` for igual a 5, a condição será falsa e o loop será interrompido._
+<br><br>
+
+Aqui um exemplo do uso do `do while` para iterar sobre um array de palavras e imprimir cada uma delas:
+
+```
+const palavras = ["banana", "maçã", "laranja", "abacaxi"];
+let i = 0;
+
+do {
+  console.log(palavras[i]);
+  i++;
+} while (i < palavras.length);
+```
+_Neste exemplo, o `do while` é usado para percorrer cada elemento do array `palavras` e imprimir na tela usando a função `console.log()`. A variável `i` é inicializada com zero e incrementada a cada iteração até que seja menor que o comprimento do array `palavras`._
+<br><br><hr>
+
