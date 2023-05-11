@@ -1,0 +1,1 @@
+Loops em javascript são estruturas de controle de fluxo que permitem que um bloco de código seja executado repetidamente enquanto uma condição específica for verdadeira. Eles são usados para automatizar tarefas repetitivas e processar grandes conjuntos de dados de forma mais eficiente.

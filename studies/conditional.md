@@ -114,5 +114,3 @@ switch (diaDaSemana) {
 console.log(mensagem); // Saída: Sexta-feira
 ```
 _Neste exemplo, a variável `diaDaSemana` contém o valor `5`. Quando a expressão `switch` é executada, ela verifica se `diaDaSemana` é igual a um dos valores especificados pelos `case`. Como `diaDaSemana` é igual a `5`, o bloco de código correspondente ao `case 5` é executado, atribuindo a mensagem "Sexta-feira" à variável `mensagem`. Em seguida, o valor da variável `mensagem` é impresso no console._
-<br><br><hr>
-
