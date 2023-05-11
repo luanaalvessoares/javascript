@@ -60,3 +60,59 @@ if (nota >= 7 && nota < 10) {
 _Nesse exemplo, a condição `nota >= 7 && nota < 10` verifica se a nota está entre 7 (inclusivo) e 10 (exclusivo). Se for verdadeira, o primeiro bloco de código é executado. Se não, a condição `nota === 10` verifica se a nota é igual a 10. Se for verdadeira, o segundo bloco de código é executado. Se não, o último bloco de código é executado._
 <br><br><hr>
 
+## Switch case
+A declaração `switch` é usada em javascript para executar diferentes ações com base em diferentes condições. É semelhante a uma sequência de declarações `if`, mas é mais fácil de ler.  A sintaxe do `switch` é a seguinte:
+
+```
+switch (expressão) {
+  case valor1:
+    // código a ser executado caso expressão seja igual a valor1
+    break;
+  case valor2:
+    // código a ser executado caso expressão seja igual a valor2
+    break;
+  default:
+    // código a ser executado caso nenhum dos casos anteriores seja verdadeiro
+    break;
+}
+```
+<br><br>
+
+O `switch` avalia a expressão passada como argumento e verifica se ela é igual a um dos valores especificados pelos `case`. Caso seja verdadeiro, o bloco de código correspondente ao `case` é executado. Se nenhum dos `case` corresponder à expressão, o bloco `default` é executado. Veja o exemplo:
+
+```
+const diaDaSemana = 5;
+let mensagem;
+
+switch (diaDaSemana) {
+  case 0:
+    mensagem = 'Domingo';
+    break;
+  case 1:
+    mensagem = 'Segunda-feira';
+    break;
+  case 2:
+    mensagem = 'Terça-feira';
+    break;
+  case 3:
+    mensagem = 'Quarta-feira';
+    break;
+  case 4:
+    mensagem = 'Quinta-feira';
+    break;
+  case 5:
+    mensagem = 'Sexta-feira';
+    break;
+  case 6:
+    mensagem = 'Sábado';
+    break;
+  default:
+    mensagem = 'Dia da semana inválido';
+    break;
+}
+
+console.log(mensagem); // Saída: Sexta-feira
+```
+_Neste exemplo, a variável `diaDaSemana` contém o valor `5`. Quando a expressão `switch` é executada, ela verifica se `diaDaSemana` é igual a um dos valores especificados pelos `case`. Como `diaDaSemana` é igual a `5`, o bloco de código correspondente ao `case 5` é executado, atribuindo a mensagem "Sexta-feira" à variável `mensagem`. Em seguida, o valor da variável `mensagem` é impresso no console._
+<br><br><hr>
+
