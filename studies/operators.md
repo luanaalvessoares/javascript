@@ -388,3 +388,16 @@ console.log(typeof y); // "string"
 _Nesse exemplo, o operador `typeof` é usado para obter o tipo de dado das variáveis `x` e `y`. O resultado de `typeof x` é uma string `number` que representa o tipo de dado da variável `x`, que é um número. Da mesma forma, o resultado de `typeof y` é uma string `string` que representa o tipo de dado da variável `y`, que é uma string._
 <br><br><hr>
 
+## Spread operator
+O spread operator é um operador que permite expandir um objeto iterável em um novo objeto ou em um parâmetro de uma função. Ele é representado pelo sinal de três pontos `...` e é usado para desmembrar um objeto em partes individuais. Para exemplificar o uso do `spread operator` no código abaixo vamos criar uma nova lista a partir de duas listas existentes, veja:
+
+```
+const lista1 = [1, 2, 3];
+const lista2 = [4, 5, 6];
+
+const novaLista = [...lista1, ...lista2];
+
+console.log(novaLista); // [1, 2, 3, 4, 5, 6]
+```
+<br><br><hr>
+
