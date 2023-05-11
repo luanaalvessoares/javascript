@@ -24,3 +24,63 @@ for (let i = 0; i < arr.length; i++) {
 _Nesse caso, o loop percorre todos os elementos do array `arr` e imprime cada um deles._
 <br><br><hr>
 
+## For in
+O laço `for...in` em javascript é usado para iterar sobre as propriedades de um objeto. A sintaxe do `for...in` é a seguinte:
+
+```
+for (variavel in objeto) {
+   // bloco de código a ser executado para cada propriedade do objeto
+}
+```
+_Onde `variavel` é uma variável que representa o nome de cada propriedade do objeto e `objeto` é o objeto que está sendo iterado._
+<br><br>
+
+Veja um exemplo do uso do `for...in`:
+
+```
+const pessoa = {
+  nome: "João",
+  idade: 30,
+  profissao: "Desenvolvedor"
+};
+
+for (let propriedade in pessoa) {
+  console.log(`${propriedade}: ${pessoa[propriedade]}`);
+}
+```
+_Nesse exemplo, o laço `for...in` itera sobre as propriedades do objeto `pessoa` e imprime no console o nome de cada propriedade e seu respectivo valor._
+<br>
+
+O resultado desse código seria:
+
+```
+nome: João
+idade: 30
+profissao: Desenvolvedor
+```
+<br><br>
+
+Agora vamos supor que temos o seguinte objeto:
+
+```
+const pessoa = {
+  nome: 'Maria',
+  idade: 30,
+  cidade: 'São Paulo'
+};
+```
+<br>
+
+Se quisermos imprimir apenas a propriedade `nome` desse objeto usando o loop `for...in`, podemos fazer o seguinte:
+
+```
+for (let propriedade in pessoa) {
+  if (propriedade === 'nome') {
+    console.log(pessoa[propriedade]);
+  }
+}
+```
+_Nesse exemplo, o loop `for...in` itera sobre todas as propriedades do objeto `pessoa`. Ao verificar que a propriedade é igual a `'nome'`, imprimimos o valor dessa propriedade usando a notação de colchetes `pessoa[propriedade]`._
+<br><br>
+
+**É importante ressaltar que o laço `for...in` itera apenas sobre as propriedades enumeráveis do objeto. Propriedades não enumeráveis, como as propriedades internas dos objetos nativos, não serão incluídas no loop.**
