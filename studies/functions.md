@@ -196,3 +196,25 @@ _Neste exemplo, a função `soma` recebe dois parâmetros, `a` e `b`, e retorna 
 **As funções parametrizadas em javascript são úteis quando precisamos reutilizar o mesmo código com diferentes valores de entrada. Ao definir parâmetros na função, podemos torná-la mais flexível e adaptável a diferentes cenários de uso.**
 <br><br><hr>
 
+## Funções com parâmetros REST
+Em javascript, o `parâmetro REST` é um recurso que permite que uma função receba um número indefinido de argumentos em forma de um array. Ele é indicado pelo uso de três pontos `( ... )` antes do nome do parâmetro. Quando a função é chamada, todos os argumentos passados após os argumentos regulares são agrupados em um array que pode ser acessado dentro da função através do `parâmetro REST`.
+
+Abaixo um exemplo de função com `parâmetros REST`:
+
+```
+function soma(a, b, ...c) {
+  let resultado = a + b;
+  for (let i = 0; i < c.length; i++) {
+    resultado += c[i];
+  }
+  return resultado;
+}
+
+console.log(soma(1, 2)); // output: 3
+console.log(soma(1, 2, 3)); // output: 6
+console.log(soma(1, 2, 3, 4)); // output: 10
+```
+_Neste exemplo, a função `soma()` recebe dois parâmetros regulares `a` e `b`, e um parâmetro REST `c`. Dentro da função, os parâmetros `a` e `b` são somados, e depois o loop `for` percorre o array `c` e adiciona cada elemento ao resultado final. Em seguida, o resultado é retornado. Quando chamamos a função `soma()`, podemos passar quantos argumentos quisermos após os dois primeiros, e eles serão agrupados no array `c`. Isso nos permite criar funções mais flexíveis que podem lidar com diferentes números de argumentos._
+<br><br><hr>
+
+
