@@ -82,7 +82,7 @@ _Observe que a função `soma` é definida dentro da função `multiplicacao` e 
 <br><br><hr>
 
 ## Funções com retorno
-As funções com retorno em javascript são aquelas que retornam um valor específico após executarem uma série de instruções. Para definir uma função com retorno, também usamos a palavra-chave `function`, seguida do nome da função, dos parâmetros entre parênteses e do corpo da função, que contém as instruções a serem executadas.
+As funções com retorno são aquelas que retornam um valor específico após executarem uma série de instruções. Para definir uma função com retorno, também usamos a palavra-chave `function`, seguida do nome da função, dos parâmetros entre parênteses e do corpo da função, que contém as instruções a serem executadas.
 <br><br>
 
 Para retornar um valor específico de uma função, usamos a palavra-chave `return`, seguida do valor que desejamos retornar. Por exemplo, suponha que desejamos criar uma função que some dois números e retorne o resultado. Podemos fazer isso da seguinte forma:
@@ -164,7 +164,7 @@ console.log(meuArray); // Imprime [1, 2, 3, 4]
 <br><br><hr>
 
 ## Funções com parâmetros
-Funções parametrizadas em javascript são aquelas que recebem um ou mais parâmetros (argumentos) como entrada e retornam um valor ou executam uma ação com base nesses parâmetros. Os parâmetros são definidos na declaração da função, dentro dos parênteses após o nome da função, e podem ser usados dentro do corpo da função.
+Funções parametrizadas são aquelas que recebem um ou mais parâmetros (argumentos) como entrada e retornam um valor ou executam uma ação com base nesses parâmetros. Os parâmetros são definidos na declaração da função, dentro dos parênteses após o nome da função, e podem ser usados dentro do corpo da função.
 <br>
 
 Abaixo um exemplo de uma função parametrizada:
@@ -215,6 +215,47 @@ console.log(soma(1, 2, 3)); // output: 6
 console.log(soma(1, 2, 3, 4)); // output: 10
 ```
 _Neste exemplo, a função `soma()` recebe dois parâmetros regulares `a` e `b`, e um parâmetro REST `c`. Dentro da função, os parâmetros `a` e `b` são somados, e depois o loop `for` percorre o array `c` e adiciona cada elemento ao resultado final. Em seguida, o resultado é retornado. Quando chamamos a função `soma()`, podemos passar quantos argumentos quisermos após os dois primeiros, e eles serão agrupados no array `c`. Isso nos permite criar funções mais flexíveis que podem lidar com diferentes números de argumentos._
+<br><br><hr>
+
+## Funções anônimas
+As funções anônimas são funções que não têm um nome associado a elas. Elas são úteis quando você precisa de uma função que será usada apenas uma vez ou quando deseja passar uma função como argumento para outra função.
+
+Para criar uma função anônima, você pode atribuí-la a uma variável ou passá-la diretamente como argumento para outra função. Veja um exemplo:
+
+```
+// Atribuindo uma função anônima a uma variável
+const soma = function(a, b) {
+  return a + b;
+}
+
+// Passando uma função anônima diretamente como argumento para outra função
+const numeros = [1, 2, 3, 4, 5];
+numeros.forEach(function(numero) {
+  console.log(numero);
+});
+```
+_Observe que, no segundo exemplo, estamos usando o método `forEach()` em um array e passando uma função anônima como argumento. Essa função é executada para cada elemento do array._
+<br><br>
+
+Também é possível criar funções anônimas usando arrow functions. Veja um exemplo:
+
+```
+// Criando uma função anônima usando arrow function
+const quadrado = (num) => {
+  return num * num;
+}
+
+// Passando uma função anônima criada com arrow function como argumento para outra função
+const numeros = [1, 2, 3, 4, 5];
+const numerosAoQuadrado = numeros.map((numero) => {
+  return numero * numero;
+});
+console.log(numerosAoQuadrado); // [1, 4, 9, 16, 25]
+```
+_Observe que, no segundo exemplo, estamos usando o método `map()` em um array e passando uma função anônima criada com arrow function como argumento. Essa função é executada para cada elemento do array e retorna um novo array com os resultados das operações._
+<br><br>
+
+**As funções anônimas são muito úteis porque permitem que você crie funções dinamicamente e as passe como argumentos para outras funções.**
 <br><br><hr>
 
 
