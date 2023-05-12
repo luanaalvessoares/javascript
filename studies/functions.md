@@ -162,3 +162,37 @@ let meuArray = retornaArray();
 console.log(meuArray); // Imprime [1, 2, 3, 4]
 ```
 <br><br><hr>
+
+## Funções com parâmetros
+Funções parametrizadas em javascript são aquelas que recebem um ou mais parâmetros (argumentos) como entrada e retornam um valor ou executam uma ação com base nesses parâmetros. Os parâmetros são definidos na declaração da função, dentro dos parênteses após o nome da função, e podem ser usados dentro do corpo da função.
+<br>
+
+Abaixo um exemplo de uma função parametrizada:
+
+```
+function saudacao(nome) {
+  console.log(`Olá, ${nome}!`);
+}
+
+saudacao("João"); // saída: "Olá, João!"
+saudacao("Maria"); // saída: "Olá, Maria!"
+```
+_Neste exemplo, a função `saudacao` recebe um parâmetro `nome` e imprime uma mensagem de saudação para o nome fornecido. Quando chamamos a função `saudacao` com o argumento "João", a mensagem "Olá, João!" é impressa no console. Da mesma forma, quando chamamos a função com o argumento "Maria", a mensagem "Olá, Maria!" é impressa._
+<br><br>
+
+Podemos definir funções com qualquer número de parâmetros, separando-os com vírgulas. Abaixo um exemplo de uma função com dois parâmetros:
+
+```
+function soma(a, b) {
+  return a + b;
+}
+
+let resultado = soma(2, 3);
+console.log(resultado); // saída: 5
+```
+_Neste exemplo, a função `soma` recebe dois parâmetros, `a` e `b`, e retorna a soma desses valores. Quando chamamos a função com os argumentos 2 e 3, a função retorna o valor 5 e atribuímos esse valor à variável `resultado`. Em seguida, imprimimos o valor de `resultado` no console, que é 5._
+<br><br>
+
+**As funções parametrizadas em javascript são úteis quando precisamos reutilizar o mesmo código com diferentes valores de entrada. Ao definir parâmetros na função, podemos torná-la mais flexível e adaptável a diferentes cenários de uso.**
+<br><br><hr>
+
