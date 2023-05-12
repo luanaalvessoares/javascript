@@ -348,3 +348,33 @@ _Nesse exemplo, a função `interior` é uma função aninhada dentro da funçã
 **As funções aninhadas podem ser usadas para evitar a poluição do escopo global com variáveis que só precisam ser acessadas dentro de uma função. Além disso, elas também podem ser usadas para criar funções que são específicas para uma determinada tarefa ou para evitar conflitos de nomeação de funções.**
 <br><br><hr>
 
+## Funções geradoras
+Funções geradoras são funções especiais que podem ser interrompidas e retomadas a qualquer momento, permitindo que elas produzam uma sequência de valores ao longo do tempo. Eles são criados usando a palavra-chave `function*` e têm um novo tipo de instrução `yield` que pode retornar um valor e pausar a execução da função.
+
+Veja um exemplo de uma função geradora simples que produz uma sequência infinita de números ímpares:
+
+```
+function* gerarImpares() {
+  let i = 1;
+  while (true) {
+    yield i;
+    i += 2;
+  }
+}
+
+const gerador = gerarImpares();
+
+console.log(gerador.next().value); // 1
+console.log(gerador.next().value); // 3
+console.log(gerador.next().value); // 5
+console.log(gerador.next().value); // 7
+```
+_Neste exemplo, a função `gerarImpares` é uma função geradora que produz uma sequência infinita de números ímpares. Ela usa um loop while que é executado continuamente, gerando um número ímpar por vez. A instrução `yield i` retorna o valor atual de `i` e pausa a execução da função até que a próxima chamada de `next()` seja feita._
+<br><br>
+
+_Note que a função geradora é criada usando a sintaxe `function*` e que a chamada `gerarImpares()` retorna um objeto gerador. Esse objeto tem um método `next()` que pode ser chamado para obter o próximo valor na sequência._
+<br><br>
+
+**As funções geradoras são muito úteis para lidar com sequências de valores assíncronos, como dados de entrada do usuário ou resultados de uma API de terceiros. Eles permitem que você crie um fluxo de dados controlado e sob demanda em vez de ter que lidar com todos os dados de uma vez.**
+<br><br><hr>
+
