@@ -258,4 +258,68 @@ _Observe que, no segundo exemplo, estamos usando o método `map()` em um array e
 **As funções anônimas são muito úteis porque permitem que você crie funções dinamicamente e as passe como argumentos para outras funções.**
 <br><br><hr>
 
+## Arrow function
+As Arrow Functions são uma forma concisa de escrever funções em javascript, introduzida no ES6 (ECMAScript 2015). Elas são chamadas de `"Arrow"` porque usam a sintaxe de uma seta `"=>"` para definir a função. As Arrow Functions são úteis quando se deseja escrever funções curtas e expressivas de maneira mais concisa.
+
+A sintaxe básica de uma Arrow Function é a seguinte:
+
+```
+(param1, param2, ..., paramN) => { statements }
+```
+_Onde:
+- `param1`, `param2`, ..., `paramN` são os parâmetros da função.
+- `statements` são as instruções da função._
+<br><br>
+
+Abaixo um exemplo simples de uma Arrow Function que recebe dois parâmetros e retorna sua soma:
+
+```
+const sum = (a, b) => a + b;
+```
+_Observe que a Arrow Function `sum` tem dois parâmetros `a` e `b`, e retorna a soma dos dois parâmetros usando a expressão `a + b`. A Arrow Function é atribuída a uma constante `sum`, que pode ser chamada como uma função normal._
+<br><br>
+
+As Arrow Functions também podem ser usadas para funções com um único parâmetro, sem a necessidade de usar parênteses ao redor do parâmetro. Veja o exemplo:
+
+```
+const double = x => x * 2;
+```
+_Observe que a Arrow Function `double` tem um único parâmetro `x`, e retorna o dobro do valor do parâmetro usando a expressão `x * 2`._
+<br><br>
+
+Outra característica interessante das Arrow Functions é que elas são sempre funções anônimas. Isso significa que elas não têm um nome como as funções tradicionais, mas podem ser atribuídas a uma variável ou constante e chamadas por essa referência. Por exemplo:
+
+```
+const greet = name => console.log(`Hello, ${name}!`);
+greet("John"); // Output: "Hello, John!"
+```
+_Observe que a Arrow Function `greet` é atribuída à constante `greet`, que é usada para chamar a função passando o argumento `"John"`. A função imprime "Hello, John!" no console._
+<br><br>
+
+As Arrow Functions também podem ser usadas como funções de retorno em outras funções, o que pode tornar o código mais legível e conciso. Veja o exemplo:
+
+```
+function createGreeting(name) {
+  return () => console.log(`Hello, ${name}!`);
+}
+
+const greetJohn = createGreeting("John");
+const greetJane = createGreeting("Jane");
+
+greetJohn(); // Output: "Hello, John!"
+greetJane(); // Output: "Hello, Jane!"
+```
+_Observe que a função `createGreeting` retorna uma Arrow Function que usa a variável `name` definida no escopo da função `createGreeting`. Essa Arrow Function é atribuída a `greetJohn` e `greetJane`, que são chamadas para imprimir "Hello, John!" e "Hello, Jane!" no console, respectivamente._
+<br><br>
+
+As Arrow Functions também podem ser usadas em conjunto com métodos de array como `map`, `filter` e `reduce` para manipulação de dados. Aqui está um exemplo simples:
+
+```
+const numbers = [1, 2, 3, 4, 5];
+
+const doubledNumbers = numbers.map(num => num * 2);
+
+console.log(doubledNumbers); // Output:
+```
+<br><br><hr>
 
