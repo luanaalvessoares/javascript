@@ -323,3 +323,28 @@ console.log(doubledNumbers); // Output:
 ```
 <br><br><hr>
 
+## Funções aninhadas
+As funções aninhadas, também conhecidas como funções internas, são funções definidas dentro de outra função. Essas funções têm acesso aos parâmetros e variáveis da função pai e podem ser usadas para simplificar e modularizar o código. 
+
+Veja um exemplo de função aninhada:
+
+```
+function exterior() {
+  let a = 1;
+  
+  function interior() {
+    let b = 2;
+    return a + b;
+  }
+  
+  return interior();
+}
+
+console.log(exterior()); // resultado: 3
+```
+_Nesse exemplo, a função `interior` é uma função aninhada dentro da função `exterior`. A variável `a` é definida dentro da função `exterior`, mas ainda é acessível dentro da função `interior` porque a função `interior` está definida dentro da função `exterior`. Quando a função `exterior` é chamada, ela retorna o valor da função `interior`, que é a soma de `a` e `b`. O resultado impresso no console é `3`._
+<br><br>
+
+**As funções aninhadas podem ser usadas para evitar a poluição do escopo global com variáveis que só precisam ser acessadas dentro de uma função. Além disso, elas também podem ser usadas para criar funções que são específicas para uma determinada tarefa ou para evitar conflitos de nomeação de funções.**
+<br><br><hr>
+
