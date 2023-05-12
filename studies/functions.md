@@ -378,3 +378,45 @@ _Note que a função geradora é criada usando a sintaxe `function*` e que a cha
 **As funções geradoras são muito úteis para lidar com sequências de valores assíncronos, como dados de entrada do usuário ou resultados de uma API de terceiros. Eles permitem que você crie um fluxo de dados controlado e sob demanda em vez de ter que lidar com todos os dados de uma vez.**
 <br><br><hr>
 
+### Instrução `yield`
+A instrução `yield` é uma funcionalidade presente em funções geradoras em javascript. Essa instrução é usada para pausar a execução da função geradora e retornar um valor para o chamador da função. Quando a função geradora é chamada novamente, a execução é retomada do ponto em que foi pausada na última chamada.
+
+Veja um exemplo simples de uma função geradora usando a instrução `yield`:
+
+```
+function* contagemAte(n) {
+  for (let i = 1; i <= n; i++) {
+    yield i;
+  }
+}
+
+let contador = contagemAte(5);
+
+console.log(contador.next().value); // 1
+console.log(contador.next().value); // 2
+console.log(contador.next().value); // 3
+console.log(contador.next().value); // 4
+console.log(contador.next().value); // 5
+```
+_Neste exemplo, a função `contagemAte` é uma função geradora que recebe um argumento `n` e usa um loop `for` para contar de 1 até `n`, retornando cada valor usando a instrução `yield`. Quando a função é chamada, ela retorna um objeto que tem um método `next()` que, quando chamado, retorna um objeto com uma propriedade `value` que contém o valor retornado pela instrução `yield`. Quando a instrução `yield` é encontrada, a execução da função é pausada e o valor retornado. Quando a função é chamada novamente, a execução é retomada do ponto em que foi pausada, permitindo que o loop continue até que `n` seja alcançado._
+<br><br>
+
+Veja outro exemplo de uma função geradora usando a instrução `yield` para iterar sobre os elementos de um array:
+
+```
+function* iterarArray(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    yield arr[i];
+  }
+}
+
+let arr = [1, 2, 3, 4, 5];
+let iterador = iterarArray(arr);
+
+console.log(iterador.next().value); // 1
+console.log(iterador.next().value); // 2
+console.log(iterador.next().value); // 3
+console.log(iterador.next().value); // 4
+console.log(iterador.next().value); // 5
+```
+_Neste exemplo, a função `iterarArray` é uma função geradora que recebe um array `arr` e itera sobre cada elemento usando um loop `for`, retornando cada elemento usando a instrução `yield`. Quando a função é chamada, ela retorna um objeto que tem um método `next()` que, quando chamado, retorna um objeto com uma propriedade `value` que contém o próximo elemento do array. Quando a instrução `yield` é encontrada, a execução da função é pausada e o valor retornado. Quando a função é chamada novamente, a execução é retomada do ponto em que foi pausada, permitindo que o loop continue até que todos os elementos do array sejam retornados._
