@@ -81,3 +81,84 @@ _Observe que a função `soma` é definida dentro da função `multiplicacao` e 
 **_Em resumo, as funções padrão em javascript são uma parte fundamental da linguagem e permitem agrupar blocos de código que executam uma tarefa específica e podem ser reutilizadas em várias partes do código. As funções podem ser declaradas de várias maneiras e podem ser aninhadas para criar funções mais complexas._**
 <br><br><hr>
 
+## Funções com retorno
+As funções com retorno em javascript são aquelas que retornam um valor específico após executarem uma série de instruções. Para definir uma função com retorno, também usamos a palavra-chave `function`, seguida do nome da função, dos parâmetros entre parênteses e do corpo da função, que contém as instruções a serem executadas.
+<br><br>
+
+Para retornar um valor específico de uma função, usamos a palavra-chave `return`, seguida do valor que desejamos retornar. Por exemplo, suponha que desejamos criar uma função que some dois números e retorne o resultado. Podemos fazer isso da seguinte forma:
+
+```
+function soma(a, b) {
+  return a + b;
+}
+
+let resultado = soma(3, 5);
+console.log(resultado); // Imprime 8
+```
+_Neste exemplo, a função `soma` recebe dois parâmetros, `a` e `b`, e retorna a soma desses dois valores usando a instrução `return a + b;`. Depois, a função é chamada passando os valores 3 e 5 como argumentos, e o resultado é atribuído à variável `resultado`. Finalmente, o valor de `resultado` é impresso no console usando a função `console.log()`._
+<br><br>
+
+Podemos também retornar valores de diferentes tipos, como números, strings, booleanos, objetos e arrays. Por exemplo:
+
+```
+function retornaString() {
+  return "Olá, mundo!";
+}
+```
+_Essa função retorna uma string._
+<br><br>
+
+```
+function retornaBooleano() {
+  let a = 5;
+  let b = 10;
+  return a < b;
+}
+```
+_Essa função retorna um valor booleano._
+<br><br>
+
+```
+function retornaObjeto() {
+  let objeto = {nome: "João", idade: 30};
+  return objeto;
+}
+```
+_Essa função retorna um objeto._
+<br><br>
+
+```
+function retornaArray() {
+  let array = [1, 2, 3, 4];
+  return array;
+}
+```
+_Essa função retorna um array._
+<br><br>
+
+Ao chamar essas funções, podemos armazenar o valor retornado em uma variável e usá-la posteriormente em nosso código:
+
+```
+let minhaString = retornaString();
+console.log(minhaString); // Imprime "Olá, mundo!"
+```
+<br><br>
+
+```
+let meuBooleano = retornaBooleano();
+console.log(meuBooleano); // Imprime true
+```
+<br><br>
+
+```
+let meuObjeto = retornaObjeto();
+console.log(meuObjeto.nome); // Imprime "João"
+console.log(meuObjeto.idade); // Imprime 30
+```
+<br><br>
+
+```
+let meuArray = retornaArray();
+console.log(meuArray); // Imprime [1, 2, 3, 4]
+```
+<br><br><hr>
