@@ -35,4 +35,13 @@ const myObject = {};
 
 myFunction.call(myObject);
 ```
+<br><br>
+4. Construtor: Quando uma função é usada como um construtor (com a palavra-chave `new`), o valor de `this` será um novo objeto vazio que herda do protótipo da função.
 
+```
+function MyConstructor() {
+  console.log(this); // um novo objeto vazio
+}
+
+const myInstance = new MyConstructor();
+```
