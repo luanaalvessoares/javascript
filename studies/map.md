@@ -15,4 +15,7 @@ array.map(item => {
   // código a ser executado em cada item do array
 });
 ```
+<br>
+_A função passada para o método `map()` recebe um argumento que representa cada item do array e deve retornar um novo valor que será incluído no novo array. Esse valor pode ser qualquer tipo de dado, inclusive outro array ou objeto._
 
+Veja abaixo alguns exemplos de uso do método `map()`:
