@@ -24,3 +24,15 @@ const myObject = {
 myObject.myMethod();
 ```
 <br><br>
+3. Chamada de função com `call()` ou `apply()`: O método `call()` ou `apply()` permite que você chame uma função com um valor específico para `this`. No exemplo abaixo, o valor de `this` será o objeto `myObject`.
+
+```
+function myFunction() {
+  console.log(this);
+}
+
+const myObject = {};
+
+myFunction.call(myObject);
+```
+
