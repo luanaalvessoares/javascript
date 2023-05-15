@@ -12,3 +12,15 @@ function myFunction() {
 myFunction();
 ```
 <br><br>
+2. Chamada de método de objeto: Quando uma função é um método de um objeto e é chamada usando a notação de ponto, o valor de `this` será o objeto que contém o método.
+
+```
+const myObject = {
+  myMethod() {
+    console.log(this); // myObject
+  }
+};
+
+myObject.myMethod();
+```
+<br><br>
