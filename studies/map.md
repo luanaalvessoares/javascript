@@ -30,3 +30,23 @@ const numerosDobrados = numeros.map(function(item) {
 console.log(numerosDobrados); // [2, 4, 6, 8, 10]
 ```
 _Nesse exemplo, o método `map()` é usado para criar um novo array chamado `numerosDobrados`, que contém cada número do array `numeros` multiplicado por 2._
+<br><br>
+```
+const usuarios = [
+  { nome: 'Maria', idade: 30 },
+  { nome: 'João', idade: 25 },
+  { nome: 'Pedro', idade: 40 }
+];
+
+const usuariosComMaisDe30Anos = usuarios.map(function(usuario) {
+  if (usuario.idade > 30) {
+    return `${usuario.nome} tem mais de 30 anos`;
+  } else {
+    return `${usuario.nome} tem 30 anos ou menos`;
+  }
+});
+
+console.log(usuariosComMaisDe30Anos);
+// ["Maria tem mais de 30 anos", "João tem 30 anos ou menos", "Pedro tem mais de 30 anos"]
+```
+_Nesse exemplo, o método `map()` é usado para criar um novo array chamado `usuariosComMaisDe30Anos`, que contém uma string para cada usuário do array `usuarios`. A string indica se o usuário tem mais de 30 anos ou não. A função passada para o método `map()` usa um condicional `if` para verificar a idade de cada usuário e retorna a string correspondente._
