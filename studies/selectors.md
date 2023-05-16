@@ -302,3 +302,28 @@ Em resumo, o `querySelector` é usado para selecionar o primeiro elemento corres
 ## querySelectorAll
 O método `querySelectorAll` é usado para selecionar todos os elementos HTML que correspondem a um seletor CSS especificado. Ele retorna uma lista de elementos correspondentes, conhecida como `NodeList`.
 <br>
+Para usar o `querySelectorAll`, você precisa chamar a função `document.querySelectorAll` e passar o seletor desejado como argumento. O seletor pode ser uma classe, um ID, um elemento HTML específico ou qualquer outro seletor CSS válido.
+<br>
+Veja o exemplo:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="box">Caixa 1</div>
+<div class="box">Caixa 2</div>
+<div class="box">Caixa 3</div>
+
+<script>
+const caixas = document.querySelectorAll(".box");
+caixas.forEach(caixa => {
+  console.log(caixa.textContent);
+});
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, o `querySelectorAll` é usado para selecionar todos os elementos com a classe "box" e armazená-los na variável `caixas`. Em seguida, utilizamos o método `forEach` para percorrer cada elemento e exibir seu conteúdo no console._
+<br><br>
