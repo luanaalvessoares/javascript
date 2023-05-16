@@ -62,3 +62,5 @@ imagemElemento.alt = "Nova Imagem";
 ```
 _Neste exemplo, os atributos `src` e `alt` do elemento com o `id` "imagem" são alterados para exibir uma nova imagem e um novo texto alternativo._
 <br><br>
+Em resumo, o `getElementById` é usado para selecionar elementos HTML com base em seus `id` e permite manipular seu conteúdo ou atributos de forma dinâmica usando javascript.
+<br><br><hr>
