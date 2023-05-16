@@ -298,3 +298,7 @@ _Neste exemplo, o `querySelector` é usado para selecionar o elemento com o ID "
 <br><br>
 Em resumo, o `querySelector` é usado para selecionar o primeiro elemento correspondente a um seletor CSS especificado. Ele oferece flexibilidade ao permitir seletores mais específicos, como classes, IDs e seletores de atributos, para encontrar elementos desejados na página HTML.
 <br><br><hr>
+
+## querySelectorAll
+O método `querySelectorAll` é usado para selecionar todos os elementos HTML que correspondem a um seletor CSS especificado. Ele retorna uma lista de elementos correspondentes, conhecida como `NodeList`.
+<br>
