@@ -142,3 +142,5 @@ console.log(paragrafo2.textContent); // Output: Parágrafo 2
 ```
 _Neste exemplo, o segundo elemento `<p>` é acessado diretamente pelo índice `[1]` e seu conteúdo é exibido no console._
 <br><br>
+Em resumo, o `getElementsByTagName` é usado para selecionar elementos HTML com base em seu nome de tag e retorna uma coleção de elementos correspondentes. Essa função permite manipular os elementos selecionados de forma dinâmica usando javascript.
+<br><br><hr>
