@@ -219,3 +219,7 @@ _Neste exemplo, o segundo elemento com a classe "box" é acessado diretamente pe
 <br><br>
 Em resumo, o `getElementsByClassName` é usado para selecionar elementos HTML com base em suas classes e retorna uma coleção de elementos correspondentes. Essa função permite manipular os elementos selecionados de forma dinâmica usando javascript.
 <br><br><hr>
+
+## querySelector
+O método `querySelector` é usado para selecionar elementos HTML com base em um seletor CSS. Ele retorna o primeiro elemento correspondente ao seletor especificado.
+<br>
