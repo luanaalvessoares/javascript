@@ -21,3 +21,44 @@ console.log(tituloElemento); // Output: <h1 id="titulo">Título do Documento</h1
 </html>
 ```
 _Neste exemplo, a função `getElementById` é usada para selecionar o elemento com o `id` "titulo" e armazenar a referência a esse elemento na variável `tituloElemento`. Em seguida, o elemento selecionado é exibido no console._
+<br><br>
+Além disso, o método `getElementById` também pode ser usado para manipular o conteúdo ou os atributos do elemento selecionado. Por exemplo, você pode alterar o texto dentro de um elemento ou modificar seus atributos:
+
+Veja esse exemplo de manipulação de conteúdo:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="paragrafo">Texto inicial</p>
+
+<script>
+const paragrafoElemento = document.getElementById("paragrafo");
+paragrafoElemento.textContent = "Novo texto";
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, o conteúdo do elemento com o `id` "paragrafo" é alterado usando a propriedade `textContent`._
+<br><br>
+Agora veja esse exemplo de manipulação de atributos:
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="imagem" src="imagem.jpg" alt="Imagem">
+
+<script>
+const imagemElemento = document.getElementById("imagem");
+imagemElemento.src = "nova_imagem.jpg";
+imagemElemento.alt = "Nova Imagem";
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, os atributos `src` e `alt` do elemento com o `id` "imagem" são alterados para exibir uma nova imagem e um novo texto alternativo._
+<br><br>
