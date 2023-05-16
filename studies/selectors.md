@@ -92,3 +92,53 @@ console.log(paragrafos); // Output: HTMLCollection [p, p]
 ```
 _Neste exemplo, a função `getElementsByTagName` é usada para selecionar todos os elementos `<p>` no documento e armazenar a coleção de elementos na variável `paragrafos`. Em seguida, a coleção de elementos é exibida no console._
 <br><br>
+É importante notar que a função `getElementsByTagName` retorna uma coleção HTML, não um array comum. Para iterar sobre os elementos selecionados, você pode usar um loop, como `for` ou `forEach`, ou acessar os elementos por índice.
+<br>
+Veja esse exemplo de iteração com loop `for`:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Título 1</h1>
+<h2>Título 2</h2>
+<p>Parágrafo 1</p>
+<p>Parágrafo 2</p>
+
+<script>
+const paragrafos = document.getElementsByTagName("p");
+for (let i = 0; i < paragrafos.length; i++) {
+  console.log(paragrafos[i].textContent);
+}
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, usamos um loop `for` para iterar sobre os elementos selecionados e exibir o texto de cada parágrafo no console._
+<br><br>
+Você também pode acessar um elemento específico por índice, se souber a posição do elemento na coleção:
+<br>
+Veja esse exemplo de acesso a um elemento por índice:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Título 1</h1>
+<h2>Título 2</h2>
+<p>Parágrafo 1</p>
+<p>Parágrafo 2</p>
+
+<script>
+const paragrafo2 = document.getElementsByTagName("p")[1];
+console.log(paragrafo2.textContent); // Output: Parágrafo 2
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, o segundo elemento `<p>` é acessado diretamente pelo índice `[1]` e seu conteúdo é exibido no console._
+<br><br>
