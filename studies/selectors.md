@@ -144,3 +144,7 @@ _Neste exemplo, o segundo elemento `<p>` é acessado diretamente pelo índice `[
 <br><br>
 Em resumo, o `getElementsByTagName` é usado para selecionar elementos HTML com base em seu nome de tag e retorna uma coleção de elementos correspondentes. Essa função permite manipular os elementos selecionados de forma dinâmica usando javascript.
 <br><br><hr>
+
+## getElementsByClassName
+O método `getElementsByClassName` é usado para selecionar um ou mais elementos HTML com base em suas classes. Ele retorna uma coleção HTML de elementos que possuem a classe especificada.
+<br>
