@@ -148,3 +148,26 @@ Em resumo, o `getElementsByTagName` é usado para selecionar elementos HTML com 
 ## getElementsByClassName
 O método `getElementsByClassName` é usado para selecionar um ou mais elementos HTML com base em suas classes. Ele retorna uma coleção HTML de elementos que possuem a classe especificada.
 <br>
+Para utilizar o `getElementsByClassName`, você precisa chamar a função `document.getElementsByClassName` e passar o nome da classe desejada como argumento. O método retornará uma coleção de elementos que possuem essa classe.
+<br>
+Veja o exemplo:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="box">Caixa 1</div>
+<div class="box">Caixa 2</div>
+<div class="box">Caixa 3</div>
+
+<script>
+const caixas = document.getElementsByClassName("box");
+console.log(caixas); // Output: HTMLCollection [div.box, div.box, div.box]
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, a função `getElementsByClassName` é usada para selecionar todos os elementos com a classe "box" e armazenar a coleção de elementos na variável `caixas`. Em seguida, a coleção de elementos é exibida no console._
+<br><br>
