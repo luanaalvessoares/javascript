@@ -223,3 +223,26 @@ Em resumo, o `getElementsByClassName` é usado para selecionar elementos HTML co
 ## querySelector
 O método `querySelector` é usado para selecionar elementos HTML com base em um seletor CSS. Ele retorna o primeiro elemento correspondente ao seletor especificado.
 <br>
+Para usar o `querySelector`, você precisa chamar a função `document.querySelector` e passar o seletor desejado como argumento. O seletor pode ser uma classe, um ID, um elemento HTML específico ou qualquer outro seletor CSS válido.
+<br>
+Veja o exemplo:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="box">Caixa 1</div>
+<div class="box">Caixa 2</div>
+<div class="box">Caixa 3</div>
+
+<script>
+const caixa = document.querySelector(".box");
+console.log(caixa.textContent); // Output: Caixa 1
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, o `querySelector` é usado para selecionar o primeiro elemento com a classe "box" e armazená-lo na variável `caixa`. Em seguida, o conteúdo desse elemento é exibido no console._
+<br><br>
