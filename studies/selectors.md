@@ -217,3 +217,5 @@ console.log(caixa2.textContent); // Output: Caixa 2
 ```
 _Neste exemplo, o segundo elemento com a classe "box" é acessado diretamente pelo índice `[1]` e seu conteúdo é exibido no console._
 <br><br>
+Em resumo, o `getElementsByClassName` é usado para selecionar elementos HTML com base em suas classes e retorna uma coleção de elementos correspondentes. Essa função permite manipular os elementos selecionados de forma dinâmica usando javascript.
+<br><br><hr>
