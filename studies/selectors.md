@@ -246,3 +246,53 @@ console.log(caixa.textContent); // Output: Caixa 1
 ```
 _Neste exemplo, o `querySelector` é usado para selecionar o primeiro elemento com a classe "box" e armazená-lo na variável `caixa`. Em seguida, o conteúdo desse elemento é exibido no console._
 <br><br>
+Você também pode usar seletores mais específicos para encontrar elementos específicos:
+<br>
+Veja o exemplo com seletores mais específicos:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="container">
+  <div class="box">Caixa 1</div>
+  <div class="box">Caixa 2</div>
+  <div class="box">Caixa 3</div>
+</div>
+
+<script>
+const caixa = document.querySelector(".container .box");
+console.log(caixa.textContent); // Output: Caixa 1
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, o `querySelector` é usado para selecionar o primeiro elemento com a classe "box" dentro de um elemento com a classe "container". Assim, apenas o primeiro elemento dentro do elemento "container" será selecionado e seu conteúdo será exibido no console._
+<br><br>
+O `querySelector` também pode ser usado para selecionar elementos com base em outros atributos, como ID:
+<br>
+Veja o exemplo com seleção por ID:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="container">
+  <div class="box">Caixa 1</div>
+  <div class="box">Caixa 2</div>
+  <div class="box">Caixa 3</div>
+</div>
+
+<script>
+const container = document.querySelector("#container");
+console.log(container.textContent); // Output: Caixa 1Caixa 2Caixa 3
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, o `querySelector` é usado para selecionar o elemento com o ID "container" e armazená-lo na variável `container`. Em seguida, o conteúdo desse elemento, incluindo o conteúdo dos elementos filhos, é exibido no console._
+<br><br>
