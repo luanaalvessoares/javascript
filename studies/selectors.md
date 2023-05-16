@@ -327,3 +327,57 @@ caixas.forEach(caixa => {
 ```
 _Neste exemplo, o `querySelectorAll` é usado para selecionar todos os elementos com a classe "box" e armazená-los na variável `caixas`. Em seguida, utilizamos o método `forEach` para percorrer cada elemento e exibir seu conteúdo no console._
 <br><br>
+Você também pode usar seletores mais específicos para encontrar elementos em contextos diferentes:
+<br>
+Veja o exemplo com seletores mais específicos:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="container">
+  <div class="box">Caixa 1</div>
+  <div class="box">Caixa 2</div>
+  <div class="box">Caixa 3</div>
+</div>
+
+<script>
+const caixas = document.querySelectorAll(".container .box");
+caixas.forEach(caixa => {
+  console.log(caixa.textContent);
+});
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, o `querySelectorAll` é usado para selecionar todos os elementos com a classe "box" dentro de um elemento com a classe "container". Dessa forma, apenas os elementos dentro do elemento "container" serão selecionados e seus conteúdos serão exibidos no console._
+<br><br>
+O `querySelectorAll` também pode ser usado para selecionar elementos com base em outros atributos, como ID:
+<br>
+Veja o exemplo com seleção por ID:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="container">
+  <div class="box">Caixa 1</div>
+  <div class="box">Caixa 2</div>
+  <div class="box">Caixa 3</div>
+</div>
+
+<script>
+const caixas = document.querySelectorAll("#container .box");
+caixas.forEach(caixa => {
+  console.log(caixa.textContent);
+});
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, o `querySelectorAll` é usado para selecionar todos os elementos com a classe "box" dentro do elemento com o ID "container". Assim, apenas os elementos dentro do elemento "container" serão selecionados e seus conteúdos serão exibidos no console._
+<br><br>
