@@ -296,3 +296,5 @@ console.log(container.textContent); // Output: Caixa 1Caixa 2Caixa 3
 ```
 _Neste exemplo, o `querySelector` é usado para selecionar o elemento com o ID "container" e armazená-lo na variável `container`. Em seguida, o conteúdo desse elemento, incluindo o conteúdo dos elementos filhos, é exibido no console._
 <br><br>
+Em resumo, o `querySelector` é usado para selecionar o primeiro elemento correspondente a um seletor CSS especificado. Ele oferece flexibilidade ao permitir seletores mais específicos, como classes, IDs e seletores de atributos, para encontrar elementos desejados na página HTML.
+<br><br><hr>
