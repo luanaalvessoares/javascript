@@ -1,4 +1,4 @@
-## Get element by ID
+## getElementById
 A função `getElementById` é um método do objeto `document` em javascript, que é usado para selecionar um elemento HTML com base no seu atributo `id`. Essa função retorna uma referência para o elemento encontrado ou `null` se nenhum elemento correspondente for encontrado.
 <br>
 Para usar o `getElementById`, você precisa chamar a função `document.getElementById` e passar o valor do `id` do elemento que deseja selecionar como argumento.
@@ -64,3 +64,7 @@ _Neste exemplo, os atributos `src` e `alt` do elemento com o `id` "imagem" são 
 <br><br>
 Em resumo, o `getElementById` é usado para selecionar elementos HTML com base em seus `id` e permite manipular seu conteúdo ou atributos de forma dinâmica usando javascript.
 <br><br><hr>
+
+## getElementByTagName
+A função `getElementsByTagName` é um método do objeto `document` em javascript, que é usado para selecionar um ou mais elementos HTML com base em seu nome de tag. Essa função retorna uma coleção de elementos que correspondem à tag especificada.
+<br>
