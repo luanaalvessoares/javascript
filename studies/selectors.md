@@ -381,3 +381,4 @@ caixas.forEach(caixa => {
 ```
 _Neste exemplo, o `querySelectorAll` é usado para selecionar todos os elementos com a classe "box" dentro do elemento com o ID "container". Assim, apenas os elementos dentro do elemento "container" serão selecionados e seus conteúdos serão exibidos no console._
 <br><br>
+Em resumo, o `querySelectorAll` é usado para selecionar todos os elementos correspondentes a um seletor CSS especificado. Ele retorna uma lista de elementos, permitindo que você faça iterações e acesse suas propriedades e métodos individualmente.
