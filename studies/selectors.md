@@ -68,3 +68,27 @@ Em resumo, o `getElementById` é usado para selecionar elementos HTML com base e
 ## getElementByTagName
 A função `getElementsByTagName` é um método do objeto `document` em javascript, que é usado para selecionar um ou mais elementos HTML com base em seu nome de tag. Essa função retorna uma coleção de elementos que correspondem à tag especificada.
 <br>
+Para usar o `getElementsByTagName`, você precisa chamar a função `document.getElementsByTagName` e passar o nome da tag que deseja selecionar como argumento. O método retornará uma coleção de elementos correspondentes.
+<br>
+Veja o exemplo:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Título 1</h1>
+<h2>Título 2</h2>
+<p>Parágrafo 1</p>
+<p>Parágrafo 2</p>
+
+<script>
+const paragrafos = document.getElementsByTagName("p");
+console.log(paragrafos); // Output: HTMLCollection [p, p]
+</script>
+
+</body>
+</html>
+```
+_Neste exemplo, a função `getElementsByTagName` é usada para selecionar todos os elementos `<p>` no documento e armazenar a coleção de elementos na variável `paragrafos`. Em seguida, a coleção de elementos é exibida no console._
+<br><br>
