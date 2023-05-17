@@ -153,3 +153,7 @@ function handleClickList(event) {
 list.addEventListener('click', handleClickList);
 ```
 _Nesse exemplo, quando qualquer item da lista é clicado, o evento é propagado para o elemento pai (a lista). A função `handleClickList()` verifica se o elemento clicado é um `<li>`, e se for, exibe o texto desse elemento no console. O `stopPropagation()` não é necessário neste exemplo, pois estamos verificando o elemento alvo dentro da função de tratamento de evento._
+<br><br>
+
+**O `stopPropagation()` pode ser usado em vários contextos onde você deseja controlar a propagação de eventos. É útil quando você precisa evitar que outros elementos reajam ao mesmo evento ou quando deseja manipular especificamente um elemento dentro de um conjunto de elementos.**
+<br><br><hr>
