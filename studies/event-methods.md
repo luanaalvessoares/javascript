@@ -97,3 +97,12 @@ _Nesse exemplo, a função `handleScroll` é chamada sempre que ocorrer uma rola
 ## stopPropagation
 O método `stopPropagation()` é utilizado em JavaScript para interromper a propagação de eventos, ou seja, impedir que um evento seja propagado para elementos pais ou filhos. Isso é útil quando você deseja evitar que outros elementos respondam ao mesmo evento.
 <br>
+Quando um evento é disparado em um elemento, ele passa por uma fase de propagação, conhecida como bubbling (bolhas), onde o evento é primeiro acionado no elemento alvo e depois propagado para os elementos pais. O `stopPropagation()` é chamado para interromper essa propagação.
+
+Veja abaixo a sintaxe básica do método `stopPropagation()`:
+
+```
+event.stopPropagation();
+```
+<br><br>
+
