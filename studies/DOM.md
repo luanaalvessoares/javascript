@@ -25,3 +25,12 @@ Por exemplo, considerando o seguinte trecho HTML:
 </div>
 ```
 <br><br>
+No DOM, teremos o seguinte relacionamento:
+<br>
+- O nó raiz é o objeto `document`.
+- O elemento `<div>` é representado por um nó filho do `document`.
+- O elemento `<h1>` é representado por um nó filho do `<div>`.
+- O elemento `<p>` é representado por um nó filho do `<div>`.
+- Os textos "Título" e "Parágrafo de exemplo" são representados por nós filhos dos respectivos elementos `<h1>` e `<p>`.
+<br>
+Essa estrutura permite acessar e manipular cada elemento individualmente por meio das APIs fornecidas pelo DOM, facilitando a criação de interações dinâmicas e funcionais em uma página da web.
