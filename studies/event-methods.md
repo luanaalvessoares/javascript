@@ -92,3 +92,8 @@ function handleScroll() {
 myDiv.addEventListener('scroll', handleScroll);
 ```
 _Nesse exemplo, a função `handleScroll` é chamada sempre que ocorrer uma rolagem no elemento `myDiv`. Isso é útil para detectar quando um usuário está visualizando uma parte específica de um conteúdo rolável._
+<br><br><hr>
+
+## stopPropagation
+O método `stopPropagation()` é utilizado em JavaScript para interromper a propagação de eventos, ou seja, impedir que um evento seja propagado para elementos pais ou filhos. Isso é útil quando você deseja evitar que outros elementos respondam ao mesmo evento.
+<br>
