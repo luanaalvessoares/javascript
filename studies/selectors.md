@@ -62,7 +62,8 @@ imagemElemento.alt = "Nova Imagem";
 ```
 _Neste exemplo, os atributos `src` e `alt` do elemento com o `id` "imagem" são alterados para exibir uma nova imagem e um novo texto alternativo._
 <br><br>
-Em resumo, o `getElementById` é usado para selecionar elementos HTML com base em seus `id` e permite manipular seu conteúdo ou atributos de forma dinâmica usando javascript.
+
+**Em resumo, o `getElementById` é usado para selecionar elementos HTML com base em seus `id` e permite manipular seu conteúdo ou atributos de forma dinâmica usando javascript.**
 <br><br><hr>
 
 ## getElementByTagName
@@ -142,7 +143,8 @@ console.log(paragrafo2.textContent); // Output: Parágrafo 2
 ```
 _Neste exemplo, o segundo elemento `<p>` é acessado diretamente pelo índice `[1]` e seu conteúdo é exibido no console._
 <br><br>
-Em resumo, o `getElementsByTagName` é usado para selecionar elementos HTML com base em seu nome de tag e retorna uma coleção de elementos correspondentes. Essa função permite manipular os elementos selecionados de forma dinâmica usando javascript.
+
+**Em resumo, o `getElementsByTagName` é usado para selecionar elementos HTML com base em seu nome de tag e retorna uma coleção de elementos correspondentes. Essa função permite manipular os elementos selecionados de forma dinâmica usando javascript.**
 <br><br><hr>
 
 ## getElementsByClassName
@@ -217,7 +219,8 @@ console.log(caixa2.textContent); // Output: Caixa 2
 ```
 _Neste exemplo, o segundo elemento com a classe "box" é acessado diretamente pelo índice `[1]` e seu conteúdo é exibido no console._
 <br><br>
-Em resumo, o `getElementsByClassName` é usado para selecionar elementos HTML com base em suas classes e retorna uma coleção de elementos correspondentes. Essa função permite manipular os elementos selecionados de forma dinâmica usando javascript.
+
+**Em resumo, o `getElementsByClassName` é usado para selecionar elementos HTML com base em suas classes e retorna uma coleção de elementos correspondentes. Essa função permite manipular os elementos selecionados de forma dinâmica usando javascript.**
 <br><br><hr>
 
 ## querySelector
@@ -296,7 +299,8 @@ console.log(container.textContent); // Output: Caixa 1Caixa 2Caixa 3
 ```
 _Neste exemplo, o `querySelector` é usado para selecionar o elemento com o ID "container" e armazená-lo na variável `container`. Em seguida, o conteúdo desse elemento, incluindo o conteúdo dos elementos filhos, é exibido no console._
 <br><br>
-Em resumo, o `querySelector` é usado para selecionar o primeiro elemento correspondente a um seletor CSS especificado. Ele oferece flexibilidade ao permitir seletores mais específicos, como classes, IDs e seletores de atributos, para encontrar elementos desejados na página HTML.
+
+**Em resumo, o `querySelector` é usado para selecionar o primeiro elemento correspondente a um seletor CSS especificado. Ele oferece flexibilidade ao permitir seletores mais específicos, como classes, IDs e seletores de atributos, para encontrar elementos desejados na página HTML.**
 <br><br><hr>
 
 ## querySelectorAll
@@ -381,4 +385,5 @@ caixas.forEach(caixa => {
 ```
 _Neste exemplo, o `querySelectorAll` é usado para selecionar todos os elementos com a classe "box" dentro do elemento com o ID "container". Assim, apenas os elementos dentro do elemento "container" serão selecionados e seus conteúdos serão exibidos no console._
 <br><br>
-Em resumo, o `querySelectorAll` é usado para selecionar todos os elementos correspondentes a um seletor CSS especificado. Ele retorna uma lista de elementos, permitindo que você faça iterações e acesse suas propriedades e métodos individualmente.
+
+**Em resumo, o `querySelectorAll` é usado para selecionar todos os elementos correspondentes a um seletor CSS especificado. Ele retorna uma lista de elementos, permitindo que você faça iterações e acesse suas propriedades e métodos individualmente.**
