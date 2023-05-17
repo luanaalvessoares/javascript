@@ -106,3 +106,50 @@ event.stopPropagation();
 ```
 <br><br>
 
+Veja o exemplo de um click no botão dentro de um elemento pai:
+```
+<div id="parent">
+  <button id="child">Clique aqui!</button>
+</div>
+```
+<br>
+```
+const parent = document.querySelector('#parent');
+const child = document.querySelector('#child');
+
+function handleClickParent() {
+  console.log('Evento clicado no elemento pai');
+}
+
+function handleClickChild(event) {
+  event.stopPropagation();
+  console.log('Evento clicado no elemento filho');
+}
+
+parent.addEventListener('click', handleClickParent);
+child.addEventListener('click', handleClickChild);
+```
+_Nesse exemplo, quando o botão dentro do elemento pai é clicado, o evento é propagado para o elemento pai e, em seguida, para o elemento filho. No entanto, o `stopPropagation()` é chamado dentro da função `handleClickChild()`, interrompendo a propagação do evento. Como resultado, apenas a mensagem "Evento clicado no elemento filho" será exibida no console._
+<br><br>
+Veja o exemplo de um click em elementos dentro de uma lista:
+```
+<ul id="myList">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+<br>
+```
+const list = document.querySelector('#myList');
+
+function handleClickList(event) {
+  const clickedElement = event.target;
+  if (clickedElement.tagName === 'LI') {
+    console.log(`Clicou no item: ${clickedElement.textContent}`);
+  }
+}
+
+list.addEventListener('click', handleClickList);
+```
+_Nesse exemplo, quando qualquer item da lista é clicado, o evento é propagado para o elemento pai (a lista). A função `handleClickList()` verifica se o elemento clicado é um `<li>`, e se for, exibe o texto desse elemento no console. O `stopPropagation()` não é necessário neste exemplo, pois estamos verificando o elemento alvo dentro da função de tratamento de evento._
