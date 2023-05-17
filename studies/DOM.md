@@ -16,3 +16,12 @@ Principais conceitos e detalhes do DOM:
 <br><br>
 A relação dos elementos da página no DOM é estabelecida pela estrutura HTML do documento. Cada elemento HTML é representado por um nó no DOM, e sua posição na árvore reflete sua relação com os outros elementos. Os nós filhos estão aninhados dentro de seus nós pais, formando uma hierarquia que corresponde à estrutura da página.
 <br>
+Por exemplo, considerando o seguinte trecho HTML:
+
+```
+<div id="container">
+  <h1>Título</h1>
+  <p>Parágrafo de exemplo</p>
+</div>
+```
+<br><br>
