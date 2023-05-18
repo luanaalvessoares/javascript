@@ -447,3 +447,6 @@ const childElement = document.getElementById('child');
 parentElement.removeChild(childElement);
 ```
 _Neste exemplo, o método `getElementById` é usado para selecionar tanto o elemento pai quanto o elemento filho que deseja remover com base em seus IDs. Em seguida, o método `removeChild` é chamado no elemento pai, passando o elemento filho como argumento, para remover o elemento filho do elemento pai._
+<br><br>
+
+**Esses exemplos ilustram diferentes formas de remover elementos do DOM usando JavaScript. Certifique-se de ter uma referência válida para o elemento que deseja remover e, em seguida, chame o método apropriado para executar a remoção.**
