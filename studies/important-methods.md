@@ -18,3 +18,16 @@ Onde:
 - `array` (opcional): O array original.
 <br>
 
+Veja um exemplo simples do uso do `filter`:
+<br>
+
+```
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const evenNumbers = numbers.filter((number) => number % 2 === 0);
+
+console.log(evenNumbers); // Output: [2, 4, 6]
+```
+_Neste exemplo, o método `filter` é usado para criar um novo array chamado `evenNumbers` que contém apenas os números pares do array original `numbers`. A função de callback verifica se cada número é divisível por 2 usando o operador `%` e retorna `true` se for o caso._
+<br><br>
+
