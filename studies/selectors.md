@@ -423,3 +423,7 @@ document.body.appendChild(ulElement);
 ```
 _Neste exemplo mais complexo, é criado um novo elemento `<ul>` usando o `createElement`. Em seguida, é definido um array de itens. Um loop `forEach` é usado para iterar pelo array e criar elementos `<li>` correspondentes a cada item. O texto de cada `<li>` é definido com base no item do array e os elementos `<li>` são adicionados ao `<ul>` usando o método `appendChild`. Por fim, o `<ul>` é adicionado ao `<body>` da página._
 <br><br><hr>
+
+## removeElement
+Desculpe, mas não existe um método nativo `removeElement` em JavaScript. No entanto, você pode remover um elemento do DOM usando o método `remove` ou manipulando seu elemento pai.
+<br>
