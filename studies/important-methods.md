@@ -31,3 +31,21 @@ console.log(evenNumbers); // Output: [2, 4, 6]
 _Neste exemplo, o método `filter` é usado para criar um novo array chamado `evenNumbers` que contém apenas os números pares do array original `numbers`. A função de callback verifica se cada número é divisível por 2 usando o operador `%` e retorna `true` se for o caso._
 <br><br>
 
+Veja um exemplo elaborado com um objeto:
+```
+const students = [
+  { name: 'Alice', grade: 85 },
+  { name: 'Bob', grade: 92 },
+  { name: 'Charlie', grade: 78 },
+  { name: 'David', grade: 95 },
+];
+
+const topStudents = students.filter((student) => student.grade >= 90);
+
+console.log(topStudents);
+// Output: [
+//   { name: 'Bob', grade: 92 },
+//   { name: 'David', grade: 95 }
+// ]
+```
+_Neste exemplo, o método `filter` é usado para criar um novo array chamado `topStudents` que contém apenas os estudantes com nota igual ou superior a 90. A função de callback verifica se a nota de cada estudante é maior ou igual a 90 e retorna `true` se for o caso._
