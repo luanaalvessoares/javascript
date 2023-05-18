@@ -427,3 +427,13 @@ _Neste exemplo mais complexo, é criado um novo elemento `<ul>` usando o `create
 ## removeElement
 Desculpe, mas não existe um método nativo `removeElement` em JavaScript. No entanto, você pode remover um elemento do DOM usando o método `remove` ou manipulando seu elemento pai.
 <br>
+Veja esse exemplo usando o método `remove`:
+
+```
+const elementToRemove = document.getElementById('myElement');
+
+elementToRemove.remove();
+```
+_Neste exemplo, o método `getElementById` é usado para selecionar o elemento que deseja remover com base em seu ID. Em seguida, o método `remove` é chamado no elemento selecionado para removê-lo do DOM._
+<br><br>
+
