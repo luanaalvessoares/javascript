@@ -49,3 +49,6 @@ console.log(topStudents);
 // ]
 ```
 _Neste exemplo, o método `filter` é usado para criar um novo array chamado `topStudents` que contém apenas os estudantes com nota igual ou superior a 90. A função de callback verifica se a nota de cada estudante é maior ou igual a 90 e retorna `true` se for o caso._
+<br><br>
+
+**Em resumo, o método `filter` permite filtrar elementos de um array com base em determinados critérios, criando um novo array com os elementos que atendem ao teste especificado. Isso oferece uma maneira conveniente de trabalhar com arrays e realizar operações de filtragem.**
