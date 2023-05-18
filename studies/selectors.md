@@ -387,3 +387,8 @@ _Neste exemplo, o `querySelectorAll` é usado para selecionar todos os elementos
 <br><br>
 
 **Em resumo, o `querySelectorAll` é usado para selecionar todos os elementos correspondentes a um seletor CSS especificado. Ele retorna uma lista de elementos, permitindo que você faça iterações e acesse suas propriedades e métodos individualmente.**
+<br><br><hr>
+
+## createElement
+O método `createElement` é usado para criar um novo elemento HTML no DOM. Ele permite criar elementos de qualquer tipo, como `<div>`, `<p>`, `<span>`, etc. O elemento criado não é adicionado à página até que seja inserido no DOM usando métodos como `appendChild` ou `insertBefore`.
+<br>
