@@ -406,3 +406,20 @@ document.body.appendChild(divElement);
 _Neste exemplo, um novo elemento `<div>` é criado usando o `createElement`. Em seguida, é definido um atributo `class` no elemento usando o método `setAttribute`. O texto é adicionado ao elemento usando a propriedade `textContent`. Por fim, o elemento é adicionado ao `<body>` da página usando o método `appendChild`._
 <br><br>
 
+Agora veja um exemplo com um código mais elaborado:
+<br>
+```
+const ulElement = document.createElement('ul');
+
+const items = ['Item 1', 'Item 2', 'Item 3'];
+
+items.forEach(item => {
+  const liElement = document.createElement('li');
+  liElement.textContent = item;
+  ulElement.appendChild(liElement);
+});
+
+document.body.appendChild(ulElement);
+```
+_Neste exemplo mais complexo, é criado um novo elemento `<ul>` usando o `createElement`. Em seguida, é definido um array de itens. Um loop `forEach` é usado para iterar pelo array e criar elementos `<li>` correspondentes a cada item. O texto de cada `<li>` é definido com base no item do array e os elementos `<li>` são adicionados ao `<ul>` usando o método `appendChild`. Por fim, o `<ul>` é adicionado ao `<body>` da página._
+<br><br><hr>
