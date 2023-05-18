@@ -392,3 +392,17 @@ _Neste exemplo, o `querySelectorAll` é usado para selecionar todos os elementos
 ## createElement
 O método `createElement` é usado para criar um novo elemento HTML no DOM. Ele permite criar elementos de qualquer tipo, como `<div>`, `<p>`, `<span>`, etc. O elemento criado não é adicionado à página até que seja inserido no DOM usando métodos como `appendChild` ou `insertBefore`.
 <br>
+Veja um exemplo:
+<br>
+```
+const divElement = document.createElement('div');
+
+divElement.setAttribute('class', 'box');
+
+divElement.textContent = 'Conteúdo da div';
+
+document.body.appendChild(divElement);
+```
+_Neste exemplo, um novo elemento `<div>` é criado usando o `createElement`. Em seguida, é definido um atributo `class` no elemento usando o método `setAttribute`. O texto é adicionado ao elemento usando a propriedade `textContent`. Por fim, o elemento é adicionado ao `<body>` da página usando o método `appendChild`._
+<br><br>
+
