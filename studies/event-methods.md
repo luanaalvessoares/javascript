@@ -278,3 +278,33 @@ Alternando um estilo específico:
 _Neste exemplo, temos um botão que chama a função `toggleStyle()` quando clicado. Essa função obtém o elemento com o ID "texto" e utiliza `classList.toggle()` para alternar a classe "destacado" nesse elemento. A classe "destacado" possui estilos CSS que modificam a cor do texto para vermelho e o tornam em negrito. Portanto, cada vez que o botão é clicado, o estilo do texto é alternado entre o estilo original e o estilo destacado._
 <br><br>
 
+Alternando várias classes:
+```
+<button onclick="toggleClasses()">Clique Aqui</button>
+<p id="elemento">Texto Original</p>
+
+<script>
+  function toggleClasses() {
+    var elemento = document.getElementById('elemento');
+    elemento.classList.toggle('destacado');
+    elemento.classList.toggle('grande');
+    elemento.classList.toggle('itálico');
+  }
+</script>
+
+<style>
+  .destacado {
+    color: red;
+    font-weight: bold;
+  }
+  .grande {
+    font-size: 24px;
+  }
+  .itálico {
+    font-style: italic;
+  }
+</style>
+```
+_Neste exemplo, temos um botão que chama a função `toggleClasses()` quando clicado. Essa função obtém o elemento com o ID "elemento" e utiliza `classList.toggle()` para alternar várias classes nesse elemento. As classes "destacado", "grande" e "itálico" possuem estilos CSS que modificam o texto. Portanto, cada vez que o botão é clicado, o estilo do texto é alternado entre diferentes combinações de classes._
+<br><br>
+
