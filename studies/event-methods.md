@@ -189,3 +189,24 @@ console.log(carro); // Resultado: { marca: 'Ford', modelo: 'Mustang' }
 _Neste exemplo, o método `remove` é usado para remover a propriedade `'ano'` do objeto `carro`. Após a execução, a saída do `console.log` mostra que a propriedade `'ano'` foi removida._
 <br><br>
 
+Removendo múltiplos elementos de um array:
+
+```
+let numeros = [1, 2, 3, 4, 5];
+
+Array.prototype.remove = function(...valores) {
+  valores.forEach(valor => {
+    let index = this.indexOf(valor);
+    if (index !== -1) {
+      this.splice(index, 1);
+    }
+  });
+};
+
+numeros.remove(2, 4);
+
+console.log(numeros); // Resultado: [1, 3, 5]
+```
+_Neste exemplo, é criado um método personalizado chamado `remove` no protótipo do objeto `Array`. Ele aceita um número arbitrário de argumentos e itera sobre eles para remover os valores correspondentes do array `numeros`. Neste caso, os elementos `2` e `4` são removidos, resultando no array `[1, 3, 5]`._
+<br><br>
+
