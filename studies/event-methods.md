@@ -161,3 +161,15 @@ _Nesse exemplo, quando qualquer item da lista é clicado, o evento é propagado 
 ## Remove
 O método `remove` é usado para remover um elemento específico de um array ou uma propriedade de um objeto. Ele funciona procurando pelo valor fornecido como argumento e, caso encontrado, remove-o. Veja alguns exemplos:
 
+Removendo um elemento de um array:
+
+```
+let frutas = ['maçã', 'banana', 'laranja', 'uva'];
+
+frutas.remove('banana');
+
+console.log(frutas); // Resultado: ['maçã', 'laranja', 'uva']
+```
+_Neste exemplo, o método `remove` é usado para remover a string `'banana'` do array `frutas`. Após a execução, a saída do `console.log` mostra que o elemento `'banana'` foi removido._
+<br><br>
+
