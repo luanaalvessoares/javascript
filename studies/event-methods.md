@@ -173,3 +173,19 @@ console.log(frutas); // Resultado: ['maçã', 'laranja', 'uva']
 _Neste exemplo, o método `remove` é usado para remover a string `'banana'` do array `frutas`. Após a execução, a saída do `console.log` mostra que o elemento `'banana'` foi removido._
 <br><br>
 
+Removendo uma propriedade de um objeto:
+
+```
+let carro = {
+  marca: 'Ford',
+  modelo: 'Mustang',
+  ano: 2020
+};
+
+carro.remove('ano');
+
+console.log(carro); // Resultado: { marca: 'Ford', modelo: 'Mustang' }
+```
+_Neste exemplo, o método `remove` é usado para remover a propriedade `'ano'` do objeto `carro`. Após a execução, a saída do `console.log` mostra que a propriedade `'ano'` foi removida._
+<br><br>
+
