@@ -239,3 +239,19 @@ Neste exemplo, o método `remove` personalizado é usado para remover um objeto 
 ## Toggle
 O método `toggle` é usado para alternar a presença de uma classe CSS em um elemento HTML. Ele adiciona a classe se ela não estiver presente e a remove se já estiver presente. Isso permite alternar o estado visual de um elemento, como exibir ou ocultar um menu, aplicando ou removendo estilos específicos. Veja alguns exemplos:
 
+Alternando a visibilidade de um elemento:
+
+```
+<button onclick="toggleElement()">Clique Aqui</button>
+<div id="conteudo" style="display: none;">Conteúdo Oculto</div>
+
+<script>
+  function toggleElement() {
+    var elemento = document.getElementById('conteudo');
+    elemento.classList.toggle('visivel');
+  }
+</script>
+```
+_Neste exemplo, temos um botão que, quando clicado, chama a função `toggleElement()`. Essa função obtém o elemento com o ID "conteudo" usando `document.getElementById()`. Em seguida, utiliza `classList.toggle()` para alternar a classe "visivel" nesse elemento. A classe "visivel" está definida no CSS para exibir o conteúdo oculto. Assim, cada vez que o botão é clicado, o conteúdo é alternado entre visível e oculto._
+<br><br>
+
