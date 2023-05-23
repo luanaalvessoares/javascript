@@ -210,3 +210,26 @@ console.log(numeros); // Resultado: [1, 3, 5]
 _Neste exemplo, é criado um método personalizado chamado `remove` no protótipo do objeto `Array`. Ele aceita um número arbitrário de argumentos e itera sobre eles para remover os valores correspondentes do array `numeros`. Neste caso, os elementos `2` e `4` são removidos, resultando no array `[1, 3, 5]`._
 <br><br>
 
+Removendo um objeto de um array com base em uma propriedade específica:
+
+```
+let pessoas = [
+  { nome: 'João', idade: 25 },
+  { nome: 'Maria', idade: 30 },
+  { nome: 'Pedro', idade: 35 }
+];
+
+Array.prototype.remove = function(propriedade, valor) {
+  let index = this.findIndex(item => item[propriedade] === valor);
+  if (index !== -1) {
+    this.splice(index, 1);
+  }
+};
+
+pessoas.remove('nome', 'Maria');
+
+console.log(pessoas); // Resultado: [ { nome: 'João', idade: 25 }, { nome: 'Pedro', idade: 35 } ]
+```
+Neste exemplo, o método `remove` personalizado é usado para remover um objeto do array `pessoas` com base em uma propriedade específica. No caso, é fornecido `'nome'` e `'Maria'` como argumentos para remover o objeto com o nome `'Maria'` do array. Após a execução, a saída do `console.log` mostra que o objeto correspondente foi removido.
+<br><br>
+
