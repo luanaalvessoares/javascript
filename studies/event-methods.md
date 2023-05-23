@@ -235,3 +235,7 @@ Neste exemplo, o método `remove` personalizado é usado para remover um objeto 
 
 **É importante notar que o método `remove` não faz parte da especificação oficial do JavaScript, mas você pode implementá-lo como uma extensão personalizada para facilitar a remoção de elementos ou propriedades de arrays e objetos.**
 <br><br><hr>
+
+## Toggle
+O método `toggle` é usado para alternar a presença de uma classe CSS em um elemento HTML. Ele adiciona a classe se ela não estiver presente e a remove se já estiver presente. Isso permite alternar o estado visual de um elemento, como exibir ou ocultar um menu, aplicando ou removendo estilos específicos. Veja alguns exemplos:
+
