@@ -233,3 +233,5 @@ console.log(pessoas); // Resultado: [ { nome: 'João', idade: 25 }, { nome: 'Ped
 Neste exemplo, o método `remove` personalizado é usado para remover um objeto do array `pessoas` com base em uma propriedade específica. No caso, é fornecido `'nome'` e `'Maria'` como argumentos para remover o objeto com o nome `'Maria'` do array. Após a execução, a saída do `console.log` mostra que o objeto correspondente foi removido.
 <br><br>
 
+**É importante notar que o método `remove` não faz parte da especificação oficial do JavaScript, mas você pode implementá-lo como uma extensão personalizada para facilitar a remoção de elementos ou propriedades de arrays e objetos.**
+<br><br><hr>
