@@ -157,3 +157,7 @@ _Nesse exemplo, quando qualquer item da lista é clicado, o evento é propagado 
 
 **O `stopPropagation()` pode ser usado em vários contextos onde você deseja controlar a propagação de eventos. É útil quando você precisa evitar que outros elementos reajam ao mesmo evento ou quando deseja manipular especificamente um elemento dentro de um conjunto de elementos.**
 <br><br><hr>
+
+## Remove
+O método `remove` é usado para remover um elemento específico de um array ou uma propriedade de um objeto. Ele funciona procurando pelo valor fornecido como argumento e, caso encontrado, remove-o. Veja alguns exemplos:
+
