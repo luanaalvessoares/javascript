@@ -308,3 +308,29 @@ Alternando várias classes:
 _Neste exemplo, temos um botão que chama a função `toggleClasses()` quando clicado. Essa função obtém o elemento com o ID "elemento" e utiliza `classList.toggle()` para alternar várias classes nesse elemento. As classes "destacado", "grande" e "itálico" possuem estilos CSS que modificam o texto. Portanto, cada vez que o botão é clicado, o estilo do texto é alternado entre diferentes combinações de classes._
 <br><br>
 
+Alternando classes em vários elementos:
+
+```
+<button onclick="toggleElements()">Clique Aqui</button>
+<p class="elemento">Texto 1</p>
+<p class="elemento">Texto 2</p>
+<p class="elemento">Texto 3</p>
+
+<script>
+  function toggleElements() {
+    var elementos = document.getElementsByClassName('elemento');
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].classList.toggle('destacado');
+    }
+  }
+</script>
+
+<style>
+  .destacado {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+```
+_Neste exemplo, temos um botão que chama a função `toggleElements()` quando clicado. Essa função utiliza `document.getElementsByClassName()` para obter todos os elementos com a classe "elemento". Em seguida, um loop é usado para percorrer todos esses elementos e aplicar o método `classList.toggle()` na classe "destacado". Isso alterna a presença da classe "destacado" em cada um dos elementos. Portanto, cada vez que o botão é clicado, a aparência dos elementos é alternada._
+<br><br><hr>
