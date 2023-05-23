@@ -255,3 +255,26 @@ Alternando a visibilidade de um elemento:
 _Neste exemplo, temos um botão que, quando clicado, chama a função `toggleElement()`. Essa função obtém o elemento com o ID "conteudo" usando `document.getElementById()`. Em seguida, utiliza `classList.toggle()` para alternar a classe "visivel" nesse elemento. A classe "visivel" está definida no CSS para exibir o conteúdo oculto. Assim, cada vez que o botão é clicado, o conteúdo é alternado entre visível e oculto._
 <br><br>
 
+Alternando um estilo específico:
+
+```
+<button onclick="toggleStyle()">Clique Aqui</button>
+<p id="texto">Texto Original</p>
+
+<script>
+  function toggleStyle() {
+    var elemento = document.getElementById('texto');
+    elemento.classList.toggle('destacado');
+  }
+</script>
+
+<style>
+  .destacado {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+```
+_Neste exemplo, temos um botão que chama a função `toggleStyle()` quando clicado. Essa função obtém o elemento com o ID "texto" e utiliza `classList.toggle()` para alternar a classe "destacado" nesse elemento. A classe "destacado" possui estilos CSS que modificam a cor do texto para vermelho e o tornam em negrito. Portanto, cada vez que o botão é clicado, o estilo do texto é alternado entre o estilo original e o estilo destacado._
+<br><br>
+
