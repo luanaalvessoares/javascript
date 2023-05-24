@@ -152,3 +152,6 @@ console.log(saoMaioresDeIdade); // Resultado: false
 ```
 _Neste exemplo, temos um array de objetos que representam pessoas. Utilizando o método `every`, criamos uma função de callback que verifica se a idade de uma pessoa é maior ou igual a 18 anos usando a condição `pessoa.idade >= 18`. O método `every` itera sobre cada objeto do array e verifica se todas as pessoas são maiores de idade. No caso, a pessoa com nome `'Maria'` tem idade inferior a 18 anos, então o resultado é `false`._
 <br><br>
+
+**Esses exemplos ilustram como o método `every` pode ser utilizado para verificar se todos os elementos de um array satisfazem uma determinada condição, permitindo uma avaliação precisa das informações contidas no array.**
+<br><br><hr>
