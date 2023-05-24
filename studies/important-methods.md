@@ -137,3 +137,18 @@ console.log(saoPositivos); // Resultado: false
 _Neste exemplo, temos um array de números. Utilizando o método `every`, criamos uma função de callback que verifica se um número é maior que zero usando a condição `numero > 0`. O método `every` itera sobre cada elemento do array e verifica se todos eles atendem a essa condição. No caso, o número `-3` não é positivo, então o resultado é `false`._
 <br><br>
 
+Verificando se todas as pessoas são maiores de idade:
+
+```
+let pessoas = [
+  { nome: 'João', idade: 25 },
+  { nome: 'Maria', idade: 17 },
+  { nome: 'Pedro', idade: 32 }
+];
+
+let saoMaioresDeIdade = pessoas.every(pessoa => pessoa.idade >= 18);
+
+console.log(saoMaioresDeIdade); // Resultado: false
+```
+_Neste exemplo, temos um array de objetos que representam pessoas. Utilizando o método `every`, criamos uma função de callback que verifica se a idade de uma pessoa é maior ou igual a 18 anos usando a condição `pessoa.idade >= 18`. O método `every` itera sobre cada objeto do array e verifica se todas as pessoas são maiores de idade. No caso, a pessoa com nome `'Maria'` tem idade inferior a 18 anos, então o resultado é `false`._
+<br><br>
