@@ -101,3 +101,22 @@ console.log(pessoa); // Resultado: { nome: 'Maria', idade: 30 }
 _Neste exemplo, estamos procurando um objeto no array `pessoas` com base em duas condições: o nome deve ser igual a `'Maria'` e a idade deve ser maior que `25`. Usando o método `find` com uma função de callback que verifica essas condições, o primeiro objeto que satisfaz ambas as condições é retornado como resultado._
 <br><br>
 
+Encontrando um objeto em um array de objetos aninhados:
+```
+let loja = {
+  nome: 'Minha Loja',
+  produtos: [
+    { id: 1, nome: 'Camiseta', preco: 29.99 },
+    { id: 2, nome: 'Calça', preco: 49.99 },
+    { id: 3, nome: 'Sapato', preco: 79.99 }
+  ]
+};
+
+let produto = loja.produtos.find(p => p.id === 2);
+
+console.log(produto); // Resultado: { id: 2, nome: 'Calça', preco: 49
+
+.99 }
+```
+_Neste exemplo, temos um objeto `loja` que possui uma propriedade `produtos`, que é um array de objetos representando os produtos da loja. Usando o método `find` no array `loja.produtos`, encontramos o objeto com `id` igual a `2`, que representa uma calça. O objeto encontrado é retornado como resultado._
+<br><br><hr>
