@@ -52,3 +52,8 @@ _Neste exemplo, o método `filter` é usado para criar um novo array chamado `to
 <br><br>
 
 **Em resumo, o método `filter` permite filtrar elementos de um array com base em determinados critérios, criando um novo array com os elementos que atendem ao teste especificado. Isso oferece uma maneira conveniente de trabalhar com arrays e realizar operações de filtragem.**
+<br><br><hr>
+
+## Find
+O método `find` em JavaScript é usado para encontrar o primeiro elemento em um array que satisfaça uma determinada condição. Ele retorna o valor do elemento encontrado ou `undefined` caso nenhum elemento seja encontrado.
+<br><br>
