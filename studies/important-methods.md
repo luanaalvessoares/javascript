@@ -120,3 +120,8 @@ console.log(produto); // Resultado: { id: 2, nome: 'Calça', preco: 49
 ```
 _Neste exemplo, temos um objeto `loja` que possui uma propriedade `produtos`, que é um array de objetos representando os produtos da loja. Usando o método `find` no array `loja.produtos`, encontramos o objeto com `id` igual a `2`, que representa uma calça. O objeto encontrado é retornado como resultado._
 <br><br><hr>
+
+## Every
+O método `every` é utilizado para verificar se todos os elementos de um array satisfazem uma determinada condição. Ele retorna `true` se todos os elementos cumprirem a condição e `false` caso contrário.
+<br><br>
+
