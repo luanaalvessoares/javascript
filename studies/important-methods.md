@@ -70,3 +70,18 @@ console.log(numeroPar); // Resultado: 4
 _Neste exemplo, temos um array de números. Usando o método `find`, criamos uma função de callback que verifica se um número é par usando a condição `numero % 2 === 0`. O método `find` itera sobre cada elemento do array e retorna o primeiro número que satisfaz essa condição. No caso, o número `4` é o primeiro número par encontrado, então ele é retornado como resultado._
 <br><br>
 
+Encontrando um objeto com base em uma propriedade:
+```
+let pessoas = [
+  { nome: 'João', idade: 25 },
+  { nome: 'Maria', idade: 30 },
+  { nome: 'Pedro', idade: 35 }
+];
+
+let pessoa = pessoas.find(p => p.nome === 'Maria');
+
+console.log(pessoa); // Resultado: { nome: 'Maria', idade: 30 }
+```
+_Neste exemplo, temos um array de objetos que representam pessoas. Utilizando o método `find`, criamos uma função de callback que verifica se o nome de uma pessoa é igual a `'Maria'`. O método `find` itera sobre cada objeto do array e retorna o primeiro objeto que satisfaz essa condição. No caso, o objeto com nome `'Maria'` é o primeiro objeto encontrado, então ele é retornado como resultado._
+<br><br>
+
