@@ -57,3 +57,16 @@ _Neste exemplo, o método `filter` é usado para criar um novo array chamado `to
 ## Find
 O método `find` em JavaScript é usado para encontrar o primeiro elemento em um array que satisfaça uma determinada condição. Ele retorna o valor do elemento encontrado ou `undefined` caso nenhum elemento seja encontrado.
 <br><br>
+
+Encontrando um número par em um array:
+
+```
+let numeros = [1, 3, 4, 7, 8, 10];
+
+let numeroPar = numeros.find(numero => numero % 2 === 0);
+
+console.log(numeroPar); // Resultado: 4
+```
+_Neste exemplo, temos um array de números. Usando o método `find`, criamos uma função de callback que verifica se um número é par usando a condição `numero % 2 === 0`. O método `find` itera sobre cada elemento do array e retorna o primeiro número que satisfaz essa condição. No caso, o número `4` é o primeiro número par encontrado, então ele é retornado como resultado._
+<br><br>
+
