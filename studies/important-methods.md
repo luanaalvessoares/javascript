@@ -125,3 +125,15 @@ _Neste exemplo, temos um objeto `loja` que possui uma propriedade `produtos`, qu
 O método `every` é utilizado para verificar se todos os elementos de um array satisfazem uma determinada condição. Ele retorna `true` se todos os elementos cumprirem a condição e `false` caso contrário.
 <br><br>
 
+Verificando se todos os números são positivos:
+
+```
+let numeros = [10, 5, -3, 8, 2];
+
+let saoPositivos = numeros.every(numero => numero > 0);
+
+console.log(saoPositivos); // Resultado: false
+```
+_Neste exemplo, temos um array de números. Utilizando o método `every`, criamos uma função de callback que verifica se um número é maior que zero usando a condição `numero > 0`. O método `every` itera sobre cada elemento do array e verifica se todos eles atendem a essa condição. No caso, o número `-3` não é positivo, então o resultado é `false`._
+<br><br>
+
