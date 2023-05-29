@@ -178,3 +178,8 @@ console.log(arraySubstrings); // ['Exemplo', 'de', 'uma', 'string']
 
 **Esses são apenas alguns exemplos de como as strings podem ser usadas com funções em JavaScript. As strings são amplamente utilizadas para manipulação de texto, processamento de dados e apresentação de informações em aplicativos. JavaScript oferece uma variedade de funções e métodos para trabalhar com strings, permitindo que você realize diversas operações e manipulações para atender às suas necessidades.**
 <br><br><hr>
+
+## Map
+Em JavaScript, o objeto `Map` é uma coleção de pares chave-valor, onde cada valor pode ser recuperado usando sua chave correspondente. Ao contrário dos arrays, as chaves em um `Map` podem ser de qualquer tipo, como strings, números, objetos e até mesmo funções.
+<br>
+
