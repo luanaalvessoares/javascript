@@ -329,3 +329,5 @@ for (const [aluno, status] of estudantes
 _Nesse exemplo, usamos objetos como chaves e atribuímos um status para cada aluno em um `Map`. Em seguida, percorremos o `Map` para exibir o nome, idade e status de cada aluno._
 <br><br>
 
+**O `Map` é útil quando você precisa associar valores a chaves e acessá-los de forma eficiente. Ele fornece métodos para adicionar, recuperar, verificar a existência e remover elementos de forma simples. Além disso, permite a iteração fácil sobre seus elementos. O `Map` é uma estrutura de dados versátil e poderosa para lidar com coleções chave-valor em JavaScript.**
+<br><br><hr>
