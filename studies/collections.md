@@ -144,3 +144,35 @@ console.log(resultado); // 'Olá Mundo'
 ```
 <br><br>
 
+**Strings com Funções**
+Em JavaScript, você pode chamar funções em strings para realizar várias manipulações e operações. Aqui estão alguns exemplos:
+
+- Buscar um caractere ou uma sequência de caracteres:
+A função `indexOf()` retorna o índice da primeira ocorrência de um caractere ou uma sequência de caracteres em uma string. Por exemplo:
+
+```
+const minhaString = 'Exemplo de uma string';
+console.log(minhaString.indexOf('de')); // 8
+```
+<br><br>
+
+- Substituir caracteres ou sequências de caracteres:
+A função `replace()` é usada para substituir uma sequência de caracteres por outra em uma string. Por exemplo:
+
+```
+const minhaString = 'Exemplo de uma string';
+const novaString = minhaString.replace('string', 'frase');
+console.log(novaString); // 'Exemplo de uma frase'
+```
+<br><br>
+
+- Dividir uma string em um array de substrings:
+A função `split()` divide uma string em um array de substrings com base em um separador especificado. Por exemplo:
+
+```
+const minhaString = 'Exemplo de uma string';
+const arraySubstrings = minhaString.split(' ');
+console.log(arraySubstrings); // ['Exemplo', 'de', 'uma', 'string']
+```
+<br><br>
+
