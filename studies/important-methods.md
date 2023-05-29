@@ -257,3 +257,5 @@ console.log(palavraMaisLonga); // 'elefante'
 ```
 _Neste exemplo, a função `callback` compara o comprimento de cada `palavra` com o comprimento do `acumulador`. Se o comprimento da palavra for maior, a palavra se torna o novo valor do acumulador. Caso contrário, o valor do acumulador permanece o mesmo. No final, o método `reduce()` retorna a palavra mais longa do array._
 <br><br>
+
+**O método `reduce()` é flexível e pode ser usado para realizar várias operações de redução em um array, como soma, multiplicação, concatenação, filtragem e muito mais. Ele é particularmente útil quando você precisa reduzir um conjunto de dados a um único valor com base em uma lógica personalizada.**
