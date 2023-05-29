@@ -199,3 +199,13 @@ console.log(temPar); // true
 _No exemplo acima, a função `callback` verifica se cada `numero` é par usando o operador `%` (módulo) para verificar se o número é divisível por 2. Como pelo menos um número (6) é par, o método `some()` retorna `true`._
 <br><br>
 
+Exemplo que usa `some()` em conjunto com arrow function (função de seta) e o método `includes()`:
+
+```
+const palavras = ['gato', 'cachorro', 'elefante', 'girafa'];
+const temLetraA = palavras.some(palavra => palavra.includes('a'));
+
+console.log(temLetraA); // true
+```
+_Neste exemplo, a função `callback` verifica se pelo menos uma `palavra` do array contém a letra "a" usando o método `includes()`. Como uma das palavras, "gato", contém a letra "a", o método `some()` retorna `true`._
+<br><br>
