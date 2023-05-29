@@ -60,3 +60,21 @@ console.log(frutas); // ['maçã', 'uva', 'laranja']
 ```
 <br><br>
 
+**Arrays com Funções**
+Em JavaScript, um array pode conter funções como seus elementos. Isso permite que você armazene um conjunto de funções para uso posterior. Aqui está um exemplo simples:
+```
+const funcoes = [
+  function() {
+    console.log('Olá');
+  },
+  function() {
+    console.log('Mundo');
+  }
+];
+
+funcoes[0](); // 'Olá'
+funcoes[1](); // 'Mundo'
+```
+_Nesse exemplo, o array `funcoes` contém duas funções. Podemos chamar as funções através dos índices do array e os parênteses `()` para invocá-las._
+<br><br>
+
