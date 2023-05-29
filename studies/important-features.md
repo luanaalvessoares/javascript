@@ -15,3 +15,17 @@ console.log(mensagem);
 _Neste exemplo, a interpolação `${nome}` e `${idade}` permite que as variáveis sejam inseridas diretamente na string resultante._
 <br><br>
 
+**Strings multi-linhas**
+As template strings permitem que você crie facilmente strings que ocupam várias linhas sem a necessidade de usar caracteres de escape. Basta digitar o texto diretamente dentro das crases. Por exemplo:
+
+```
+const mensagem = `
+  Olá,
+  Esta é uma mensagem
+  de várias linhas.
+`;
+console.log(mensagem);
+```
+_Neste exemplo, a string é criada com várias linhas de texto sem a necessidade de caracteres de escape._
+<br><br>
+
