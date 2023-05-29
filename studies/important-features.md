@@ -44,3 +44,5 @@ _Neste exemplo, a expressão `${a + b}` é avaliada e seu resultado é inserido 
 
 **As template strings são muito úteis quando você precisa criar strings complexas que envolvem a combinação de texto fixo e valores dinâmicos. Além disso, elas tornam o código mais legível e fácil de manter.**
 <br>
+
+**É importante observar que as template strings são suportadas em versões mais recentes do JavaScript, como o ECMAScript 6 (ES6) e versões posteriores. Se você estiver trabalhando com uma versão mais antiga, pode ser necessário usar outras abordagens para obter recursos semelhantes, como concatenação de strings ou o método `join()` em arrays.**
