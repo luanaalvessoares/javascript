@@ -29,3 +29,16 @@ console.log(mensagem);
 _Neste exemplo, a string é criada com várias linhas de texto sem a necessidade de caracteres de escape._
 <br><br>
 
+**Expressões dentro de interpolação**
+Além de variáveis, você também pode usar expressões mais complexas dentro das interpolações. Isso inclui operações matemáticas, chamadas de função e até mesmo expressões ternárias. Por exemplo:
+
+```
+const a = 10;
+const b = 5;
+
+const resultado = `A soma de ${a} e ${b} é ${a + b}.`;
+console.log(resultado); // "A soma de 10 e 5 é 15."
+```
+_Neste exemplo, a expressão `${a + b}` é avaliada e seu resultado é inserido na string resultante._
+<br><br>
+
