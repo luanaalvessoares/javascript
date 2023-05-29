@@ -125,4 +125,19 @@ _Neste exemplo, temos um objeto `loja` que possui uma propriedade `produtos`, qu
 Em JavaScript, a função `every()` é um método que verifica se todos os elementos de um array atendem a uma determinada condição. Ele retorna um valor booleano, `true` se todos os elementos cumprirem a condição e `false` se pelo menos um deles não cumprir.
 <br>
 
+A sintaxe básica do método `every()` é a seguinte:
+```
+array.every(callback(elemento, índice, array), thisArg)
+```
+<br>
+
+Onde:
+
+- `array`: O array que será verificado.
+- `callback`: Uma função que será chamada para cada elemento do array. Ela recebe três argumentos: `elemento` (o elemento atual), `índice` (o índice do elemento) e `array` (o próprio array).
+- `thisArg` (opcional): Um valor a ser usado como `this` quando executar a função `callback`.
+<br>
+
+A função `callback` é executada para cada elemento do array. Se ela retornar `true` para todos os elementos, o método `every()` retorna `true`. Caso contrário, se a função `callback` retornar `false` para algum elemento, o método `every()` retorna `false` imediatamente e não continua a executar a função `callback` para os elementos restantes.
+<br><br>
 
