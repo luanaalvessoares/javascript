@@ -223,3 +223,19 @@ console.log(meuMap.get('chave1')); // 'valor1'
 ```
 <br><br>
 
+**Verificação de existência de uma chave**
+Você pode verificar se uma chave existe no `Map` usando o método `has()`:
+
+```
+meuMap.has(chave);
+```
+,br>
+
+Por exemplo:
+
+```
+console.log(meuMap.has('chave1')); // true
+console.log(meuMap.has('chave3')); // false
+```
+<br><br>
+
