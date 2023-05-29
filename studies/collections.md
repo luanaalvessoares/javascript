@@ -336,3 +336,11 @@ _Nesse exemplo, usamos objetos como chaves e atribuímos um status para cada alu
 Em JavaScript, o objeto `Set` é uma coleção de valores únicos, o que significa que não pode conter elementos duplicados. O Set fornece métodos para adicionar, remover e verificar a existência de elementos. É uma estrutura de dados útil quando você precisa armazenar uma lista de valores exclusivos.
 <br>
 
+**Criação de um Set**
+Para criar um novo Set, você pode usar a seguinte sintaxe:
+
+```
+const meuSet = new Set();
+```
+<br><br>
+
