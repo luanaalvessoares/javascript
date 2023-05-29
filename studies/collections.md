@@ -80,3 +80,8 @@ _Nesse exemplo, o array `funcoes` contém duas funções. Podemos chamar as fun�
 
 **Os arrays são uma parte fundamental do JavaScript e são amplamente utilizados em diversas situações. Eles são flexíveis, permitem armazenar e manipular coleções de elementos de forma eficiente. Seja para armazenar uma lista de itens, realizar iterações, aplicar transformações ou executar lógica personalizada, os arrays são uma ferramenta poderosa no desenvolvimento de aplicativos JavaScript.**
 <br><br><hr>
+
+## Strings
+Em JavaScript, uma string é uma sequência de caracteres, como texto, que pode ser armazenada em uma variável. As strings são imutáveis, o que significa que, uma vez criadas, elas não podem ser modificadas. No entanto, é possível realizar várias operações e manipulações em strings por meio de funções e métodos disponíveis.
+<br>
+
