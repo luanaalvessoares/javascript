@@ -85,3 +85,29 @@ _Nesse exemplo, o array `funcoes` contém duas funções. Podemos chamar as fun�
 Em JavaScript, uma string é uma sequência de caracteres, como texto, que pode ser armazenada em uma variável. As strings são imutáveis, o que significa que, uma vez criadas, elas não podem ser modificadas. No entanto, é possível realizar várias operações e manipulações em strings por meio de funções e métodos disponíveis.
 <br>
 
+**Declaração e acesso aos caracteres da string**
+Para criar uma string em JavaScript, você pode usar aspas simples ou duplas, por exemplo:
+
+```
+const minhaString = 'Exemplo de uma string';
+```
+<br><br>
+
+Você também pode usar o template literals (delimitado por crases) para criar strings com interpolação de valores:
+
+```
+const nome = 'João';
+const idade = 25;
+const mensagem = `Olá, meu nome é ${nome} e eu tenho ${idade} anos.`;
+```
+<br><br>
+
+Para acessar caracteres individuais em uma string, você pode usar a notação de colchetes (`[]`) e o índice do caractere desejado. Lembre-se de que os índices das strings começam em 0. Por exemplo:
+
+```
+const minhaString = 'Exemplo';
+console.log(minhaString[0]); // 'E'
+console.log(minhaString[2]); // 'e'
+```
+<br><br>
+
