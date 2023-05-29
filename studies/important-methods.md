@@ -141,3 +141,17 @@ Onde:
 A função `callback` é executada para cada elemento do array. Se ela retornar `true` para todos os elementos, o método `every()` retorna `true`. Caso contrário, se a função `callback` retornar `false` para algum elemento, o método `every()` retorna `false` imediatamente e não continua a executar a função `callback` para os elementos restantes.
 <br><br>
 
+Exemplo de uso do método `every()` para verificar se todos os números de um array são maiores que 5:
+
+```
+const numeros = [10, 7, 6, 9];
+const todosMaioresQue5 = numeros.every(function(numero) {
+  return numero > 5;
+});
+
+console.log(todosMaioresQue5); // true
+```
+_No exemplo acima, a função `callback` verifica se cada `numero` é maior que 5. Como todos os números atendem a essa condição, o método `every()` retorna `true`._
+<br><br>
+
+
