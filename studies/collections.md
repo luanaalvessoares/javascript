@@ -183,3 +183,11 @@ console.log(arraySubstrings); // ['Exemplo', 'de', 'uma', 'string']
 Em JavaScript, o objeto `Map` é uma coleção de pares chave-valor, onde cada valor pode ser recuperado usando sua chave correspondente. Ao contrário dos arrays, as chaves em um `Map` podem ser de qualquer tipo, como strings, números, objetos e até mesmo funções.
 <br>
 
+**Criação de um `Map`**
+Para criar um novo `Map`, você pode usar a seguinte sintaxe:
+
+```
+const meuMap = new Map();
+```
+<br><br>
+
