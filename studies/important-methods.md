@@ -165,4 +165,5 @@ console.log(temLetraA); // false
 _Neste exemplo, a função `callback` verifica se cada `palavra` do array contém a letra "a" usando o método `includes()`. Como uma das palavras, "elefante", não contém a letra "a", o método `every()` retorna `false`._
 <br><br>
 
-
+**O método `every()` é útil quando você precisa verificar se todos os elementos de um array satisfazem uma determinada condição. Ele pode ser usado para validação, filtragem de dados e outras situações em que você precisa ter certeza de que todos os elementos atendem a uma condição específica.**
+<br><br><hr>
