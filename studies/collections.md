@@ -229,13 +229,28 @@ Você pode verificar se uma chave existe no `Map` usando o método `has()`:
 ```
 meuMap.has(chave);
 ```
-,br>
+<br>
 
 Por exemplo:
 
 ```
 console.log(meuMap.has('chave1')); // true
 console.log(meuMap.has('chave3')); // false
+```
+<br><br>
+
+**Remoção de elementos**
+Para remover um elemento do `Map`, você pode usar o método `delete()`:
+
+```
+meuMap.delete(chave);
+```
+<br>
+
+Por exemplo:
+
+```
+meuMap.delete('chave2');
 ```
 <br><br>
 
