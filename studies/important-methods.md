@@ -186,3 +186,16 @@ Onde:
 A função `callback` é executada para cada elemento do array. Se ela retornar `true` para pelo menos um elemento, o método `some()` retorna `true`. Caso contrário, se a função `callback` retornar `false` para todos os elementos, o método `some()` retorna `false`.
 <br><br>
 
+Exemplo de uso do método `some()` para verificar se há pelo menos um número par em um array:
+
+```
+const numeros = [1, 3, 5, 6, 7];
+const temPar = numeros.some(function(numero) {
+  return numero % 2 === 0;
+});
+
+console.log(temPar); // true
+```
+_No exemplo acima, a função `callback` verifica se cada `numero` é par usando o operador `%` (módulo) para verificar se o número é divisível por 2. Como pelo menos um número (6) é par, o método `some()` retorna `true`._
+<br><br>
+
