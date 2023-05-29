@@ -361,3 +361,19 @@ meuSet.add('valor2');
 ```
 <br><br>
 
+**Verificação de existência de um elemento**
+Você pode verificar se um elemento existe no Set usando o método has():
+
+```
+meuSet.has(valor);
+```
+<br>
+
+Por exemplo:
+
+```
+console.log(meuSet.has('valor1')); // true
+console.log(meuSet.has('valor3')); // false
+```
+<br><br>
+
