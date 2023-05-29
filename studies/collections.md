@@ -176,3 +176,5 @@ console.log(arraySubstrings); // ['Exemplo', 'de', 'uma', 'string']
 ```
 <br><br>
 
+**Esses são apenas alguns exemplos de como as strings podem ser usadas com funções em JavaScript. As strings são amplamente utilizadas para manipulação de texto, processamento de dados e apresentação de informações em aplicativos. JavaScript oferece uma variedade de funções e métodos para trabalhar com strings, permitindo que você realize diversas operações e manipulações para atender às suas necessidades.**
+<br><br><hr>
