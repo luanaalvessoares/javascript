@@ -232,3 +232,16 @@ Onde:
 A função `callback` é chamada para cada elemento do array e atualiza o valor do acumulador com base em uma operação definida. O valor atualizado do acumulador é passado como argumento na próxima chamada da função `callback`. No final, o método `reduce()` retorna o valor final do acumulador.
 <br><br>
 
+Exemlo de uso do método `reduce()` para somar todos os elementos de um array:
+
+```
+const numeros = [1, 2, 3, 4, 5];
+const soma = numeros.reduce(function(acumulador, numero) {
+  return acumulador + numero;
+}, 0);
+
+console.log(soma); // 15
+```
+_No exemplo acima, a função `callback` soma o valor do `acumulador` com cada `numero` do array. O valor inicial do acumulador é definido como `0`. Assim, o método `reduce()` soma todos os elementos do array e retorna o valor final da soma._
+<br><br>
+
