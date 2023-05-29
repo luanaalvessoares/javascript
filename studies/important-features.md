@@ -42,3 +42,5 @@ console.log(resultado); // "A soma de 10 e 5 é 15."
 _Neste exemplo, a expressão `${a + b}` é avaliada e seu resultado é inserido na string resultante._
 <br><br>
 
+**As template strings são muito úteis quando você precisa criar strings complexas que envolvem a combinação de texto fixo e valores dinâmicos. Além disso, elas tornam o código mais legível e fácil de manter.**
+<br>
