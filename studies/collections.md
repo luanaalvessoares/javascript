@@ -377,3 +377,18 @@ console.log(meuSet.has('valor3')); // false
 ```
 <br><br>
 
+**Remoção de elementos**
+Para remover um elemento do Set, você pode usar o método delete():
+
+```
+meuSet.delete(valor);
+```
+<br>
+
+Por exemplo:
+
+```
+meuSet.delete('valor2');
+```
+<br><br>
+
