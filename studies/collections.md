@@ -439,3 +439,16 @@ for (const valor of meuSet) {
 _Neste exemplo, criamos um Set e adicionamos dois valores. Em seguida, verificamos a existência do valor 'valor1', removemos o valor 'valor2' e, por fim, iteramos sobre os valores restantes._
 <br><br>
 
+Agora um exemplo mais completo que remove valores duplicados:
+
+```
+const numeros = [1, 2, 3, 4, 4, 5, 5, 5];
+const numerosUnicos = new Set(numeros);
+
+console.log(numerosUnicos); // Set { 1, 2, 3, 4, 5 }
+console.log(numerosUnicos.size); // 5
+```
+_Neste exemplo, temos uma lista de números. Ao criar um Set a partir dessa lista, os valores duplicados são automaticamente removidos, resultando em um conjunto de valores únicos._
+<br><br>
+
+
