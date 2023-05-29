@@ -209,3 +209,5 @@ console.log(temLetraA); // true
 ```
 _Neste exemplo, a função `callback` verifica se pelo menos uma `palavra` do array contém a letra "a" usando o método `includes()`. Como uma das palavras, "gato", contém a letra "a", o método `some()` retorna `true`._
 <br><br>
+
+**O método `some()` é útil quando você precisa verificar se pelo menos um dos elementos de um array satisfaz uma determinada condição. Ele pode ser usado para realizar validações, encontrar elementos específicos em uma coleção e tomar decisões com base em pelo menos uma ocorrência em um conjunto de dados.**
