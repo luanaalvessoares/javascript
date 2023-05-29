@@ -451,4 +451,4 @@ console.log(numerosUnicos.size); // 5
 _Neste exemplo, temos uma lista de números. Ao criar um Set a partir dessa lista, os valores duplicados são automaticamente removidos, resultando em um conjunto de valores únicos._
 <br><br>
 
-
+**O Set é útil quando você precisa armazenar uma coleção de valores únicos e realizar operações de conjunto, como união, interseção e diferença. Ele oferece métodos eficientes para adicionar, remover e verificar elementos e é uma ótima opção quando a ordem dos elementos não é importante.**
