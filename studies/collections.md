@@ -111,3 +111,36 @@ console.log(minhaString[2]); // 'e'
 ```
 <br><br>
 
+**Funções e Strings**
+As strings são frequentemente usadas com funções para realizar várias operações e manipulações. Aqui estão alguns exemplos de uso comum:
+
+- Comprimento da string:
+A função `length` retorna o número de caracteres em uma string. Por exemplo:
+
+```
+const minhaString = 'Exemplo';
+console.log(minhaString.length); // 7
+```
+<br><br>
+
+- Conversão de caixa (maiúsculas e minúsculas):
+As funções `toUpperCase()` e `toLowerCase()` são usadas para converter os caracteres de uma string em maiúsculas ou minúsculas, respectivamente. Por exemplo:
+
+```
+const minhaString = 'Exemplo';
+console.log(minhaString.toUpperCase()); // 'EXEMPLO'
+console.log(minhaString.toLowerCase()); // 'exemplo'
+```
+<br><br>
+
+- Concatenação de strings:
+A função `concat()` é usada para concatenar duas ou mais strings. Por exemplo:
+
+```
+const string1 = 'Olá';
+const string2 = 'Mundo';
+const resultado = string1.concat(' ', string2);
+console.log(resultado); // 'Olá Mundo'
+```
+<br><br>
+
