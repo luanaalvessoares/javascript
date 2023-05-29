@@ -154,4 +154,15 @@ console.log(todosMaioresQue5); // true
 _No exemplo acima, a função `callback` verifica se cada `numero` é maior que 5. Como todos os números atendem a essa condição, o método `every()` retorna `true`._
 <br><br>
 
+Exemplo de uso do `every()` em conjunto com arrow function e o método `includes()`:
+
+```
+const palavras = ['gato', 'cachorro', 'elefante', 'girafa'];
+const temLetraA = palavras.every(palavra => palavra.includes('a'));
+
+console.log(temLetraA); // false
+```
+_Neste exemplo, a função `callback` verifica se cada `palavra` do array contém a letra "a" usando o método `includes()`. Como uma das palavras, "elefante", não contém a letra "a", o método `every()` retorna `false`._
+<br><br>
+
 
