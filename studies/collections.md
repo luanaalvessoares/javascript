@@ -191,3 +191,20 @@ const meuMap = new Map();
 ```
 <br><br>
 
+**Adição de elementos**
+Para adicionar um par chave-valor ao `Map`, você pode usar o método `set()`:
+
+```
+meuMap.set(chave, valor);
+```
+<br>
+
+Por exemplo:
+
+```
+const meuMap = new Map();
+meuMap.set('chave1', 'valor1');
+meuMap.set('chave2', 'valor2');
+```
+<br><br>
+
