@@ -167,3 +167,8 @@ _Neste exemplo, a função `callback` verifica se cada `palavra` do array conté
 
 **O método `every()` é útil quando você precisa verificar se todos os elementos de um array satisfazem uma determinada condição. Ele pode ser usado para validação, filtragem de dados e outras situações em que você precisa ter certeza de que todos os elementos atendem a uma condição específica.**
 <br><br><hr>
+
+## Some
+A função `some()` é um método que verifica se pelo menos um dos elementos de um array atende a uma determinada condição. Ele retorna um valor booleano, `true` se pelo menos um elemento cumprir a condição e `false` se nenhum elemento cumprir.
+<br>
+
