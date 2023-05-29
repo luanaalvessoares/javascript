@@ -344,3 +344,20 @@ const meuSet = new Set();
 ```
 <br><br>
 
+**Adição de elementos**
+Para adicionar um elemento ao Set, você pode usar o método add():
+
+```
+meuSet.add(valor);
+```
+<br>
+
+Por exemplo:
+
+```
+const meuSet = new Set();
+meuSet.add('valor1');
+meuSet.add('valor2');
+```
+<br><br>
+
