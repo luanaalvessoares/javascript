@@ -421,3 +421,21 @@ console.log(meuSet.size);
 ```
 <br><br>
 
+Veja um exemplo simples do uso de uma coleção `Set`:
+
+```
+const meuSet = new Set();
+meuSet.add('valor1');
+meuSet.add('valor2');
+
+console.log(meuSet.has('valor1')); // true
+
+meuSet.delete('valor2');
+
+for (const valor of meuSet) {
+  console.log(valor);
+}
+```
+_Neste exemplo, criamos um Set e adicionamos dois valores. Em seguida, verificamos a existência do valor 'valor1', removemos o valor 'valor2' e, por fim, iteramos sobre os valores restantes._
+<br><br>
+
