@@ -254,3 +254,37 @@ meuMap.delete('chave2');
 ```
 <br><br>
 
+**Iteração sobre os elementos**
+Existem várias maneiras de iterar sobre os elementos de um `Map`. Alguns exemplos são:
+<br>
+
+- Usando o método `forEach()`:
+
+```
+meuMap.forEach(function(valor, chave) {
+  console.log(chave, valor);
+});
+```
+<br><br>
+
+- Usando um loop `for...of`:
+
+```
+for (const [chave, valor] of meuMap) {
+  console.log(chave, valor);
+}
+```
+<br><br>
+
+- Obtendo as chaves usando `keys()` e os valores usando `values()`:
+
+```
+for (const chave of meuMap.keys()) {
+  console.log(chave);
+}
+
+for (const valor of meuMap.values()) {
+  console.log(valor);
+}
+```
+<br><br>
