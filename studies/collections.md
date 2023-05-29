@@ -208,3 +208,18 @@ meuMap.set('chave2', 'valor2');
 ```
 <br><br>
 
+**Acesso aos elementos**
+Você pode acessar o valor correspondente a uma chave usando o método `get()`:
+
+```
+meuMap.get(chave);
+```
+<br>
+
+Por exemplo:
+
+```
+console.log(meuMap.get('chave1')); // 'valor1'
+```
+<br><br>
+
