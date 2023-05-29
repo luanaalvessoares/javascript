@@ -217,3 +217,18 @@ _Neste exemplo, a função `callback` verifica se pelo menos uma `palavra` do ar
 A função `reduce()` é um método poderoso que permite reduzir um array a um único valor por meio da aplicação de uma função de redução. Essa função de redução é aplicada a cada elemento do array, em sequência, acumulando um valor a partir de uma operação definida.
 <br>
 
+A sintaxe básica do método `reduce()` é a seguinte:
+
+```
+array.reduce(callback(acumulador, elemento, índice, array), valorInicial)
+```
+
+Onde:
+
+- `array`: O array que será reduzido.
+- `callback`: Uma função que será chamada para cada elemento do array. Ela recebe quatro argumentos: `acumulador` (o valor acumulado até o momento), `elemento` (o elemento atual), `índice` (o índice do elemento) e `array` (o próprio array).
+- `valorInicial` (opcional): Um valor inicial para o acumulador. Se não for fornecido, o primeiro elemento do array será usado como valor inicial e o processo de redução começará no segundo elemento.
+
+A função `callback` é chamada para cada elemento do array e atualiza o valor do acumulador com base em uma operação definida. O valor atualizado do acumulador é passado como argumento na próxima chamada da função `callback`. No final, o método `reduce()` retorna o valor final do acumulador.
+<br><br>
+
