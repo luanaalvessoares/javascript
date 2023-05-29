@@ -245,3 +245,15 @@ console.log(soma); // 15
 _No exemplo acima, a função `callback` soma o valor do `acumulador` com cada `numero` do array. O valor inicial do acumulador é definido como `0`. Assim, o método `reduce()` soma todos os elementos do array e retorna o valor final da soma._
 <br><br>
 
+Exemplo que usa `reduce()` para encontrar a palavra mais longa em um array de palavras:
+
+```
+const palavras = ['gato', 'cachorro', 'elefante', 'girafa'];
+const palavraMaisLonga = palavras.reduce(function(acumulador, palavra) {
+  return palavra.length > acumulador.length ? palavra : acumulador;
+}, '');
+
+console.log(palavraMaisLonga); // 'elefante'
+```
+_Neste exemplo, a função `callback` compara o comprimento de cada `palavra` com o comprimento do `acumulador`. Se o comprimento da palavra for maior, a palavra se torna o novo valor do acumulador. Caso contrário, o valor do acumulador permanece o mesmo. No final, o método `reduce()` retorna a palavra mais longa do array._
+<br><br>
