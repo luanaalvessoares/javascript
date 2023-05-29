@@ -413,3 +413,11 @@ for (const valor of meuSet) {
 ```
 <br><br>
 
+**Obtendo o tamanho do Set**
+Você pode obter o número de elementos em um Set usando a propriedade size:
+
+```
+console.log(meuSet.size);
+```
+<br><br>
+
