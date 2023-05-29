@@ -172,3 +172,17 @@ _Neste exemplo, a função `callback` verifica se cada `palavra` do array conté
 A função `some()` é um método que verifica se pelo menos um dos elementos de um array atende a uma determinada condição. Ele retorna um valor booleano, `true` se pelo menos um elemento cumprir a condição e `false` se nenhum elemento cumprir.
 <br>
 
+A sintaxe básica do método `some()` é a seguinte:
+
+```
+array.some(callback(elemento, índice, array), thisArg)
+```
+
+Onde:
+- `array`: O array que será verificado.
+- `callback`: Uma função que será chamada para cada elemento do array. Ela recebe três argumentos: `elemento` (o elemento atual), `índice` (o índice do elemento) e `array` (o próprio array).
+- `thisArg` (opcional): Um valor a ser usado como `this` quando executar a função `callback`.
+
+A função `callback` é executada para cada elemento do array. Se ela retornar `true` para pelo menos um elemento, o método `some()` retorna `true`. Caso contrário, se a função `callback` retornar `false` para todos os elementos, o método `some()` retorna `false`.
+<br><br>
+
