@@ -307,3 +307,25 @@ for (const [chave, valor] of meuMap) {
 ```
 <br><br>
 
+Agora um exemplo mais complexo utilizando também `template strings`:
+
+```
+const estudantes = new Map();
+
+const aluno1 = { nome: 'João', idade: 20 };
+const aluno2 = { nome: 'Maria', idade: 22 };
+const aluno3 = { nome: 'Pedro', idade: 19 };
+
+estudantes.set(aluno1, 'Aprovado');
+estudantes.set(aluno2, 'Reprovado');
+estudantes.set(aluno3, 'Aprovado');
+
+for (const [aluno, status] of estudantes
+
+) {
+  console.log(`${aluno.nome} - ${aluno.idade} anos: ${status}`);
+}
+```
+_Nesse exemplo, usamos objetos como chaves e atribuímos um status para cada aluno em um `Map`. Em seguida, percorremos o `Map` para exibir o nome, idade e status de cada aluno._
+<br><br>
+
