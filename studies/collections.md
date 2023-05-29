@@ -392,3 +392,24 @@ meuSet.delete('valor2');
 ```
 <br><br>
 
+**Iteração sobre os elementos**
+Existem várias maneiras de iterar sobre os elementos de um Set. Alguns exemplos são:
+
+- Usando o método forEach():
+
+```
+meuSet.forEach(function(valor) {
+  console.log(valor);
+});
+```
+<br>
+
+- Usando um loop for...of:
+
+```
+for (const valor of meuSet) {
+  console.log(valor);
+}
+```
+<br><br>
+
