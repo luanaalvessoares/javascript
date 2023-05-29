@@ -211,3 +211,9 @@ _Neste exemplo, a função `callback` verifica se pelo menos uma `palavra` do ar
 <br><br>
 
 **O método `some()` é útil quando você precisa verificar se pelo menos um dos elementos de um array satisfaz uma determinada condição. Ele pode ser usado para realizar validações, encontrar elementos específicos em uma coleção e tomar decisões com base em pelo menos uma ocorrência em um conjunto de dados.**
+<br><br><hr>
+
+## Reduce
+A função `reduce()` é um método poderoso que permite reduzir um array a um único valor por meio da aplicação de uma função de redução. Essa função de redução é aplicada a cada elemento do array, em sequência, acumulando um valor a partir de uma operação definida.
+<br>
+
