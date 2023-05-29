@@ -288,3 +288,22 @@ for (const valor of meuMap.values()) {
 }
 ```
 <br><br>
+
+Veja um exemplo simples de uso de uma coleção `map`:
+
+```
+const meuMap = new Map();
+meuMap.set('chave1', 'valor1');
+meuMap.set('chave2', 'valor2');
+
+console.log(meuMap.get('chave1')); // 'valor1'
+console.log(meuMap.has('chave2')); // true
+
+meuMap.delete('chave1');
+
+for (const [chave, valor] of meuMap) {
+  console.log(chave, valor);
+}
+```
+<br><br>
+
