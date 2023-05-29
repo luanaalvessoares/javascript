@@ -78,3 +78,5 @@ funcoes[1](); // 'Mundo'
 _Nesse exemplo, o array `funcoes` contém duas funções. Podemos chamar as funções através dos índices do array e os parênteses `()` para invocá-las._
 <br><br>
 
+**Os arrays são uma parte fundamental do JavaScript e são amplamente utilizados em diversas situações. Eles são flexíveis, permitem armazenar e manipular coleções de elementos de forma eficiente. Seja para armazenar uma lista de itens, realizar iterações, aplicar transformações ou executar lógica personalizada, os arrays são uma ferramenta poderosa no desenvolvimento de aplicativos JavaScript.**
+<br><br><hr>
