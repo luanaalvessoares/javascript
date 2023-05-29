@@ -331,3 +331,8 @@ _Nesse exemplo, usamos objetos como chaves e atribuímos um status para cada alu
 
 **O `Map` é útil quando você precisa associar valores a chaves e acessá-los de forma eficiente. Ele fornece métodos para adicionar, recuperar, verificar a existência e remover elementos de forma simples. Além disso, permite a iteração fácil sobre seus elementos. O `Map` é uma estrutura de dados versátil e poderosa para lidar com coleções chave-valor em JavaScript.**
 <br><br><hr>
+
+## Set
+Em JavaScript, o objeto `Set` é uma coleção de valores únicos, o que significa que não pode conter elementos duplicados. O Set fornece métodos para adicionar, remover e verificar a existência de elementos. É uma estrutura de dados útil quando você precisa armazenar uma lista de valores exclusivos.
+<br>
+
