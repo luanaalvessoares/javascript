@@ -168,3 +168,40 @@ Na POO, a herança é usada para estabelecer uma relação de "é um" entre clas
 Em JavaScript, a herança é baseada em protótipos. Cada objeto em JavaScript tem um protótipo, que é outro objeto a partir do qual ele herda propriedades e métodos. O protótipo é uma referência ao objeto pai. Para estabelecer a herança, o protótipo do objeto filho é definido como o objeto pai. Dessa forma, as propriedades e métodos do objeto pai se tornam acessíveis no objeto filho.
 <br><br>
 
+**Implementando Herança em JavaScript**
+Em JavaScript, a herança é implementada usando a função `Object.create()` e a propriedade `prototype`. Vamos ver um exemplo prático:
+
+```
+// Classe pai (superclasse)
+function Pessoa(nome) {
+  this.nome = nome;
+}
+
+Pessoa.prototype.saudacao = function() {
+  console.log(`Olá, meu nome é ${this.nome}.`);
+};
+
+// Classe filha (subclasse)
+function Aluno(nome, matricula) {
+  Pessoa.call(this, nome);
+  this.matricula = matricula;
+}
+
+Aluno.prototype = Object.create(Pessoa.prototype);
+Aluno.prototype.constructor = Aluno;
+
+Aluno.prototype.exibirMatricula = function() {
+  console.log(`A matrícula do aluno ${this.nome} é ${this.matricula}.`);
+};
+
+// Criação de objetos
+const pessoa1 = new Pessoa('Alice');
+pessoa1.saudacao(); // "Olá, meu nome é Alice."
+
+const aluno1 = new Aluno('Bob', '2021001');
+aluno1.saudacao(); // "Olá, meu nome é Bob."
+aluno1.exibirMatricula(); // "A matrícula do aluno Bob é 2021001."
+```
+_Neste exemplo, temos a classe `Pessoa` como a classe pai e a classe `Aluno` como a classe filha. Usamos a função `Object.create()` para criar um novo objeto com o protótipo da classe pai e atribuímos esse objeto ao protótipo da classe filha usando `Aluno.prototype = Object.create(Pessoa.prototype)`. Em seguida, ajustamos o construtor da classe filha para apontar para a própria classe usando `Aluno.prototype.constructor = Aluno`. Dessa forma, a classe filha herda o construtor da classe pai._
+<br><br>
+
