@@ -547,3 +547,5 @@ cachorro.latir(); // "O cachorro late."
 _Neste exemplo, o objeto `animalPrototype` é usado como protótipo para o objeto `cachorro` criado usando `Object.create()`. O objeto `cachorro` herda o método `fazerBarulho()` do seu protótipo. Além disso, o objeto `cachorro` pode ter propriedades e métodos adicionais, como o método `latir()`._
 <br><br>
 
+**O uso do protótipo em JavaScript permite a implementação de herança, compartilhamento de propriedades e métodos entre objetos e a extensão de objetos existentes sem modificar sua estrutura original. Isso torna a POO em JavaScript mais flexível e dinâmica.**
+<br><br><hr>
