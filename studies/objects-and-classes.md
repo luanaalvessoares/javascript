@@ -160,3 +160,7 @@ A herança é um conceito importante na programação orientada a objetos (POO) 
 Abaixo uma explicação detalhada sobre herança em JavaScript e como podemos implementá-la.
 <br>
 
+**Conceito de Herança**
+Na POO, a herança é usada para estabelecer uma relação de "é um" entre classes. Isso significa que uma classe filha herda as propriedades e métodos da classe pai. A classe pai é chamada de classe base ou superclasse, enquanto a classe filha é chamada de classe derivada ou subclasse. A herança permite que a classe filha reutilize o código da classe pai, além de adicionar novas funcionalidades ou modificar o comportamento existente.
+<br><br>
+
