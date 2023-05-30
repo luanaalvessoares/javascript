@@ -549,3 +549,7 @@ _Neste exemplo, o objeto `animalPrototype` é usado como protótipo para o objet
 
 **O uso do protótipo em JavaScript permite a implementação de herança, compartilhamento de propriedades e métodos entre objetos e a extensão de objetos existentes sem modificar sua estrutura original. Isso torna a POO em JavaScript mais flexível e dinâmica.**
 <br><br><hr>
+
+## Abstract
+Em JavaScript, a palavra-chave `abstract` não é nativamente suportada como em algumas outras linguagens de programação. No entanto, é possível emular o comportamento de classes abstratas usando outras técnicas e convenções de nomenclatura. Vejamos a explicação dessas técnicas em detalhes:
+
