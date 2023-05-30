@@ -215,3 +215,7 @@ Quando um objeto filho acessa uma propriedade ou método, o mecanismo de heranç
 **A herança é uma poderosa ferramenta na programação orientada a objetos, permitindo reutilização de código, organização hierárquica de classes e polimorfismo. Compreender a herança em JavaScript é essencial para escrever código orientado a objetos eficiente e flexível.**
 <br><br><hr>
 
+## Conversões
+Em JavaScript, é comum a necessidade de converter objetos JavaScript em formato JSON (JavaScript Object Notation) e vice-versa. Essa conversão permite armazenar e transmitir dados de forma estruturada e interoperável. Vou explicar como realizar essas conversões e dar exemplos de código.
+<br>
+
