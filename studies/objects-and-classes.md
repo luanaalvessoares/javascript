@@ -553,3 +553,39 @@ _Neste exemplo, o objeto `animalPrototype` é usado como protótipo para o objet
 ## Abstract
 Em JavaScript, a palavra-chave `abstract` não é nativamente suportada como em algumas outras linguagens de programação. No entanto, é possível emular o comportamento de classes abstratas usando outras técnicas e convenções de nomenclatura. Vejamos a explicação dessas técnicas em detalhes:
 
+**Classes Abstratas**
+Uma classe abstrata é uma classe que não pode ser instanciada diretamente, mas serve como um modelo para outras classes derivadas. Ela geralmente contém métodos abstratos, que são métodos sem implementação definida na classe abstrata, mas que devem ser implementados nas classes derivadas.
+<br>
+
+Em JavaScript, podemos simular o conceito de classes abstratas usando uma função construtora e a propriedade `prototype`. Aqui está um exemplo:
+
+```
+function Animal(nome) {
+  if (this.constructor === Animal) {
+    throw new Error('Não é possível instanciar uma classe abstrata.');
+  }
+  
+  this.nome = nome;
+}
+
+Animal.prototype.fazerSom = function() {
+  throw new Error('Método abstrato fazerSom() deve ser implementado.');
+};
+
+function Cachorro(nome) {
+  Animal.call(this, nome);
+}
+
+Cachorro.prototype = Object.create(Animal.prototype);
+Cachorro.prototype.constructor = Cachorro;
+
+Cachorro.prototype.fazerSom = function() {
+  console.log('O cachorro faz au au.');
+};
+
+const cachorro1 = new Cachorro('Rex');
+cachorro1.fazerSom(); // "O cachorro faz au au."
+```
+_Neste exemplo, a função construtora `Animal` é definida e lançará um erro se alguém tentar instanciá-la diretamente. Ela serve como uma classe abstrata. A função `Cachorro` é uma classe derivada de `Animal` e herda sua propriedade `nome`. No entanto, ela precisa implementar o método abstrato `fazerSom()`. Isso é feito na definição do protótipo da classe `Cachorro` usando `Object.create()` e definindo o método `fazerSom()`._
+<br><br>
+
