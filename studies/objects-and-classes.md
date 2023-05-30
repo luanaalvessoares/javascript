@@ -149,3 +149,7 @@ pessoa1.saudacao(); // "Olá, meu nome é Alice e eu tenho 25 anos."
 ```
 _Neste exemplo, `saudacao()` é um método da classe `Pessoa` que imprime uma mensagem de saudação com base nas propriedades do objeto._
 <br><br>
+
+**Esses são apenas alguns conceitos básicos da programação orientada a objetos em JavaScript. A POO é um paradigma poderoso que permite criar código mais modular, reutilizável e fácil de manter. Além dos conceitos mencionados, existem outros recursos avançados, como encapsulamento, polimorfismo e interfaces. É importante estudar e praticar para aprofundar seus conhecimentos em programação orientada a objetos.**
+<br><br><hr>
+
