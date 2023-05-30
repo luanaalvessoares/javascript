@@ -45,3 +45,20 @@ delete pessoa.idade; // Exclusão de propriedade
 ```
 <br><br>
 
+**Métodos**
+Um método é uma função que está associada a um objeto. Ele pode ser chamado para executar uma ação específica no contexto do objeto. Aqui está um exemplo:
+
+```
+const pessoa = {
+  nome: 'Alice',
+  idade: 25,
+  saudacao: function() {
+    console.log(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`);
+  }
+};
+
+pessoa.saudacao(); // "Olá, meu nome é Alice e eu tenho 25 anos."
+```
+_Neste exemplo, `saudacao` é um método associado ao objeto `pessoa` que imprime uma mensagem de saudação com base nas propriedades do objeto._
+<br><br>
+
