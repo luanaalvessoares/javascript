@@ -215,6 +215,46 @@ Quando um objeto filho acessa uma propriedade ou método, o mecanismo de heranç
 A partir do ECMAScript 2015 (ES6), foram introduzidas várias melhorias na implementação da herança e na sintaxe de classes em JavaScript. Essas melhorias simplificaram a escrita de código e trouxeram recursos mais poderosos para a programação orientada a objetos. Vamos destacar algumas dessas mudanças:
 <br>
 
+**Sintaxe de Classe**
+Antes do ES6, em JavaScript, a herança era baseada em protótipos e exigia um pouco mais de trabalho manual para estabelecer a relação entre classes e definir protótipos. No entanto, a partir do ES6, a sintaxe de classe foi introduzida, permitindo uma sintaxe mais familiar para criar classes e estabelecer a herança.
+
+Aqui está um exemplo de como a sintaxe de classe simplifica a definição de classes e a implementação de herança:
+
+```
+// Classe pai (superclasse)
+class Pessoa {
+  constructor(nome) {
+    this.nome = nome;
+  }
+
+  saudacao() {
+    console.log(`Olá, meu nome é ${this.nome}.`);
+  }
+}
+
+// Classe filha (subclasse)
+class Aluno extends Pessoa {
+  constructor(nome, matricula) {
+    super(nome);
+    this.matricula = matricula;
+  }
+
+  exibirMatricula() {
+    console.log(`A matrícula do aluno ${this.nome} é ${this.matricula}.`);
+  }
+}
+
+// Criação de objetos
+const pessoa1 = new Pessoa('Alice');
+pessoa1.saudacao(); // "Olá, meu nome é Alice."
+
+const aluno1 = new Aluno('Bob', '2021001');
+aluno1.saudacao(); // "Olá, meu nome é Bob."
+aluno1.exibirMatricula(); // "A matrícula do aluno Bob é 2021001."
+```
+_Neste exemplo, podemos ver que a sintaxe de classe torna mais claro e conciso definir as classes `Pessoa` e `Aluno`. A palavra-chave `extends` é usada para estabelecer a herança, e o método `super()` é usado para chamar o construtor da classe pai._
+<br><br>
+
 
 <br><br><hr>
 
