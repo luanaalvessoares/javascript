@@ -277,6 +277,40 @@ _Neste exemplo, o método `somar()` é um método estático da classe `Utilitari
 O encapsulamento é um conceito fundamental na programação orientada a objetos que visa proteger os dados de uma classe e controlar o acesso a eles. O encapsulamento permite que os dados sejam ocultados e acessados apenas por meio de métodos da classe, garantindo assim a integridade e segurança dos dados.
 <br>
 
+Em JavaScript, o encapsulamento pode ser alcançado usando a prática de definir propriedades e métodos como públicos, privados ou protegidos. Veja um exemplo:
+
+```
+class Pessoa {
+  constructor(nome, idade) {
+    this.nome = nome; // propriedade pública
+    let _idade = idade; // propriedade privada
+
+    this.getNome = function() {
+      return this.nome;
+    }; // método público
+
+    this.getIdade = function() {
+      return _idade;
+    }; // método público
+  }
+
+  aniversario() {
+    let idadeAtual = this.getIdade();
+    this._idade = idadeAtual + 1;
+  } // método público
+}
+
+const pessoa = new Pessoa('Alice', 25);
+
+console.log(pessoa.getNome()); // "Alice"
+console.log(pessoa.getIdade()); // 25
+
+pessoa.aniversario();
+console.log(pessoa.getIdade()); // 26
+```
+_Neste exemplo, a propriedade `nome` é pública e pode ser acessada diretamente fora da classe. A propriedade `_idade` é privada, pois foi declarada usando `let` dentro do construtor e só pode ser acessada através do método `getIdade()`. Dessa forma, os dados são encapsulados e só podem ser modificados ou acessados através dos métodos apropriados._
+<br><br><hr>
+
 
 
 ## Conversões
