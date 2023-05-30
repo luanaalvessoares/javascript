@@ -164,3 +164,7 @@ Abaixo uma explicação detalhada sobre herança em JavaScript e como podemos im
 Na POO, a herança é usada para estabelecer uma relação de "é um" entre classes. Isso significa que uma classe filha herda as propriedades e métodos da classe pai. A classe pai é chamada de classe base ou superclasse, enquanto a classe filha é chamada de classe derivada ou subclasse. A herança permite que a classe filha reutilize o código da classe pai, além de adicionar novas funcionalidades ou modificar o comportamento existente.
 <br><br>
 
+**Herança Prototípica em JavaScript**
+Em JavaScript, a herança é baseada em protótipos. Cada objeto em JavaScript tem um protótipo, que é outro objeto a partir do qual ele herda propriedades e métodos. O protótipo é uma referência ao objeto pai. Para estabelecer a herança, o protótipo do objeto filho é definido como o objeto pai. Dessa forma, as propriedades e métodos do objeto pai se tornam acessíveis no objeto filho.
+<br><br>
+
