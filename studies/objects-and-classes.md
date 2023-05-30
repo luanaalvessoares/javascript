@@ -255,6 +255,20 @@ aluno1.exibirMatricula(); // "A matrícula do aluno Bob é 2021001."
 _Neste exemplo, podemos ver que a sintaxe de classe torna mais claro e conciso definir as classes `Pessoa` e `Aluno`. A palavra-chave `extends` é usada para estabelecer a herança, e o método `super()` é usado para chamar o construtor da classe pai._
 <br><br>
 
+**Métodos Estáticos**
+Com o ES6, também foi introduzido o conceito de métodos estáticos em classes. Métodos estáticos são métodos que pertencem à própria classe, em vez de pertencerem às instâncias da classe. Esses métodos podem ser chamados diretamente na classe, sem a necessidade de criar uma instância. Isso é útil quando você precisa ter métodos que são relevantes para a classe em si, e não para instâncias individuais. Veja o exemplo de uso de métodos estáticos:
+
+```
+class Utilitarios {
+  static somar(a, b) {
+    return a + b;
+  }
+}
+
+console.log(Utilitarios.somar(5, 3)); // 8
+```
+_Neste exemplo, o método `somar()` é um método estático da classe `Utilitarios`. Ele pode ser chamado diretamente na classe, sem a necessidade de criar uma instância da classe. Isso é útil quando você tem funções de utilitário ou métodos auxiliares que não dependem do estado de uma instância específica._
+<br><br>
 
 <br><br><hr>
 
