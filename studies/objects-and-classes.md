@@ -26,3 +26,12 @@ carro.ano = 2021;
 _Nesses exemplos, criamos objetos `pessoa` e `carro` com suas propriedades e valores associados._
 <br><br>
 
+**Acesso às propriedades**
+Podemos acessar as propriedades de um objeto usando a notação de ponto (`objeto.propriedade`) ou a notação de colchetes (`objeto['propriedade']`). Aqui está um exemplo:
+
+```
+console.log(pessoa.nome); // "Alice"
+console.log(carro['marca']); // "Toyota"
+```
+<br><br>
+
