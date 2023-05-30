@@ -35,3 +35,13 @@ console.log(carro['marca']); // "Toyota"
 ```
 <br><br>
 
+**Adição, modificação e exclusão de propriedades**
+Podemos adicionar novas propriedades, modificar o valor de propriedades existentes e excluir propriedades de um objeto. Aqui estão exemplos dessas operações:
+
+```
+pessoa.sobrenome = 'Silva'; // Adição de nova propriedade
+pessoa.idade = 26; // Modificação de valor de propriedade
+delete pessoa.idade; // Exclusão de propriedade
+```
+<br><br>
+
