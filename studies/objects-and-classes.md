@@ -115,3 +115,17 @@ pessoa1.saudacao(); // "Olá, meu nome é Alice e eu tenho 25 anos."
 _Neste exemplo, `Pessoa` é uma classe que tem uma propriedade `nome`, uma propriedade `idade` e um método `saudacao()`. O objeto `pessoa1` é uma instância da classe `Pessoa`._
 <br><br>
 
+**Construtores**
+Um construtor é um método especial em uma classe que é executado automaticamente quando um objeto é criado usando a palavra-chave `new`. O construtor é usado para inicializar as propriedades do objeto. Em JavaScript, o construtor é definido usando o método especial `constructor()`. Aqui está um exemplo:
+
+```
+class Pessoa {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+}
+```
+_Neste exemplo, o construtor da classe `Pessoa` recebe os parâmetros `nome` e `idade` e atribui esses valores às propriedades correspondentes do objeto._
+<br><br>
+
