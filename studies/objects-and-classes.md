@@ -87,3 +87,10 @@ _Neste exemplo, a função `criarPessoa` retorna um objeto com as propriedades `
 **Os objetos em JavaScript são flexíveis e poderosos. Eles permitem organizar e manipular dados de forma estruturada, representar entidades complexas e definir comportamentos personalizados por meio de métodos. É uma parte fundamental da linguagem JavaScript e é amplamente utilizado em aplicações web e desenvolvimento de software em geral.**
 <br><br><hr>
 
+## Classes
+A programação orientada a objetos (POO) é um paradigma de programação que organiza o código em torno de objetos, que são instâncias de classes. JavaScript suporta programação orientada a objetos, embora seja uma linguagem multiparadigma.
+<br>
+
+Abaixo estão os principais conceitos relacionados à programação orientada a objetos em JavaScript:
+<br>
+
