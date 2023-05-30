@@ -62,3 +62,25 @@ pessoa.saudacao(); // "Olá, meu nome é Alice e eu tenho 25 anos."
 _Neste exemplo, `saudacao` é um método associado ao objeto `pessoa` que imprime uma mensagem de saudação com base nas propriedades do objeto._
 <br><br>
 
+**Uso de objetos como parâmetros e retornos de funções**
+Os objetos podem ser usados como parâmetros e retornos de funções em JavaScript. Isso permite que você passe e retorne conjuntos complexos de dados de uma maneira estruturada. Aqui está um exemplo:
+
+```
+function criarPessoa(nome, idade) {
+  return {
+    nome: nome,
+    idade: idade,
+    saudacao: function() {
+      console.log
+
+(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`);
+    }
+  };
+}
+
+const pessoa = criarPessoa('Alice', 25);
+pessoa.saudacao(); // "Olá, meu nome é Alice e eu tenho 25 anos."
+```
+_Neste exemplo, a função `criarPessoa` retorna um objeto com as propriedades `nome` e `idade`, bem como o método `saudacao`._
+<br><br>
+
