@@ -232,3 +232,18 @@ console.log(objeto.idade); // 25
 _Neste exemplo, temos uma string JSON `json` que representa um objeto com as propriedades "nome" e "idade". Usando `JSON.parse(json)`, convertemos o JSON em um objeto JavaScript `objeto`. Agora podemos acessar as propriedades do objeto normalmente._
 <br><br>
 
+**Conversão de Objetos para JSON**
+Para converter um objeto JavaScript em um JSON, podemos usar a função `JSON.stringify()`. Essa função converte um objeto JavaScript em uma string JSON. Aqui está um exemplo:
+
+```
+const objeto = {
+  nome: "Alice",
+  idade: 25
+};
+const json = JSON.stringify(objeto);
+
+console.log(json); // '{"nome":"Alice","idade":25}'
+```
+_Neste exemplo, temos um objeto JavaScript `objeto` com as propriedades "nome" e "idade". Usando `JSON.stringify(objeto)`, convertemos o objeto em uma string JSON `json`. Agora podemos usar essa string JSON para armazenar, transmitir ou manipular os dados._
+<br><br>
+
