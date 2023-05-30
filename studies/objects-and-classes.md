@@ -273,6 +273,15 @@ _Neste exemplo, o método `somar()` é um método estático da classe `Utilitari
 **Essas são apenas algumas das melhorias na implementação de herança e sintaxe de classes introduzidas no ES6. O ES6 trouxe uma sintaxe mais amigável e recursos poderosos para a programação orientada a objetos em JavaScript, facilitando o desenvolvimento e a manutenção de código. É importante mencionar que as classes em JavaScript ainda são baseadas em protótipos por baixo dos panos, mas a sintaxe de classe torna a herança e a criação de objetos mais intuitivas.**
 <br><br><hr>
 
+## Static
+Os membros estáticos em programação orientada a objetos (POO) em JavaScript são propriedades e métodos que pertencem à classe em si, e não às instâncias individuais da classe. Eles são compartilhados por todas as instâncias da classe e podem ser acessados diretamente na própria classe, sem a necessidade de criar uma instância.
+<br>
+
+Vamos entender os membros estáticos em mais detalhes e observar exemplos para ilustrar seu uso:
+<br>
+
+
+
 ## Encapsulamento:
 O encapsulamento é um conceito fundamental na programação orientada a objetos que visa proteger os dados de uma classe e controlar o acesso a eles. O encapsulamento permite que os dados sejam ocultados e acessados apenas por meio de métodos da classe, garantindo assim a integridade e segurança dos dados.
 <br>
