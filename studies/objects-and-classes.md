@@ -301,6 +301,26 @@ console.log(Pessoa.contador); // 2
 _Neste exemplo, a propriedade estática `contador` é usada para contar o número de instâncias da classe `Pessoa`. Cada vez que uma nova instância é criada, a propriedade estática é incrementada. Observe que a propriedade estática é acessada diretamente na classe `Pessoa` usando o nome da classe, sem a necessidade de criar uma instância._
 <br><br>
 
+**Métodos Estáticos**
+Um método estático é um método que pertence à classe em si, e não a uma instância específica. Ele pode ser usado para fornecer funcionalidades que não dependem do estado de uma instância específica. Aqui está um exemplo:
+
+```
+class Calculadora {
+  static somar(a, b) {
+    return a + b;
+  }
+
+  static subtrair(a, b) {
+    return a - b;
+  }
+}
+
+console.log(Calculadora.somar(5, 3)); // 8
+console.log(Calculadora.subtrair(10, 4)); // 6
+```
+_Neste exemplo, a classe `Calculadora` possui dois métodos estáticos: `somar()` e `subtrair()`. Esses métodos podem ser chamados diretamente na classe `Calculadora`, sem a necessidade de criar uma instância da classe._
+<br><br>
+
 
 
 ## Encapsulamento:
