@@ -153,3 +153,10 @@ _Neste exemplo, `saudacao()` é um método da classe `Pessoa` que imprime uma me
 **Esses são apenas alguns conceitos básicos da programação orientada a objetos em JavaScript. A POO é um paradigma poderoso que permite criar código mais modular, reutilizável e fácil de manter. Além dos conceitos mencionados, existem outros recursos avançados, como encapsulamento, polimorfismo e interfaces. É importante estudar e praticar para aprofundar seus conhecimentos em programação orientada a objetos.**
 <br><br><hr>
 
+## Herança
+A herança é um conceito importante na programação orientada a objetos (POO) que permite que uma classe herde características (propriedades e métodos) de outra classe. Em JavaScript, a herança é baseada em protótipos.
+<br>
+
+Abaixo uma explicação detalhada sobre herança em JavaScript e como podemos implementá-la.
+<br>
+
