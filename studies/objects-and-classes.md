@@ -504,3 +504,24 @@ Vejamos o conceito de protótipo em detalhes com exemplos para ilustrar seu uso:
 Em JavaScript, cada objeto tem um protótipo, que é um objeto do qual ele herda propriedades e métodos. Quando você tenta acessar uma propriedade ou chamar um método em um objeto, o mecanismo de protótipo procura primeiro no próprio objeto e, se não encontrar, procura no seu protótipo. Essa busca continua até encontrar a propriedade ou método desejado ou até chegar ao protótipo final da cadeia de protótipos, que é o objeto `Object.prototype`.
 <br><br>
 
+**Propriedade `prototype`**
+Cada função em JavaScript tem uma propriedade chamada `prototype`, que é um objeto usado como protótipo para os objetos criados por essa função. Quando você cria um objeto usando a palavra-chave `new` seguida de uma função, o objeto criado herda as propriedades e métodos do protótipo da função. Veja um exemplo:
+
+```
+function Pessoa(nome) {
+  this.nome = nome;
+}
+
+Pessoa.prototype.dizerOla = function() {
+  console.log(`Olá, meu nome é ${this.nome}`);
+};
+
+const pessoa1 = new Pessoa('Alice');
+pessoa1.dizerOla(); // "Olá, meu nome é Alice"
+
+const pessoa2 = new Pessoa('Bob');
+pessoa2.dizerOla(); // "Olá, meu nome é Bob"
+```
+_Neste exemplo, a função `Pessoa` define um construtor para criar objetos do tipo `Pessoa`. A propriedade `nome` é definida no objeto criado a partir da função `Pessoa`. O método `dizerOla()` é definido no protótipo da função `Pessoa` usando a propriedade `prototype`. Isso significa que todos os objetos criados a partir da função `Pessoa` terão acesso a esse método._
+<br><br>
+
