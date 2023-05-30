@@ -589,3 +589,31 @@ cachorro1.fazerSom(); // "O cachorro faz au au."
 _Neste exemplo, a função construtora `Animal` é definida e lançará um erro se alguém tentar instanciá-la diretamente. Ela serve como uma classe abstrata. A função `Cachorro` é uma classe derivada de `Animal` e herda sua propriedade `nome`. No entanto, ela precisa implementar o método abstrato `fazerSom()`. Isso é feito na definição do protótipo da classe `Cachorro` usando `Object.create()` e definindo o método `fazerSom()`._
 <br><br>
 
+**Convenções de Nomenclatura**
+Embora a palavra-chave `abstract` não exista em JavaScript, é comum utilizar convenções de nomenclatura para indicar que uma classe ou método é abstrato. Por exemplo, prefixar o nome da classe ou do método com "Abstract" ou "Base" pode ser uma maneira de indicar que eles são projetados para serem usados como classes abstratas.
+
+```
+function AbstractAnimal(nome) {
+  this.nome = nome;
+}
+
+AbstractAnimal.prototype.makeSound = function() {
+  throw new Error('Abstract method makeSound() must be implemented.');
+};
+
+function Dog(nome) {
+  AbstractAnimal.call(this, nome);
+}
+
+Dog.prototype = Object.create(AbstractAnimal.prototype);
+Dog.prototype.constructor = Dog;
+
+Dog.prototype.makeSound = function() {
+  console.log('The dog barks.');
+};
+
+const dog1 = new Dog('Rex');
+dog1.makeSound(); // "The dog barks."
+```
+_Neste exemplo, usamos a convenção de prefixar a classe abstrata com "Abstract" e o método abstrato com "make" em vez de "fazer". Isso ajuda a indicar a natureza abstrata da classe e do método._
+<br><br>
