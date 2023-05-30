@@ -280,6 +280,27 @@ Os membros estáticos em programação orientada a objetos (POO) em JavaScript s
 Vamos entender os membros estáticos em mais detalhes e observar exemplos para ilustrar seu uso:
 <br>
 
+**Propriedades Estáticas**
+Uma propriedade estática é uma variável que é compartilhada por todas as instâncias de uma classe. Ela pode ser usada para armazenar informações ou configurações comuns a todas as instâncias da classe. Aqui está um exemplo:
+
+```
+class Pessoa {
+  static contador = 0; // Propriedade estática
+
+  constructor(nome) {
+    this.nome = nome;
+    Pessoa.contador++; // Acessando a propriedade estática
+  }
+}
+
+const pessoa1 = new Pessoa('Alice');
+const pessoa2 = new Pessoa('Bob');
+
+console.log(Pessoa.contador); // 2
+```
+_Neste exemplo, a propriedade estática `contador` é usada para contar o número de instâncias da classe `Pessoa`. Cada vez que uma nova instância é criada, a propriedade estática é incrementada. Observe que a propriedade estática é acessada diretamente na classe `Pessoa` usando o nome da classe, sem a necessidade de criar uma instância._
+<br><br>
+
 
 
 ## Encapsulamento:
