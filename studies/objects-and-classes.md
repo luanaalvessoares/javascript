@@ -315,6 +315,37 @@ _Neste exemplo, a propriedade `nome` é pública e pode ser acessada diretamente
 O polimorfismo é um princípio da programação orientada a objetos que permite que objetos de diferentes classes sejam tratados como se fossem do mesmo tipo. Isso permite escrever código mais flexível e reutilizável, pois as operações podem ser aplicadas a diferentes tipos de objetos de forma transparente.
 <br>
 
+Em JavaScript, o polimorfismo é alcançado usando herança e sobrescrita de métodos. Veja o exemplo:
+
+```
+class Animal {
+  falar() {
+    console.log('O animal faz algum som.');
+  }
+}
+
+class Cachorro extends Animal {
+  falar() {
+    console.log('O cachorro late.');
+  }
+}
+
+class Gato extends Animal {
+  falar() {
+    console.log('O gato mia.');
+  }
+}
+
+const animal1 = new Animal();
+const cachorro1 = new Cachorro();
+const gato1 = new Gato();
+
+animal1.falar(); // "O animal faz algum som."
+cachorro1.falar(); // "O cachorro late."
+gato1.falar(); // "O gato mia."
+```
+_Neste exemplo, temos uma classe `Animal` e duas classes derivadas, `Cachorro` e `Gato`. Todas as classes têm um método `falar()`, mas cada uma sobrescreve esse método para fornecer seu próprio comportamento específico. No entanto, podemos chamar o método `falar()` em objetos de qualquer uma das classes, e o comportamento correto será executado com base no tipo do objeto._
+<br><br><hr>
 
 
 ## Conversões
