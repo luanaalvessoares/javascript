@@ -492,3 +492,11 @@ Além disso, é possível especificar um segundo argumento chamado "replacer" na
 
 Em resumo, a conversão de JSON para objetos e de objetos para JSON é uma tarefa comum em JavaScript, e as funções `JSON.parse()` e `JSON.stringify()` facilitam esse processo. Essas conversões são úteis para trabalhar com APIs, armazenar dados em bancos de dados, transmitir informações entre clientes e servidores, entre outros casos de uso.
 <br><br><hr>
+
+## Prototype
+O protótipo em JavaScript é um mecanismo fundamental para implementar a herança e compartilhar propriedades e métodos entre objetos. Ele permite que um objeto herde propriedades e métodos de outro objeto, tornando a programação orientada a objetos (POO) em JavaScript mais flexível e poderosa.
+<br>
+
+Vejamos o conceito de protótipo em detalhes com exemplos para ilustrar seu uso:
+<br>
+
