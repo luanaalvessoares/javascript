@@ -129,3 +129,23 @@ class Pessoa {
 _Neste exemplo, o construtor da classe `Pessoa` recebe os parâmetros `nome` e `idade` e atribui esses valores às propriedades correspondentes do objeto._
 <br><br>
 
+**Métodos**
+Métodos são funções definidas em uma classe e são usados para definir o comportamento do objeto. Eles são chamados usando a notação de ponto (`objeto.metodo()`). Aqui está um exemplo:
+
+```
+class Pessoa {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  saudacao() {
+    console.log(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`);
+  }
+}
+
+const pessoa1 = new Pessoa('Alice', 25);
+pessoa1.saudacao(); // "Olá, meu nome é Alice e eu tenho 25 anos."
+```
+_Neste exemplo, `saudacao()` é um método da classe `Pessoa` que imprime uma mensagem de saudação com base nas propriedades do objeto._
+<br><br>
