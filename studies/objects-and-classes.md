@@ -270,6 +270,7 @@ console.log(Utilitarios.somar(5, 3)); // 8
 _Neste exemplo, o método `somar()` é um método estático da classe `Utilitarios`. Ele pode ser chamado diretamente na classe, sem a necessidade de criar uma instância da classe. Isso é útil quando você tem funções de utilitário ou métodos auxiliares que não dependem do estado de uma instância específica._
 <br><br>
 
+**Essas são apenas algumas das melhorias na implementação de herança e sintaxe de classes introduzidas no ES6. O ES6 trouxe uma sintaxe mais amigável e recursos poderosos para a programação orientada a objetos em JavaScript, facilitando o desenvolvimento e a manutenção de código. É importante mencionar que as classes em JavaScript ainda são baseadas em protótipos por baixo dos panos, mas a sintaxe de classe torna a herança e a criação de objetos mais intuitivas.**
 <br><br><hr>
 
 ## Conversões
