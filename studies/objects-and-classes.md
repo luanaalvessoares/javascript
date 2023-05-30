@@ -205,3 +205,7 @@ aluno1.exibirMatricula(); // "A matrícula do aluno Bob é 2021001."
 _Neste exemplo, temos a classe `Pessoa` como a classe pai e a classe `Aluno` como a classe filha. Usamos a função `Object.create()` para criar um novo objeto com o protótipo da classe pai e atribuímos esse objeto ao protótipo da classe filha usando `Aluno.prototype = Object.create(Pessoa.prototype)`. Em seguida, ajustamos o construtor da classe filha para apontar para a própria classe usando `Aluno.prototype.constructor = Aluno`. Dessa forma, a classe filha herda o construtor da classe pai._
 <br><br>
 
+**Acesso a Propriedades e Métodos**
+Quando um objeto filho acessa uma propriedade ou método, o mecanismo de herança em JavaScript primeiro verifica se a propriedade ou método está definido no próprio objeto filho. Se não estiver, ele verifica o protótipo do objeto filho e continua subindo na cadeia de protótipos até encontrar a propriedade ou método desejado.
+<br><br>
+
