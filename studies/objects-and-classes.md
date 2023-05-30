@@ -273,6 +273,12 @@ _Neste exemplo, o método `somar()` é um método estático da classe `Utilitari
 **Essas são apenas algumas das melhorias na implementação de herança e sintaxe de classes introduzidas no ES6. O ES6 trouxe uma sintaxe mais amigável e recursos poderosos para a programação orientada a objetos em JavaScript, facilitando o desenvolvimento e a manutenção de código. É importante mencionar que as classes em JavaScript ainda são baseadas em protótipos por baixo dos panos, mas a sintaxe de classe torna a herança e a criação de objetos mais intuitivas.**
 <br><br><hr>
 
+## Encapsulamento:
+O encapsulamento é um conceito fundamental na programação orientada a objetos que visa proteger os dados de uma classe e controlar o acesso a eles. O encapsulamento permite que os dados sejam ocultados e acessados apenas por meio de métodos da classe, garantindo assim a integridade e segurança dos dados.
+<br>
+
+
+
 ## Conversões
 Em JavaScript, é comum a necessidade de converter objetos JavaScript em formato JSON (JavaScript Object Notation) e vice-versa. Essa conversão permite armazenar e transmitir dados de forma estruturada e interoperável. Vou explicar como realizar essas conversões e dar exemplos de código.
 <br>
