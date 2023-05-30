@@ -94,3 +94,24 @@ A programação orientada a objetos (POO) é um paradigma de programação que o
 Abaixo estão os principais conceitos relacionados à programação orientada a objetos em JavaScript:
 <br>
 
+**Classes e Objetos**
+Uma classe é uma estrutura que define a estrutura e o comportamento de um objeto. Em JavaScript, as classes foram introduzidas no ECMAScript 2015 (ES6). Você pode definir uma classe usando a palavra-chave `class`. Um objeto é uma instância de uma classe. Você cria objetos usando a palavra-chave `new`. Aqui está um exemplo:
+
+```
+class Pessoa {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  saudacao() {
+    console.log(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`);
+  }
+}
+
+const pessoa1 = new Pessoa('Alice', 25);
+pessoa1.saudacao(); // "Olá, meu nome é Alice e eu tenho 25 anos."
+```
+_Neste exemplo, `Pessoa` é uma classe que tem uma propriedade `nome`, uma propriedade `idade` e um método `saudacao()`. O objeto `pessoa1` é uma instância da classe `Pessoa`._
+<br><br>
+
