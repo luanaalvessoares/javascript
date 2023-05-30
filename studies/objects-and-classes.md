@@ -525,3 +525,25 @@ pessoa2.dizerOla(); // "Olá, meu nome é Bob"
 _Neste exemplo, a função `Pessoa` define um construtor para criar objetos do tipo `Pessoa`. A propriedade `nome` é definida no objeto criado a partir da função `Pessoa`. O método `dizerOla()` é definido no protótipo da função `Pessoa` usando a propriedade `prototype`. Isso significa que todos os objetos criados a partir da função `Pessoa` terão acesso a esse método._
 <br><br>
 
+**Herança por meio de Protótipo**
+O protótipo também é usado para implementar a herança em JavaScript. Você pode criar um objeto com um protótipo específico usando a função `Object.create()`. Isso permite que o objeto criado herde as propriedades e métodos do protótipo especificado. Veja o exemplo:
+
+```
+const animalPrototype = {
+  fazerBarulho: function() {
+    console.log('O animal faz algum som.');
+  }
+};
+
+const cachorro = Object.create(animalPrototype);
+cachorro.fazerBarulho(); // "O animal faz algum som."
+
+cachorro.latir = function() {
+  console.log('O cachorro late.');
+};
+
+cachorro.latir(); // "O cachorro late."
+```
+_Neste exemplo, o objeto `animalPrototype` é usado como protótipo para o objeto `cachorro` criado usando `Object.create()`. O objeto `cachorro` herda o método `fazerBarulho()` do seu protótipo. Além disso, o objeto `cachorro` pode ter propriedades e métodos adicionais, como o método `latir()`._
+<br><br>
+
