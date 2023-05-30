@@ -219,3 +219,16 @@ Quando um objeto filho acessa uma propriedade ou método, o mecanismo de heranç
 Em JavaScript, é comum a necessidade de converter objetos JavaScript em formato JSON (JavaScript Object Notation) e vice-versa. Essa conversão permite armazenar e transmitir dados de forma estruturada e interoperável. Vou explicar como realizar essas conversões e dar exemplos de código.
 <br>
 
+**Conversão de JSON para Objetos**
+Para converter um JSON em um objeto JavaScript, podemos usar a função `JSON.parse()`. Essa função analisa uma string JSON e retorna um objeto JavaScript equivalente. Aqui está um exemplo:
+
+```
+const json = '{"nome": "Alice", "idade": 25}';
+const objeto = JSON.parse(json);
+
+console.log(objeto.nome);  // "Alice"
+console.log(objeto.idade); // 25
+```
+_Neste exemplo, temos uma string JSON `json` que representa um objeto com as propriedades "nome" e "idade". Usando `JSON.parse(json)`, convertemos o JSON em um objeto JavaScript `objeto`. Agora podemos acessar as propriedades do objeto normalmente._
+<br><br>
+
