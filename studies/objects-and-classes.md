@@ -84,3 +84,6 @@ pessoa.saudacao(); // "Olá, meu nome é Alice e eu tenho 25 anos."
 _Neste exemplo, a função `criarPessoa` retorna um objeto com as propriedades `nome` e `idade`, bem como o método `saudacao`._
 <br><br>
 
+**Os objetos em JavaScript são flexíveis e poderosos. Eles permitem organizar e manipular dados de forma estruturada, representar entidades complexas e definir comportamentos personalizados por meio de métodos. É uma parte fundamental da linguagem JavaScript e é amplamente utilizado em aplicações web e desenvolvimento de software em geral.**
+<br><br><hr>
+
