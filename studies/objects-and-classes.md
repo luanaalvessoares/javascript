@@ -350,6 +350,44 @@ _Neste exemplo, temos uma classe `Animal` e duas classes derivadas, `Cachorro` e
 ## Interfaces
 As interfaces são contratos que definem um conjunto de métodos e propriedades que uma classe deve implementar. Elas estabelecem um padrão para garantir que objetos de diferentes classes possam ser tratados de forma consistente. Embora JavaScript não tenha um suporte nativo para interfaces, é possível simular o conceito usando convenções de nomenclatura. Abaixo um exemplo:
 
+```
+class Animal {
+  falar() {
+    console.log('O animal faz algum som.');
+  }
+}
+
+class Cachorro {
+  latir() {
+    console.log('O cachorro late.');
+  }
+}
+
+class Gato {
+  miar() {
+    console.log('O gato mia.');
+  }
+}
+
+function tratarAnimal(animal) {
+  if (animal instanceof Animal) {
+    animal.falar();
+  } else {
+    console.log('Não é um animal válido.');
+  }
+}
+
+const animal1 = new Animal();
+const cachorro1 = new Cachorro();
+const gato1 = new Gato();
+
+tratarAnimal(animal1); // "O animal faz algum som."
+tratarAnimal(cachorro1); // "Não é um animal válido."
+tratarAnimal(gato1); // "Não é um animal válido."
+```
+
+_Neste exemplo, temos uma função `tratarAnimal()` que espera um objeto que implementa a interface "Animal". Embora não tenhamos uma interface real, usamos a verificação `instanceof Animal` para garantir que o objeto passado seja do tipo esperado. Isso nos permite tratar objetos de diferentes classes como animais e executar as operações adequadas._
+<br><br>
 
 
 ## Conversões
