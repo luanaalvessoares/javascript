@@ -209,3 +209,9 @@ _Neste exemplo, temos a classe `Pessoa` como a classe pai e a classe `Aluno` com
 Quando um objeto filho acessa uma propriedade ou método, o mecanismo de herança em JavaScript primeiro verifica se a propriedade ou método está definido no próprio objeto filho. Se não estiver, ele verifica o protótipo do objeto filho e continua subindo na cadeia de protótipos até encontrar a propriedade ou método desejado.
 <br><br>
 
+**É importante mencionar que, a partir do ECMAScript 2015 (ES6), a sintaxe de classe foi introduzida em JavaScript, o que torna a implementação da herança mais simples usando as palavras-chave `class`, `extends` e `super`. No entanto, a herança baseada em protótipos continua sendo fundamental em JavaScript.**
+<br>
+
+**A herança é uma poderosa ferramenta na programação orientada a objetos, permitindo reutilização de código, organização hierárquica de classes e polimorfismo. Compreender a herança em JavaScript é essencial para escrever código orientado a objetos eficiente e flexível.**
+<br><br><hr>
+
