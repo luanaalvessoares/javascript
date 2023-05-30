@@ -500,3 +500,7 @@ O protótipo em JavaScript é um mecanismo fundamental para implementar a heran�
 Vejamos o conceito de protótipo em detalhes com exemplos para ilustrar seu uso:
 <br>
 
+**Conceito de Protótipo**
+Em JavaScript, cada objeto tem um protótipo, que é um objeto do qual ele herda propriedades e métodos. Quando você tenta acessar uma propriedade ou chamar um método em um objeto, o mecanismo de protótipo procura primeiro no próprio objeto e, se não encontrar, procura no seu protótipo. Essa busca continua até encontrar a propriedade ou método desejado ou até chegar ao protótipo final da cadeia de protótipos, que é o objeto `Object.prototype`.
+<br><br>
+
