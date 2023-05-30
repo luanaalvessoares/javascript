@@ -617,3 +617,5 @@ dog1.makeSound(); // "The dog barks."
 ```
 _Neste exemplo, usamos a convenção de prefixar a classe abstrata com "Abstract" e o método abstrato com "make" em vez de "fazer". Isso ajuda a indicar a natureza abstrata da classe e do método._
 <br><br>
+
+**Embora JavaScript não forneça suporte nativo para classes abstratas, é possível emular o comportamento desejado usando as técnicas mencionadas acima. No entanto, é importante lembrar que essas são abordagens convencionais e não têm a mesma semântica de classes abstratas em linguagens que as suportam nativamente.**
