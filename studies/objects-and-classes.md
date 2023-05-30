@@ -347,6 +347,10 @@ gato1.falar(); // "O gato mia."
 _Neste exemplo, temos uma classe `Animal` e duas classes derivadas, `Cachorro` e `Gato`. Todas as classes têm um método `falar()`, mas cada uma sobrescreve esse método para fornecer seu próprio comportamento específico. No entanto, podemos chamar o método `falar()` em objetos de qualquer uma das classes, e o comportamento correto será executado com base no tipo do objeto._
 <br><br><hr>
 
+## Interfaces
+As interfaces são contratos que definem um conjunto de métodos e propriedades que uma classe deve implementar. Elas estabelecem um padrão para garantir que objetos de diferentes classes possam ser tratados de forma consistente. Embora JavaScript não tenha um suporte nativo para interfaces, é possível simular o conceito usando convenções de nomenclatura. Abaixo um exemplo:
+
+
 
 ## Conversões
 Em JavaScript, é comum a necessidade de converter objetos JavaScript em formato JSON (JavaScript Object Notation) e vice-versa. Essa conversão permite armazenar e transmitir dados de forma estruturada e interoperável. Vou explicar como realizar essas conversões e dar exemplos de código.
