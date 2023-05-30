@@ -247,3 +247,16 @@ console.log(json); // '{"nome":"Alice","idade":25}'
 _Neste exemplo, temos um objeto JavaScript `objeto` com as propriedades "nome" e "idade". Usando `JSON.stringify(objeto)`, convertemos o objeto em uma string JSON `json`. Agora podemos usar essa string JSON para armazenar, transmitir ou manipular os dados._
 <br><br>
 
+É importante mencionar que a conversão de JSON para objetos e de objetos para JSON tem algumas considerações:
+<br>
+
+- Ao converter um JSON para um objeto, é necessário garantir que a string JSON esteja em um formato válido. Caso contrário, ocorrerá um erro durante o processo de análise.
+<br>
+
+- Ao converter um objeto para JSON, algumas propriedades podem não ser incluídas na string JSON. Isso acontece quando as propriedades são funções, símbolos ou propriedades com o valor `undefined`. Essas propriedades são omitidas no JSON resultante.
+<br>
+
+Além disso, é possível especificar um segundo argumento chamado "replacer" na função `JSON.stringify()`, que permite personalizar o processo de serialização. E você também pode usar o terceiro argumento "espaco" para formatar a string JSON com espaços e recuo para torná-la mais legível.
+<br><br>
+
+
