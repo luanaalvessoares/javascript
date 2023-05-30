@@ -389,6 +389,8 @@ tratarAnimal(gato1); // "Não é um animal válido."
 _Neste exemplo, temos uma função `tratarAnimal()` que espera um objeto que implementa a interface "Animal". Embora não tenhamos uma interface real, usamos a verificação `instanceof Animal` para garantir que o objeto passado seja do tipo esperado. Isso nos permite tratar objetos de diferentes classes como animais e executar as operações adequadas._
 <br><br>
 
+**Embora JavaScript não tenha suporte nativo para interfaces, é possível usar bibliotecas ou frameworks como TypeScript ou Babel para trabalhar com interfaces de forma mais explícita e segura.**
+<br><br><hr>
 
 ## Conversões
 Em JavaScript, é comum a necessidade de converter objetos JavaScript em formato JSON (JavaScript Object Notation) e vice-versa. Essa conversão permite armazenar e transmitir dados de forma estruturada e interoperável. Vou explicar como realizar essas conversões e dar exemplos de código.
