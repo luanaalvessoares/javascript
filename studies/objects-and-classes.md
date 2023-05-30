@@ -321,7 +321,11 @@ console.log(Calculadora.subtrair(10, 4)); // 6
 _Neste exemplo, a classe `Calculadora` possui dois métodos estáticos: `somar()` e `subtrair()`. Esses métodos podem ser chamados diretamente na classe `Calculadora`, sem a necessidade de criar uma instância da classe._
 <br><br>
 
+**Os membros estáticos são úteis quando você precisa de funcionalidades que não dependem do estado de uma instância específica, ou quando deseja compartilhar informações ou comportamentos comuns a todas as instâncias de uma classe.**
+<br>
 
+**É importante lembrar que os membros estáticos são acessados diretamente na classe, usando o nome da classe, e não nas instâncias da classe.**
+<br><br><hr>
 
 ## Encapsulamento:
 O encapsulamento é um conceito fundamental na programação orientada a objetos que visa proteger os dados de uma classe e controlar o acesso a eles. O encapsulamento permite que os dados sejam ocultados e acessados apenas por meio de métodos da classe, garantindo assim a integridade e segurança dos dados.
