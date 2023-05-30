@@ -311,6 +311,10 @@ console.log(pessoa.getIdade()); // 26
 _Neste exemplo, a propriedade `nome` é pública e pode ser acessada diretamente fora da classe. A propriedade `_idade` é privada, pois foi declarada usando `let` dentro do construtor e só pode ser acessada através do método `getIdade()`. Dessa forma, os dados são encapsulados e só podem ser modificados ou acessados através dos métodos apropriados._
 <br><br><hr>
 
+## Polimorfismo
+O polimorfismo é um princípio da programação orientada a objetos que permite que objetos de diferentes classes sejam tratados como se fossem do mesmo tipo. Isso permite escrever código mais flexível e reutilizável, pois as operações podem ser aplicadas a diferentes tipos de objetos de forma transparente.
+<br>
+
 
 
 ## Conversões
