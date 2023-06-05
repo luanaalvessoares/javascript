@@ -45,3 +45,13 @@ console.log(data.toLocaleDateString()); // Exibe apenas a data formatada
 ```
 <br><br>
 
+**Manipulação de datas:**
+O objeto `Date` também permite a manipulação de datas adicionando ou subtraindo unidades de tempo, como dias, meses ou anos.
+<br>
+
+Exemplo:
+```
+const data = new Date();
+data.setDate(data.getDate() + 7); // Adiciona 7 dias à data atual
+console.log(data); // Exibe a nova data após a manipulação
+```
