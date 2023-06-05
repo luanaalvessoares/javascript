@@ -32,3 +32,16 @@ console.log(data.getMilliseconds()); // Obtém os milissegundos atuais (ex: 500)
 ```
 <br><br>
 
+**Formatação de datas e horas:**
+Para exibir datas e horas de maneira legível, é possível formatá-las usando métodos como `toLocaleString()` ou `toLocaleDateString()`, que levam em consideração as configurações regionais do usuário.
+<br>
+
+Exemplo:
+```
+const data = new Date();
+console.log(data.toLocaleString()); // Exibe a data e hora formatadas de acordo com a configuração regional do usuário
+
+console.log(data.toLocaleDateString()); // Exibe apenas a data formatada
+```
+<br><br>
+
