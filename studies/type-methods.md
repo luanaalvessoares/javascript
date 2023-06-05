@@ -83,3 +83,9 @@ console.log(array.join(" - ")); // "Hello - World!"
 ```
 <br><br>
 
+**Usos e aplicações:**
+- Manipulação e processamento de texto.
+- Validação e formatação de entradas de usuário.
+- Geração de saída dinâmica em páginas da web.
+- Comparação e busca de padrões em strings.
+<br><br>
