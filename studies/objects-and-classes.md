@@ -625,3 +625,25 @@ _Neste exemplo, usamos a convenção de prefixar a classe abstrata com "Abstract
 Em JavaScript, os módulos são uma maneira de organizar e compartilhar código. Eles permitem dividir um programa em partes menores, chamadas de módulos, que podem ser importados e usados em outros arquivos. O suporte a módulos foi introduzido no JavaScript com o padrão ECMAScript 2015 (ES6). Vamos explorar os principais aspectos dos módulos em JavaScript, incluindo sua sintaxe, usos, métodos e exemplos.
 <br>
 
+**Exportando módulos:**
+- Exportar valores individuais:
+<br>
+
+```
+export const nome = 'João';
+export function soma(a, b) {
+    return a + b;
+}
+```
+<br><br>
+
+- Exportar valores por padrão:
+<br>
+
+```
+export default function multiplicacao(a, b) {
+    return a * b;
+}
+```
+<br><br>
+
