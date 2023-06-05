@@ -619,3 +619,9 @@ _Neste exemplo, usamos a convenção de prefixar a classe abstrata com "Abstract
 <br><br>
 
 **Embora JavaScript não forneça suporte nativo para classes abstratas, é possível emular o comportamento desejado usando as técnicas mencionadas acima. No entanto, é importante lembrar que essas são abordagens convencionais e não têm a mesma semântica de classes abstratas em linguagens que as suportam nativamente.**
+<br><br><hr>
+
+## Módulos
+Em JavaScript, os módulos são uma maneira de organizar e compartilhar código. Eles permitem dividir um programa em partes menores, chamadas de módulos, que podem ser importados e usados em outros arquivos. O suporte a módulos foi introduzido no JavaScript com o padrão ECMAScript 2015 (ES6). Vamos explorar os principais aspectos dos módulos em JavaScript, incluindo sua sintaxe, usos, métodos e exemplos.
+<br>
+
