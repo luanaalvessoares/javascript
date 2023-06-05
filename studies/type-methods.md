@@ -28,3 +28,25 @@ console.log(texto.substring(7, 12)); // "World"
 ```
 <br><br>
 
+**Métodos de manipulação:**
+- `concat(str1, str2, ..., strN)`: Concatena duas ou mais strings.
+- `slice(start, end)`: Retorna uma parte da string original, do índice de início ao índice de fim (não incluído).
+- `replace(searchValue, replaceValue)`: Substitui um valor de string por outro valor em uma string.
+- `toUpperCase()`: Retorna a string em letras maiúsculas.
+- `toLowerCase()`: Retorna a string em letras minúsculas.
+- `trim()`: Remove os espaços em branco do início e do fim da string.
+<br>
+
+Exemplo:
+```
+const str1 = "Hello";
+const str2 = "World";
+console.log(str1.concat(", ", str2)); // "Hello, World"
+console.log(str1.slice(1, 4)); // "ell"
+console.log(str1.replace("Hello", "Hi")); // "Hi"
+console.log(str1.toUpperCase()); // "HELLO"
+console.log(str2.toLowerCase()); // "world"
+console.log("   Spaces   ".trim()); // "Spaces"
+```
+<br><br>
+
