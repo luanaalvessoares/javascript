@@ -34,3 +34,12 @@ No DOM, teremos o seguinte relacionamento:
 - Os textos "Título" e "Parágrafo de exemplo" são representados por nós filhos dos respectivos elementos `<h1>` e `<p>`.
 <br>
 Essa estrutura permite acessar e manipular cada elemento individualmente por meio das APIs fornecidas pelo DOM, facilitando a criação de interações dinâmicas e funcionais em uma página da web.
+<br><br><hr>
+
+## Clipboard
+A função do clipboard em JavaScript é permitir a manipulação de dados copiados ou recortados para a área de transferência do sistema operacional. Isso possibilita que os usuários copiem texto, imagens ou outros dados de um local e cole-os em outro, seja dentro do mesmo aplicativo ou em aplicativos diferentes.
+<br>
+
+Através do uso do clipboard, é possível realizar diversas operações, como copiar texto para a área de transferência, colar conteúdo da área de transferência em campos de entrada, obter o conteúdo atual da área de transferência e até mesmo modificar o conteúdo que será colado. Veja alguns exemplos:
+<br>
+
