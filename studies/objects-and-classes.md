@@ -676,3 +676,42 @@ console.log(multiplicacao(2, 3)); // 6
 ```
 <br><br>
 
+**Módulos complexos e encadeados:**
+- Exportar e importar vários valores:
+<br>
+
+```
+// meuModulo.js
+export function soma(a, b) {
+    return a + b;
+}
+export function subtracao(a, b) {
+    return a - b;
+}
+
+// meuOutroModulo.js
+import { soma, subtracao } from './meuModulo.js';
+console.log(soma(5, 3)); // 8
+console.log(subtracao(5, 3)); // 2
+```
+<br><br>
+
+- Exportar e importar um valor padrão junto com valores nomeados:
+<br>
+
+```
+// meuModulo.js
+export default function multiplicacao(a, b) {
+    return a * b;
+}
+export function soma(a, b) {
+    return a + b;
+}
+
+// meuOutroModulo.js
+import multiplicacao, { soma } from './meuModulo.js';
+console.log(multiplicacao(2, 3)); // 6
+console.log(soma(2, 3)); // 5
+```
+<br><br>
+
