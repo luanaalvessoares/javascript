@@ -647,3 +647,32 @@ export default function multiplicacao(a, b) {
 ```
 <br><br>
 
+**Importando módulos:**
+- Importar valores nomeados:
+<br>
+
+```
+import { nome, soma } from './meuModulo.js';
+console.log(nome); // 'João'
+console.log(soma(2, 3)); // 5
+```
+<br><br>
+
+- Importar valores com um nome diferente:
+<br>
+
+```
+import { nome as nomeDoUsuario } from './meuModulo.js';
+console.log(nomeDoUsuario); // 'João'
+```
+<br><br>
+
+- Importar um valor padrão:
+<br>
+
+```
+import multiplicacao from './meuModulo.js';
+console.log(multiplicacao(2, 3)); // 6
+```
+<br><br>
+
