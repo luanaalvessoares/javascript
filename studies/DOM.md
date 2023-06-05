@@ -108,3 +108,15 @@ history.go(3); // Navega três páginas para frente
 ```
 <br><br>
 
+**Redirecionando para uma URL específica:**
+- `location.href = url`: Redireciona o navegador para a URL especificada.
+- `location.replace(url)`: Redireciona o navegador para a URL especificada, substituindo a página atual no histórico.
+<br>
+
+Exemplo:
+```
+location.href = "https://www.example.com"; // Redireciona para a URL especificada
+location.replace("https://www.example.com"); // Redireciona e substitui a página atual no histórico
+```
+<br><br>
+
