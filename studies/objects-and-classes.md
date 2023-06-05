@@ -715,3 +715,13 @@ console.log(soma(2, 3)); // 5
 ```
 <br><br>
 
+**Uso de módulos em navegadores:**
+Para usar módulos em navegadores, é necessário adicionar o atributo `type="module"` à tag `script` do arquivo HTML que importa os módulos.
+<br>
+
+```
+<!-- index.html -->
+<script type="module" src="meuScript.js"></script>
+```
+<br><br>
+
