@@ -168,3 +168,32 @@ console.log(chaves[0] === chave); // true
 ```
 <br><br>
 
+**Usos avançados de símbolos:**
+- Implementação de comportamentos específicos em métodos internos de objetos.
+- Criação de constantes únicas.
+- Evitar conflitos de nomes em propriedades de objetos.
+<br>
+
+Exemplo:
+```
+const AREA = Symbol();
+class Retangulo {
+    constructor(base, altura) {
+        this.base = base;
+        this.altura = altura;
+        this[AREA] = base * altura;
+    }
+
+    obterArea() {
+        return this[AREA];
+    }
+}
+
+const retangulo = new Retangulo(5, 3);
+console.log(retangulo.obterArea()); // 15
+console.log(retangulo[AREA]);
+
+// undefined
+```
+<br><br>
+
