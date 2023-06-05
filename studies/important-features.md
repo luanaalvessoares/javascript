@@ -146,3 +146,25 @@ console.log(Object.prototype.toString.call(meuObjeto)); // "[object MeuObjeto]"
 ```
 <br><br>
 
+**Usando símbolos como chaves de propriedades:**
+- `Object.defineProperty(objeto, chave, descritor)`: Define uma nova propriedade diretamente em um objeto, utilizando um símbolo como chave.
+- `Object.getOwnPropertySymbols(objeto)`: Retorna um array com todos os símbolos próprios de um objeto.
+- `Reflect.ownKeys(objeto)`: Retorna um array com todas as chaves (incluindo símbolos) próprias de um objeto.
+<br>
+
+Exemplo:
+```
+const chave = Symbol();
+const meuObjeto = {};
+Object.defineProperty(meuObjeto, chave, { value: "Valor da propriedade" });
+
+console.log(meuObjeto[chave]); // "Valor da propriedade"
+
+const simbolos = Object.getOwnPropertySymbols(meuObjeto);
+console.log(simbolos[0] === chave); // true
+
+const chaves = Reflect.ownKeys(meuObjeto);
+console.log(chaves[0] === chave); // true
+```
+<br><br>
+
