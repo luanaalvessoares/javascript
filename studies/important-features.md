@@ -120,3 +120,14 @@ console.log(sym1 === sym2); // false
 ```
 <br><br>
 
+**Descrição de símbolos:**
+- `Symbol(description)`: Cria um símbolo com uma descrição opcional, usada apenas para fins de depuração.
+<br>
+
+Exemplo:
+```
+const sym = Symbol("Meu símbolo");
+console.log(sym.toString()); // "Symbol(Meu símbolo)"
+```
+<br><br>
+
