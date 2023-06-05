@@ -46,3 +46,12 @@ _Neste exemplo, a expressão `${a + b}` é avaliada e seu resultado é inserido 
 <br>
 
 **É importante observar que as template strings são suportadas em versões mais recentes do JavaScript, como o ECMAScript 6 (ES6) e versões posteriores. Se você estiver trabalhando com uma versão mais antiga, pode ser necessário usar outras abordagens para obter recursos semelhantes, como concatenação de strings ou o método `join()` em arrays.**
+<br><br><hr>
+
+## Promises
+Promises são objetos em JavaScript que representam a eventual conclusão (ou falha) de uma operação assíncrona. Elas são usadas para lidar com fluxos de código assíncronos de maneira mais legível e organizada. Uma promise pode ter três estados: pendente (pending), resolvida (fulfilled) e rejeitada (rejected).
+<br>
+
+Uma promise pode ser criada utilizando o construtor `Promise`, que recebe uma função executora com dois parâmetros: `resolve` e `reject`. A função executora é chamada imediatamente quando a promise é criada e pode conter qualquer código assíncrono, como uma requisição HTTP ou uma leitura de arquivo.
+<br>
+
