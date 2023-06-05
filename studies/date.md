@@ -15,3 +15,20 @@ console.log(dataEspecifica); // Exibe a data especificada: Fri Jun 30 2023 00:00
 ```
 <br><br>
 
+**Obtendo informações de data e hora:**
+O objeto `Date` fornece vários métodos para obter informações específicas, como o ano, mês, dia, hora, minuto, segundo e milissegundo.
+<br>
+
+Exemplo:
+```
+const data = new Date();
+console.log(data.getFullYear()); // Obtém o ano atual (ex: 2023)
+console.log(data.getMonth()); // Obtém o mês atual (ex: 5 - junho, pois os meses são indexados a partir de 0)
+console.log(data.getDate()); // Obtém o dia do mês atual (ex: 4)
+console.log(data.getHours()); // Obtém a hora atual (ex: 14)
+console.log(data.getMinutes()); // Obtém os minutos atuais (ex: 30)
+console.log(data.getSeconds()); // Obtém os segundos atuais (ex: 15)
+console.log(data.getMilliseconds()); // Obtém os milissegundos atuais (ex: 500)
+```
+<br><br>
+
