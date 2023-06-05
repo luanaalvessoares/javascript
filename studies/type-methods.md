@@ -94,3 +94,5 @@ console.log(array.join(" - ")); // "Hello - World!"
 - As strings são imutáveis, o que significa que não podem ser modificadas diretamente. Métodos de manipulação de strings retornam uma nova string.
 - As strings são indexadas com base em zero, ou seja, o primeiro caractere está no índice zero.
 <br><br>
+
+**Essas são algumas das propriedades, métodos, usos e restrições relacionadas a strings em JavaScript. As strings desempenham um papel fundamental no processamento de texto e são amplamente usadas em aplicações JavaScript.**
