@@ -33,3 +33,19 @@ console.log(Math.atan2(1, 1)); // 0.7853981633974483 (ângulo entre o eixo x pos
 ```
 <br><br>
 
+**Funções exponenciais e logarítmicas:**
+- `Math.pow(x, y)`: Retorna `x` elevado à potência `y`.
+- `Math.sqrt(x)`: Retorna a raiz quadrada de `x`.
+- `Math.log(x)`: Retorna o logaritmo natural (base e) de `x`.
+- `Math.exp(x)`: Retorna `e` elevado à potência `x`.
+<br>
+
+Exemplo:
+```
+console.log(Math.pow(2, 3)); // 8 (2 elevado à potência de 3)
+console.log(Math.sqrt(16)); // 4 (raiz quadrada de 16)
+console.log(Math.log(Math.E)); // 1 (logaritmo natural de e)
+console.log(Math.exp(2)); // 7.3890560989306495 (e elevado à potência de 2)
+```
+<br><br>
+
