@@ -85,3 +85,15 @@ pasteFromClipboard(inputElement);
 Em JavaScript, é possível interagir com o histórico do navegador e realizar redirecionamentos usando o objeto `history`. Ele fornece métodos e propriedades para navegar entre as páginas visitadas e controlar o histórico de navegação do usuário. Vamos explorar algumas das principais funcionalidades do objeto `history` com exemplos:
 <br>
 
+**Navegando para uma página anterior ou posterior:**
+- `history.back()`: Navega para a página anterior no histórico.
+- `history.forward()`: Navega para a próxima página no histórico.
+<br>
+
+Exemplo:
+```
+history.back(); // Navega para a página anterior
+history.forward(); // Navega para a próxima página
+```
+<br><br>
+
