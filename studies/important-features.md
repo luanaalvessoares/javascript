@@ -197,3 +197,4 @@ console.log(retangulo[AREA]);
 ```
 <br><br>
 
+**Essas são as principais funcionalidades e métodos dos símbolos em JavaScript. Eles fornecem uma maneira eficiente de criar identificadores únicos e personalizar o comportamento de objetos.**
