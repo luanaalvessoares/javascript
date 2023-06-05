@@ -102,3 +102,9 @@ _Nesse exemplo, a função `fetchData` simula uma requisição assíncrona e ret
 <br><br>
 
 **Esses exemplos ilustram como as promises podem ser poderosas ao lidar com operações assíncronas e simplificar o código, permitindo que você controle melhor o fluxo de execução e trate erros de maneira eficiente.**
+<br><br><hr>
+
+## Symbol
+Em JavaScript, o tipo de dado Symbol é uma primitiva que representa um identificador único e imutável. Símbolos são frequentemente usados como chaves de propriedades de objetos para evitar colisões de nomes e garantir a singularidade dessas propriedades. Vamos explorar os principais aspectos dos símbolos em JavaScript, incluindo sua criação, métodos, usos e exemplos.
+<br>
+
