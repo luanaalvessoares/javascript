@@ -100,3 +100,5 @@ Promise.all(promises)
 
 _Nesse exemplo, a função `fetchData` simula uma requisição assíncrona e retorna uma promise que é resolvida com os dados após um atraso de 2 segundos. O método `Promise.all` é usado para aguardar a conclusão de todas as promises retornadas pela função `fetchData` para todas as URLs. O resultado é um array com os dados de todas as requisições, que é exibido no console._
 <br><br>
+
+**Esses exemplos ilustram como as promises podem ser poderosas ao lidar com operações assíncronas e simplificar o código, permitindo que você controle melhor o fluxo de execução e trate erros de maneira eficiente.**
