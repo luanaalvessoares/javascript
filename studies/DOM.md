@@ -80,3 +80,8 @@ pasteFromClipboard(inputElement);
 <br><br>
 
 **Esses exemplos demonstram como o clipboard em JavaScript pode ser utilizado para facilitar a manipulação de dados na área de transferência, proporcionando uma interação mais fluída e intuitiva para os usuários.**
+
+## History
+Em JavaScript, é possível interagir com o histórico do navegador e realizar redirecionamentos usando o objeto `history`. Ele fornece métodos e propriedades para navegar entre as páginas visitadas e controlar o histórico de navegação do usuário. Vamos explorar algumas das principais funcionalidades do objeto `history` com exemplos:
+<br>
+
