@@ -725,3 +725,19 @@ Para usar módulos em navegadores, é necessário adicionar o atributo `type="mo
 ```
 <br><br>
 
+**Carregamento dinâmico de módulos:**
+O método `import()` permite carregar módulos de forma assíncrona, retornando uma Promise que resolve com o módulo exportado.
+<br>
+
+```
+import('./meuModulo.js')
+.then((modulo) => {
+    console.log(modulo.soma(2, 3));
+})
+.
+
+catch((erro) => {
+    console.log(erro);
+});
+```
+<br><br>
