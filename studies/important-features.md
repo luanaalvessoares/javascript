@@ -131,3 +131,18 @@ console.log(sym.toString()); // "Symbol(Meu símbolo)"
 ```
 <br><br>
 
+**Propriedades e métodos de símbolos:**
+- `Symbol.hasInstance`: Método que determina se um objeto é uma instância de outro objeto.
+- `Symbol.iterator`: Método usado para criar um iterador personalizado para um objeto.
+- `Symbol.toStringTag`: Propriedade usada para personalizar a string retornada pelo método `toString()` de um objeto.
+<br>
+
+Exemplo:
+```
+const meuObjeto = {
+    [Symbol.toStringTag]: "MeuObjeto"
+};
+console.log(Object.prototype.toString.call(meuObjeto)); // "[object MeuObjeto]"
+```
+<br><br>
+
