@@ -17,3 +17,19 @@ console.log(Math.ceil(4.2)); // 5
 ```
 <br><br>
 
+**Funções trigonométricas:**
+- `Math.sin(x)`: Retorna o seno de `x`.
+- `Math.cos(x)`: Retorna o cosseno de `x`.
+- `Math.tan(x)`: Retorna a tangente de `x`.
+- `Math.atan2(y, x)`: Retorna o ângulo em radianos entre o eixo x positivo e o ponto `(x, y)`.
+<br>
+
+Exemplo:
+```
+console.log(Math.sin(Math.PI / 2)); // 1 (seno de 90 graus)
+console.log(Math.cos(0)); // 1 (cosseno de 0 grau)
+console.log(Math.tan(Math.PI / 4)); // 1 (tangente de 45 graus)
+console.log(Math.atan2(1, 1)); // 0.7853981633974483 (ângulo entre o eixo x positivo e o ponto (1, 1))
+```
+<br><br>
+
