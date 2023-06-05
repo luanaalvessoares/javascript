@@ -43,3 +43,20 @@ A função do clipboard em JavaScript é permitir a manipulação de dados copia
 Através do uso do clipboard, é possível realizar diversas operações, como copiar texto para a área de transferência, colar conteúdo da área de transferência em campos de entrada, obter o conteúdo atual da área de transferência e até mesmo modificar o conteúdo que será colado. Veja alguns exemplos:
 <br>
 
+**Copiar texto para a área de transferência**
+```
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      console.log('Texto copiado com sucesso!');
+    })
+    .catch((error) => {
+      console.error('Falha ao copiar o texto: ', error);
+    });
+}
+
+// Exemplo de uso
+copyToClipboard('Texto que será copiado');
+```
+<br><br>
+
