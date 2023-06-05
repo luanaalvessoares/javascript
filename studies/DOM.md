@@ -97,3 +97,14 @@ history.forward(); // Navega para a próxima página
 ```
 <br><br>
 
+**Navegando para uma página específica:**
+- `history.go(n)`: Navega para uma página relativa ao índice atual no histórico. O valor de `n` pode ser positivo (avançando) ou negativo (retrocedendo).
+<br>
+
+Exemplo:
+```
+history.go(-2); // Navega duas páginas para trás
+history.go(3); // Navega três páginas para frente
+```
+<br><br>
+
