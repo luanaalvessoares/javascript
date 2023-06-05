@@ -55,3 +55,21 @@ Promises são objetos em JavaScript que representam a eventual conclusão (ou fa
 Uma promise pode ser criada utilizando o construtor `Promise`, que recebe uma função executora com dois parâmetros: `resolve` e `reject`. A função executora é chamada imediatamente quando a promise é criada e pode conter qualquer código assíncrono, como uma requisição HTTP ou uma leitura de arquivo.
 <br>
 
+**Veja esse exemplo de uso de promise para simular um atraso de 2 segundos antes de exibir uma mensagem:**
+```
+function delayMessage(message, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(message);
+    }, delay);
+  });
+}
+
+delayMessage("Olá, mundo!", 2000)
+  .then((result) => {
+    console.log(result); // "Olá, mundo!" será exibido após 2 segundos
+  });
+```
+_Nesse exemplo, a função `delayMessage` retorna uma promise que é resolvida com a mensagem após o atraso especificado._
+<br><br>
+
