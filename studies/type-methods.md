@@ -50,3 +50,22 @@ console.log("   Spaces   ".trim()); // "Spaces"
 ```
 <br><br>
 
+**Métodos de busca e verificação:**
+- `indexOf(searchValue, startIndex)`: Retorna o índice da primeira ocorrência do valor de pesquisa na string.
+- `lastIndexOf(searchValue, startIndex)`: Retorna o índice da última ocorrência do valor de pesquisa na string.
+- `startsWith(searchValue, startIndex)`: Verifica se a string começa com o valor de pesquisa.
+- `endsWith(searchValue, endIndex)`: Verifica se a string termina com o valor de pesquisa.
+- `includes(searchValue, startIndex)`: Verifica se a string contém o valor de pesquisa.
+<br>
+
+Exemplo:
+```
+const texto = "Hello, World!";
+console.log(texto.indexOf("o")); // 4
+console.log(texto.lastIndexOf("o")); // 8
+console.log(texto.startsWith("Hello")); // true
+console.log(texto.endsWith("World!")); // true
+console.log(texto.includes("lo")); // true
+```
+<br><br>
+
