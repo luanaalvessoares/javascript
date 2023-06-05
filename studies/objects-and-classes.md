@@ -741,3 +741,5 @@ catch((erro) => {
 });
 ```
 <br><br>
+
+**Essas são as principais funcionalidades e métodos dos módulos em JavaScript. Com eles, você pode organizar e compartilhar código de forma eficiente, facilitando a manutenção e reutilização de suas aplicações.**
