@@ -89,3 +89,8 @@ console.log(array.join(" - ")); // "Hello - World!"
 - Geração de saída dinâmica em páginas da web.
 - Comparação e busca de padrões em strings.
 <br><br>
+
+**Restrições:**
+- As strings são imutáveis, o que significa que não podem ser modificadas diretamente. Métodos de manipulação de strings retornam uma nova string.
+- As strings são indexadas com base em zero, ou seja, o primeiro caractere está no índice zero.
+<br><br>
