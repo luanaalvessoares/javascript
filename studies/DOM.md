@@ -78,3 +78,5 @@ const inputElement = document.getElementById('meuInput');
 pasteFromClipboard(inputElement);
 ```
 <br><br>
+
+**Esses exemplos demonstram como o clipboard em JavaScript pode ser utilizado para facilitar a manipulação de dados na área de transferência, proporcionando uma interação mais fluída e intuitiva para os usuários.**
