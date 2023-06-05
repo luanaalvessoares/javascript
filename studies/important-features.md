@@ -73,3 +73,30 @@ delayMessage("Olá, mundo!", 2000)
 _Nesse exemplo, a função `delayMessage` retorna uma promise que é resolvida com a mensagem após o atraso especificado._
 <br><br>
 
+**Agora, vejamos um exemplo mais complexo que envolve múltiplas promises e o método `Promise.all` para aguardar a conclusão de todas as promises:**
+```
+function fetchData(url) {
+  return new Promise((resolve, reject) => {
+    // Simulação de uma requisição assíncrona
+    setTimeout(() => {
+      const data = { id: 1, name: "Exemplo de dado" };
+      resolve(data);
+    }, 2000);
+  });
+}
+
+const urls = ["https://api.example.com/1", "https://api.example.com/2", "https://api.example.com/3"];
+
+const promises = urls.map((url) => fetchData(url));
+
+Promise.all(promises)
+  .then((results) => {
+    console.log(results); // Array com os dados de todas as requisições
+  })
+  .catch((error) => {
+    console.error(error); // Tratamento de erro, caso uma ou mais promises sejam rejeitadas
+  });
+```
+
+_Nesse exemplo, a função `fetchData` simula uma requisição assíncrona e retorna uma promise que é resolvida com os dados após um atraso de 2 segundos. O método `Promise.all` é usado para aguardar a conclusão de todas as promises retornadas pela função `fetchData` para todas as URLs. O resultado é um array com os dados de todas as requisições, que é exibido no console._
+<br><br>
