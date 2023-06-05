@@ -108,3 +108,15 @@ _Nesse exemplo, a função `fetchData` simula uma requisição assíncrona e ret
 Em JavaScript, o tipo de dado Symbol é uma primitiva que representa um identificador único e imutável. Símbolos são frequentemente usados como chaves de propriedades de objetos para evitar colisões de nomes e garantir a singularidade dessas propriedades. Vamos explorar os principais aspectos dos símbolos em JavaScript, incluindo sua criação, métodos, usos e exemplos.
 <br>
 
+**Criando símbolos:**
+- `Symbol()`: Cria um símbolo único.
+<br>
+
+Exemplo:
+```
+const sym1 = Symbol();
+const sym2 = Symbol();
+console.log(sym1 === sym2); // false
+```
+<br><br>
+
