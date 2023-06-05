@@ -69,3 +69,17 @@ console.log(texto.includes("lo")); // true
 ```
 <br><br>
 
+**Conversão para array:**
+- `split(separator, limit)`: Divide uma string em um array de substrings com base em um separador.
+- `join(separator)`: Junta todos os elementos de um array em uma única string usando um separador.
+<br>
+
+Exemplo:
+```
+const texto = "Hello, World!";
+const array = texto.split(", ");
+console.log(array); // ["Hello", "World!"]
+console.log(array.join(" - ")); // "Hello - World!"
+```
+<br><br>
+
