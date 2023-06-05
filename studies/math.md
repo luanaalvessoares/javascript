@@ -49,3 +49,12 @@ console.log(Math.exp(2)); // 7.3890560989306495 (e elevado à potência de 2)
 ```
 <br><br>
 
+**Constantes:**
+A biblioteca `Math` também possui algumas constantes úteis, como `Math.PI` para o valor de pi (π) e `Math.E` para o valor de Euler.
+<br>
+
+Exemplo:
+```
+console.log(Math.PI); // 3.141592653589793 (valor de pi)
+console.log(Math.E); // 2.718281828459045 (valor de Euler)
+```
