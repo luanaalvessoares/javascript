@@ -60,3 +60,21 @@ copyToClipboard('Texto que será copiado');
 ```
 <br><br>
 
+**Colar conteúdo da área de transferência em um campo de entrada**
+```
+function pasteFromClipboard(inputField) {
+  navigator.clipboard.readText()
+    .then((text) => {
+      inputField.value = text;
+      console.log('Conteúdo colado com sucesso!');
+    })
+    .catch((error) => {
+      console.error('Falha ao colar o conteúdo: ', error);
+    });
+}
+
+// Exemplo de uso
+const inputElement = document.getElementById('meuInput');
+pasteFromClipboard(inputElement);
+```
+<br><br>
