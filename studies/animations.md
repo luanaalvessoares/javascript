@@ -90,3 +90,5 @@ setTimeout(sayHello, 2000); // Executa a função sayHello após 2 segundos
 **O `setTimeout` é útil quando você precisa atrasar a execução de um bloco de código específico, como exibir uma mensagem após um determinado tempo, ou fazer uma atualização em um elemento da página depois de um atraso.**
 <br><br><hr>
 
+## Set Interval
+`setInterval` é uma função em JavaScript que permite a execução repetida de um determinado bloco de código em intervalos regulares de tempo. 
