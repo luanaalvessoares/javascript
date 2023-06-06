@@ -198,3 +198,9 @@ console.log(retangulo[AREA]);
 <br><br>
 
 **Essas são as principais funcionalidades e métodos dos símbolos em JavaScript. Eles fornecem uma maneira eficiente de criar identificadores únicos e personalizar o comportamento de objetos.**
+<br><br><hr>
+
+## Regex
+Expressões regulares são sequências de caracteres que formam um padrão de busca. Elas são usadas para realizar correspondências de padrões em strings e realizar tarefas como validação de entrada, busca e substituição de texto.
+<br>
+

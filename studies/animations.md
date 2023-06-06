@@ -128,5 +128,3 @@ setTimeout(function() {
 <br><br>
 
 **_Lembre-se de que o tempo especificado em `setTimeout` e `setInterval` é em milissegundos. Portanto, para definir um intervalo de 1 segundo, você deve usar o valor 1000 (1000 milissegundos = 1 segundo)._**
-<br><br>
-
