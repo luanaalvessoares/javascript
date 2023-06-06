@@ -226,3 +226,6 @@ console.log(regex.test(str)); // true, pois "hello" está presente na string
 _No exemplo acima, a expressão regular `/hello/` é usada para verificar se a string contém a palavra "hello". O método `test()` retorna `true` se houver uma correspondência e `false` caso contrário._
 <br><br>
 
+Além disso, as expressões regulares em JavaScript possuem diversos métodos, como `match()`, `replace()`, `search()`, `split()`, que permitem realizar várias operações em strings usando padrões de correspondência.
+<br>
+
