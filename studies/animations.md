@@ -91,4 +91,15 @@ setTimeout(sayHello, 2000); // Executa a função sayHello após 2 segundos
 <br><br><hr>
 
 ## Set Interval
-`setInterval` é uma função em JavaScript que permite a execução repetida de um determinado bloco de código em intervalos regulares de tempo. 
+`setInterval` é uma função em JavaScript que permite a execução repetida de um determinado bloco de código em intervalos regulares de tempo. A sintaxe básica do `setInterval` é a seguinte:
+<br>
+
+```
+setInterval(callback, intervalo);
+```
+<br>
+
+Onde:
+- `callback`: É a função que será executada repetidamente no intervalo especificado.
+- `intervalo`: É o tempo em milissegundos entre cada execução da função.
+
