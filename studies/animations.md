@@ -113,3 +113,20 @@ setInterval(sayHello, 1000); // Executa a função sayHello a cada 1 segundo
 ```
 <br><br>
 
+O `setInterval` é comumente usado para criar animações, atualizar dados em tempo real, verificar atualizações periódicas de conteúdo, entre outras tarefas que requerem execução repetida em intervalos regulares. No entanto, é importante ter cuidado ao usar `setInterval` para garantir que você tenha um meio de parar a execução contínua quando necessário. Você pode fazer isso usando a função `clearInterval`, que cancela a execução do `setInterval`.
+<br>
+
+Exemplo:
+```
+const intervalId = setInterval(sayHello, 1000); // Executa a função sayHello a cada 1 segundo
+
+// Depois de 5 segundos, cancela o setInterval
+setTimeout(function() {
+  clearInterval(intervalId);
+}, 5000);
+```
+<br><br>
+
+**_Lembre-se de que o tempo especificado em `setTimeout` e `setInterval` é em milissegundos. Portanto, para definir um intervalo de 1 segundo, você deve usar o valor 1000 (1000 milissegundos = 1 segundo)._**
+<br><br>
+
