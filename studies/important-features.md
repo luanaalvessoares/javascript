@@ -247,4 +247,4 @@ Existem várias regras e padrões que podem ser usados nas expressões regulares
 As expressões regulares são amplamente utilizadas em várias áreas, como validação de formulários, análise de texto, extração de informações, formatação de strings e muito mais.
 <br>
 
-
+**Lembre-se de que as expressões regulares podem ser complexas e exigem um pouco de prática para dominar. Existem também recursos online, como websites e ferramentas específicas para testar e construir expressões regulares, que podem ajudar no processo de aprendizado e criação de padrões mais avançados.**
