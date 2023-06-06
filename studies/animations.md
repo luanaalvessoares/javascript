@@ -103,3 +103,13 @@ Onde:
 - `callback`: É a função que será executada repetidamente no intervalo especificado.
 - `intervalo`: É o tempo em milissegundos entre cada execução da função.
 
+Exemplo:
+```
+function sayHello() {
+  console.log("Olá!");
+}
+
+setInterval(sayHello, 1000); // Executa a função sayHello a cada 1 segundo
+```
+<br><br>
+
