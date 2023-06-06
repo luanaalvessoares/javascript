@@ -51,3 +51,9 @@ gsap.to(element, { duration: 2, x: 200 });
 ```
 <br><br>
 
+**Onde usar animações em JavaScript**
+- Websites: As animações podem ser usadas para criar efeitos visuais atraentes em páginas da web, como sliders, carrosséis, animações de carregamento, menus interativos, etc.
+- Aplicativos Web: Animar elementos de interface do usuário em aplicativos web pode melhorar a experiência do usuário e fornecer feedback visual.
+- Jogos: JavaScript é amplamente utilizado no desenvolvimento de jogos web, onde animações são essenciais para criar movimentos suaves, transições e efeitos especiais.
+<br><br>
+
