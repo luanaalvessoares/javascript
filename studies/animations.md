@@ -13,3 +13,20 @@ element.style.width = "200px";
 ```
 <br><br>
 
+**Animando propriedades com JavaScript**
+- Propriedade `requestAnimationFrame()`: Essa função permite executar uma função de atualização antes do próximo repintar da tela, proporcionando uma animação suave.
+<br>
+
+Exemplo:
+```
+function animate() {
+    const element = document.getElementById("myElement");
+    element.style.left = parseInt(element.style.left) + 5 + "px";
+    if (parseInt(element.style.left) < 200) {
+    requestAnimationFrame(animate);
+    }
+}
+animate();
+```
+<br><br>
+
