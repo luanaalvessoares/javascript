@@ -30,3 +30,24 @@ animate();
 ```
 <br><br>
 
+**Bibliotecas e frameworks**
+- CSS Animations Frameworks: Existem várias bibliotecas populares, como CSS Animations, Animate.css e Magic Animations, que fornecem um conjunto de classes pré-definidas para criar animações impressionantes apenas adicionando e removendo classes nos elementos HTML.
+<br>
+
+Exemplo (usando Animate.css):
+```
+const element = document.getElementById("myElement");
+element.classList.add("animate__animated", "animate__bounceIn");
+```
+<br><br>
+
+- JavaScript Animation Libraries: Bibliotecas como GreenSock (GSAP) e Velocity.js oferecem recursos avançados para criar animações complexas e controladas por código, incluindo sequências, interações e efeitos físicos.
+<br>
+
+Exemplo (usando GSAP):
+```
+const element = document.getElementById("myElement");
+gsap.to(element, { duration: 2, x: 200 });
+```
+<br><br>
+
