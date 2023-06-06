@@ -229,3 +229,15 @@ _No exemplo acima, a expressão regular `/hello/` é usada para verificar se a s
 Além disso, as expressões regulares em JavaScript possuem diversos métodos, como `match()`, `replace()`, `search()`, `split()`, que permitem realizar várias operações em strings usando padrões de correspondência.
 <br>
 
+Exemplo:
+```
+const str = "Olá, mundo! 123";
+const regex = /\d+/;
+
+console.log(str.match(regex)); // ["123"], retorna um array com os dígitos encontrados na string
+console.log(str.replace(regex, "X")); // "Olá, mundo! X", substitui os dígitos encontrados por "X"
+console.log(str.search(regex)); // 8, retorna a posição do primeiro dígito na string
+console.log(str.split(regex)); // ["Olá, mundo! ", ""], divide a string em um array nos dígitos encontrados
+```
+<br><br>
+
