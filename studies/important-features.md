@@ -216,3 +216,13 @@ As expressões regulares são definidas usando uma combinação de caracteres li
 - `()` (parênteses): Agrupa padrões em subexpressões.
 <br>
 
+Exemplo:
+```
+const regex = /hello/;
+const str = "Olá, hello mundo!";
+
+console.log(regex.test(str)); // true, pois "hello" está presente na string
+```
+_No exemplo acima, a expressão regular `/hello/` é usada para verificar se a string contém a palavra "hello". O método `test()` retorna `true` se houver uma correspondência e `false` caso contrário._
+<br><br>
+
