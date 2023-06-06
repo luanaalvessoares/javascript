@@ -241,3 +241,10 @@ console.log(str.split(regex)); // ["Olá, mundo! ", ""], divide a string em um a
 ```
 <br><br>
 
+Existem várias regras e padrões que podem ser usados nas expressões regulares, como quantificadores, classes de caracteres, âncoras, grupos de captura, entre outros. É importante estudar e praticar expressões regulares para aproveitar seu poder e flexibilidade ao máximo.
+<br>
+
+As expressões regulares são amplamente utilizadas em várias áreas, como validação de formulários, análise de texto, extração de informações, formatação de strings e muito mais.
+<br>
+
+
