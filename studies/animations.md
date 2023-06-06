@@ -64,4 +64,16 @@ gsap.to(element, { duration: 2, x: 200 });
 <br><br><hr>
 
 ## Set Time Out
-`setTimeout` é uma função em JavaScript que permite a execução de um determinado bloco de código depois de um certo período de tempo. 
+`setTimeout` é uma função em JavaScript que permite a execução de um determinado bloco de código depois de um certo período de tempo. A sintaxe básica do `setTimeout` é a seguinte:
+<br>
+
+```
+setTimeout(callback, tempo);
+```
+<br>
+
+Onde:
+- `callback`: É a função que será executada após o tempo especificado.
+- `tempo`: É o tempo em milissegundos que deve decorrer antes da execução da função.
+<br>
+
