@@ -77,3 +77,13 @@ Onde:
 - `tempo`: É o tempo em milissegundos que deve decorrer antes da execução da função.
 <br>
 
+Exemplo:
+```
+function sayHello() {
+  console.log("Olá!");
+}
+
+setTimeout(sayHello, 2000); // Executa a função sayHello após 2 segundos
+```
+<br><br>
+
