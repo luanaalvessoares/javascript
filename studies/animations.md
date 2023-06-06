@@ -61,5 +61,7 @@ gsap.to(element, { duration: 2, x: 200 });
 - Use aceleração por GPU: Ao animar elementos, utilize propriedades CSS que podem ser aceleradas por hardware, como `transform` e `opacity`, para obter melhor desempenho.
 - Utilize debounce e throttling: Para animações baseadas em eventos, como redimensionamento de janela ou rolagem, use técnicas como debounce e throttling para limitar a frequência de execução da animação.
 - Evite animações pesadas em dispositivos móveis: Dispositivos móveis têm recursos limitados, portanto, evite animações complexas ou muito intensas que possam prejudicar o desempenho.
-<br><br>
+<br><br><hr>
 
+## Set Time Out
+`setTimeout` é uma função em JavaScript que permite a execução de um determinado bloco de código depois de um certo período de tempo. 
