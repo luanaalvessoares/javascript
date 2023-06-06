@@ -204,3 +204,15 @@ console.log(retangulo[AREA]);
 Expressões regulares são sequências de caracteres que formam um padrão de busca. Elas são usadas para realizar correspondências de padrões em strings e realizar tarefas como validação de entrada, busca e substituição de texto.
 <br>
 
+As expressões regulares são definidas usando uma combinação de caracteres literais e metacaracteres. Alguns dos metacaracteres mais comuns são:
+
+- `.` (ponto): Corresponde a qualquer caractere, exceto quebras de linha.
+- `^` (circunflexo): Corresponde ao início de uma string.
+- `$` (cifrão): Corresponde ao final de uma string.
+- `*` (asterisco): Corresponde a zero ou mais ocorrências do padrão anterior.
+- `+` (mais): Corresponde a uma ou mais ocorrências do padrão anterior.
+- `?` (ponto de interrogação): Torna o padrão anterior opcional.
+- `[]` (colchetes): Define um conjunto de caracteres possíveis de corresponder.
+- `()` (parênteses): Agrupa padrões em subexpressões.
+<br>
+
