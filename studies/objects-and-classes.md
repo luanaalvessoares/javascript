@@ -796,3 +796,31 @@ const [variavel1, variavel2] = array;
 ```
 <br><br>
 
+Aqui está um exemplo prático:
+<br>
+
+```
+const frutas = ['Maçã', 'Banana', 'Laranja'];
+
+// Desestruturando o array frutas
+const [fruta1, fruta2, fruta3] = frutas;
+
+console.log(fruta1); // 'Maçã'
+console.log(fruta2); // 'Banana'
+console.log(fruta3); // 'Laranja'
+```
+<br><br>
+
+Você também pode descartar elementos do array utilizando uma vírgula:
+<br>
+
+```
+const numeros = [1, 2, 3, 4, 5];
+
+const [primeiro, , terceiro] = numeros;
+
+console.log(primeiro);  // 1
+console.log(terceiro); // 3
+```
+<br><br>
+
