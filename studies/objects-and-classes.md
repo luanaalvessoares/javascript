@@ -840,3 +840,4 @@ exibirDados(pessoa); // Saída: 'Nome: Maria, Idade: 25'
 _Neste exemplo, a função `exibirDados` espera receber um objeto como argumento e usa a desestruturação para extrair as propriedades `nome` e `idade` do objeto diretamente._
 <br><br>
 
+**A desestruturação em JavaScript oferece uma maneira poderosa e concisa de extrair valores de objetos e arrays. Ela pode ser usada para simplificar o código, torná-lo mais legível e evitar repetições. É uma técnica amplamente utilizada em programação JavaScript moderna.**
