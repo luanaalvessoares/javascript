@@ -210,3 +210,4 @@ console.log('Tecla de acesso:', accessKey);
 _Este código irá imprimir a tecla de acesso definida para o elemento no console._
 <br><br>
 
+**É importante observar que o comportamento exato da tecla de acesso pode variar entre navegadores e sistemas operacionais. Além disso, algumas teclas de acesso podem entrar em conflito com atalhos do navegador ou do sistema, portanto, é recomendável evitar o uso de teclas comuns ou reservadas.**
