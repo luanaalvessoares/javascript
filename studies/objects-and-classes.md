@@ -786,3 +786,13 @@ console.log(cidade); // 'São Paulo'
 ```
 <br><br>
 
+**Desestruturação de Arrays:**
+A desestruturação de arrays permite extrair elementos específicos de um array e atribuí-los a variáveis individuais. A sintaxe básica para desestruturar um array é a seguinte:
+<br>
+
+```
+const array = [elemento1, elemento2, ...];
+const [variavel1, variavel2] = array;
+```
+<br><br>
+
