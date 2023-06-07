@@ -200,3 +200,13 @@ element.accessKey = 's';
 _Neste exemplo, `myElement` é o ID do elemento HTML para o qual queremos definir a tecla de acesso. Neste caso, a tecla de acesso foi definida como "s". Agora, quando o usuário pressionar Alt+s (ou outra combinação dependendo do navegador), o elemento será ativado ou focado._
 <br><br>
 
+Além de definir a propriedade `accessKey`, você também pode recuperar a tecla de acesso atualmente definida em um elemento usando a mesma propriedade:
+
+```
+// Obtendo a tecla de acesso definida para o elemento
+var accessKey = element.accessKey;
+console.log('Tecla de acesso:', accessKey);
+```
+_Este código irá imprimir a tecla de acesso definida para o elemento no console._
+<br><br>
+
