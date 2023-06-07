@@ -131,3 +131,9 @@ Exemplo:
 console.log(history.length); // Exibe o número de URLs no histórico
 console.log(history.state); // Exibe o objeto de estado associado à página atual
 ```
+<br><br><hr>
+
+## Get Bounding Client Rect
+A função `getBoundingClientRect()` em JavaScript é usada para obter as coordenadas de um elemento em relação à viewport do navegador. Ela retorna um objeto `DOMRect` que contém informações sobre a posição, tamanho, bordas e margens do elemento.
+<br>
+
