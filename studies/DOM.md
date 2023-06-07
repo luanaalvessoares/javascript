@@ -185,3 +185,6 @@ _Neste exemplo, `myElement` é o ID do elemento para o qual queremos obter as co
 A propriedade `accessKey` em JavaScript é usada para definir ou obter a tecla de acesso (ou atalho) de um elemento HTML. Essa tecla de acesso permite que os usuários ativem um elemento usando uma combinação de teclas, geralmente em conjunto com a tecla Alt (ou Ctrl, dependendo do navegador e sistema operacional).
 <br>
 
+Ao definir a propriedade `accessKey` em um elemento, você está associando uma tecla específica a esse elemento. Quando o usuário pressionar a tecla de acesso e a tecla de atalho (geralmente Alt), o elemento será focado ou ativado, dependendo do tipo de elemento.
+<br>
+
