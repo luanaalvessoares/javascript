@@ -749,3 +749,13 @@ catch((erro) => {
 A desestruturação (destructuring) em JavaScript é uma forma concisa de extrair valores de objetos ou arrays e atribuí-los a variáveis individuais. Ela permite acessar elementos aninhados em objetos e arrays de uma maneira mais simplificada e legível.A desestruturação pode ser usada tanto com objetos como com arrays. Vamos explorar cada um deles separadamente.
 <br>
 
+**Desestruturação de Objetos:**
+A desestruturação de objetos permite extrair valores de propriedades específicas de um objeto e atribuí-los a variáveis com o mesmo nome das propriedades. A sintaxe básica para desestruturar um objeto é a seguinte:
+<br>
+
+```
+const objeto = { propriedade1: valor1, propriedade2: valor2, ... };
+const { propriedade1, propriedade2 } = objeto;
+```
+<br><br>
+
