@@ -149,3 +149,10 @@ O objeto `DOMRect` retornado possui as seguintes propriedades:
 - `left`: A coordenada horizontal do canto esquerdo do retângulo (em relação à viewport).
 <br>
 
+Essas informações podem ser úteis em várias situações, como:
+
+- Posicionamento dinâmico de elementos: Você pode usar as coordenadas retornadas para posicionar um elemento de acordo com a posição de outro elemento na página.
+- Cálculos de colisão: Ao comparar as coordenadas de dois elementos, você pode determinar se eles estão colidindo ou sobrepostos.
+- Detecção de visibilidade: Verificar se um elemento está visível na viewport, com base em suas coordenadas.
+<br>
+
