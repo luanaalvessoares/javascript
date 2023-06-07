@@ -137,3 +137,15 @@ console.log(history.state); // Exibe o objeto de estado associado à página atu
 A função `getBoundingClientRect()` em JavaScript é usada para obter as coordenadas de um elemento em relação à viewport do navegador. Ela retorna um objeto `DOMRect` que contém informações sobre a posição, tamanho, bordas e margens do elemento.
 <br>
 
+O objeto `DOMRect` retornado possui as seguintes propriedades:
+
+- `x`: A coordenada horizontal do canto esquerdo do retângulo (em pixels).
+- `y`: A coordenada vertical do canto superior do retângulo (em pixels).
+- `width`: A largura do retângulo (em pixels).
+- `height`: A altura do retângulo (em pixels).
+- `top`: A coordenada vertical do canto superior do retângulo (em relação à viewport).
+- `right`: A coordenada horizontal do canto direito do retângulo (em relação à viewport).
+- `bottom`: A coordenada vertical do canto inferior do retângulo (em relação à viewport).
+- `left`: A coordenada horizontal do canto esquerdo do retângulo (em relação à viewport).
+<br>
+
