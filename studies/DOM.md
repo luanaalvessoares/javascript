@@ -178,3 +178,4 @@ console.log('Left:', rect.left);
 _Neste exemplo, `myElement` é o ID do elemento para o qual queremos obter as coordenadas. As informações do retângulo são então exibidas no console._
 <br><br>
 
+**Tenha em mente que as coordenadas retornadas pela função `getBoundingClientRect()` são relativas à viewport, e não à página inteira. Se você precisar das coordenadas em relação ao documento inteiro, pode ser necessário considerar o deslocamento da rolagem (scroll) da página.**
