@@ -824,3 +824,19 @@ console.log(terceiro); // 3
 ```
 <br><br>
 
+**Desestruturação de Parâmetros de Função:**
+A desestruturação também pode ser aplicada aos parâmetros de uma função, permitindo extrair valores diretamente dos argumentos passados para a função. Isso torna a chamada da função mais legível e flexível. Veja um exemplo:
+<br>
+
+```
+function exibirDados({ nome, idade }) {
+  console.log(`Nome: ${nome}, Idade: ${idade}`);
+}
+
+const pessoa = { nome: 'Maria', idade: 25 };
+
+exibirDados(pessoa); // Saída: 'Nome: Maria, Idade: 25'
+```
+_Neste exemplo, a função `exibirDados` espera receber um objeto como argumento e usa a desestruturação para extrair as propriedades `nome` e `idade` do objeto diretamente._
+<br><br>
+
