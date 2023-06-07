@@ -759,3 +759,30 @@ const { propriedade1, propriedade2 } = objeto;
 ```
 <br><br>
 
+Aqui está um exemplo prático:
+<br>
+
+```
+const pessoa = { nome: 'João', idade: 30, cidade: 'São Paulo' };
+
+// Desestruturando o objeto pessoa
+const { nome, idade, cidade } = pessoa;
+
+console.log(nome);   // 'João'
+console.log(idade);  // 30
+console.log(cidade); // 'São Paulo'
+```
+<br><br>
+
+Você também pode atribuir valores padrão para as variáveis, caso a propriedade correspondente não esteja definida no objeto:
+<br>
+
+```
+const pessoa = { nome: 'João', idade: 30 };
+
+const { nome, idade, cidade = 'São Paulo' } = pessoa;
+
+console.log(cidade); // 'São Paulo'
+```
+<br><br>
+
