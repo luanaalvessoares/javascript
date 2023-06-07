@@ -156,3 +156,25 @@ Essas informações podem ser úteis em várias situações, como:
 - Detecção de visibilidade: Verificar se um elemento está visível na viewport, com base em suas coordenadas.
 <br>
 
+Abaixo um exemplo de uso da função `getBoundingClientRect()`:
+
+```
+// Obtendo uma referência para o elemento desejado
+var element = document.getElementById('myElement');
+
+// Obtendo as coordenadas do elemento em relação à viewport
+var rect = element.getBoundingClientRect();
+
+// Extraindo informações do objeto DOMRect
+console.log('Posição X:', rect.x);
+console.log('Posição Y:', rect.y);
+console.log('Largura:', rect.width);
+console.log('Altura:', rect.height);
+console.log('Top:', rect.top);
+console.log('Right:', rect.right);
+console.log('Bottom:', rect.bottom);
+console.log('Left:', rect.left);
+```
+_Neste exemplo, `myElement` é o ID do elemento para o qual queremos obter as coordenadas. As informações do retângulo são então exibidas no console._
+<br><br>
+
