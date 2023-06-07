@@ -743,3 +743,9 @@ catch((erro) => {
 <br><br>
 
 **Essas são as principais funcionalidades e métodos dos módulos em JavaScript. Com eles, você pode organizar e compartilhar código de forma eficiente, facilitando a manutenção e reutilização de suas aplicações.**
+<br><br><hr>
+
+## Desestruturação
+A desestruturação (destructuring) em JavaScript é uma forma concisa de extrair valores de objetos ou arrays e atribuí-los a variáveis individuais. Ela permite acessar elementos aninhados em objetos e arrays de uma maneira mais simplificada e legível.A desestruturação pode ser usada tanto com objetos como com arrays. Vamos explorar cada um deles separadamente.
+<br>
+
