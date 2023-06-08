@@ -323,3 +323,13 @@ O navegador possui recursos para validar automaticamente os tipos de entrada com
 ```
 <br><br>
 
+**Validação de formato:**
+Você pode usar expressões regulares para validar o formato de uma entrada. As expressões regulares são padrões de busca e correspondência de texto. Elas são úteis para verificar se um valor atende a um formato específico, como um número de telefone, um código postal ou uma senha com requisitos específicos.
+
+```
+<input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
+<input type="text" pattern="[A-Za-z]{3}" placeholder="ABC" />
+<input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" placeholder="Senha" />
+```
+<br><br>
+
