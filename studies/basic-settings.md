@@ -27,3 +27,13 @@ const a = 5; const b = 10; const c = a + b;
 ```
 <br><br>
 
+**Declaração de função imediatamente invocada:**
+Em uma declaração de função imediatamente invocada (IIFE), o ponto e vírgula é necessário para separar a expressão da função e a chamada imediata.
+
+```
+(function() {
+  // código da função
+})();
+```
+<br><br>
+
