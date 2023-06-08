@@ -232,3 +232,17 @@ if ('geolocation' in navigator) {
 ```
 <br><br>
 
+**Obter a localização do usuário:**
+Uma vez que a geolocalização é suportada, você pode usar o método `navigator.geolocation.getCurrentPosition()` para obter a localização atual do usuário. Esse método recebe uma função de callback que é invocada com a posição do usuário.
+
+```
+navigator.geolocation.getCurrentPosition(function(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  // Utilize a latitude e longitude obtidas aqui
+}, function(error) {
+  // Trate os erros aqui
+});
+```
+<br><br>
+
