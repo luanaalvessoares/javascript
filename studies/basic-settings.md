@@ -15,3 +15,7 @@ function minhaFuncao() {
 }
 ```
 
+## Casos em que ponto e vírgula (;) é obrigatório
+Em JavaScript, o ponto e vírgula (;) é usado para separar instruções ou comandos individuais. Embora o ponto e vírgula seja opcional em muitos casos, existem situações em que ele é obrigatório para evitar comportamentos inesperados no código. Vejamos abaixo os casos em que o ponto e vírgula é obrigatório:
+<br>
+
