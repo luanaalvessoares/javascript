@@ -333,3 +333,17 @@ Você pode usar expressões regulares para validar o formato de uma entrada. As 
 ```
 <br><br>
 
+**Validação de campos obrigatórios:**
+Você pode usar o atributo `required` em campos de formulário para garantir que o usuário preencha determinados campos antes de enviar o formulário.
+
+```
+<input type="text" required />
+<textarea required></textarea>
+<select required>
+  <option value="">Selecione uma opção</option>
+  <option value="opcao1">Opção 1</option>
+  <option value="opcao2">Opção 2</option>
+</select>
+```
+<br><br>
+
