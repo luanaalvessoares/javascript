@@ -246,3 +246,28 @@ navigator.geolocation.getCurrentPosition(function(position) {
 ```
 <br><br>
 
+**Lidar com erros:**
+É importante lidar com possíveis erros que possam ocorrer ao obter a localização do usuário. Você pode fornecer uma segunda função de callback como argumento opcional para o método `getCurrentPosition()`, que será invocada se ocorrer algum erro.
+
+```
+navigator.geolocation.getCurrentPosition(function(position) {
+  // ...
+}, function(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      // O usuário negou a permissão de geolocalização
+      break;
+    case error.POSITION_UNAVAILABLE:
+      // A posição não está disponível
+      break;
+    case error.TIMEOUT:
+      // Tempo limite expirado ao tentar obter a posição
+      break;
+    case error.UNKNOWN_ERROR:
+      // Ocorreu um erro desconhecido
+      break;
+  }
+});
+```
+<br><br>
+
