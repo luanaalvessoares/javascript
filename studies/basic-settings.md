@@ -53,3 +53,16 @@ for (const key in obj) {
 ```
 <br><br>
 
+**Uso de expressões após o comando return, throw ou break:**
+Se você tiver uma expressão após um comando return, throw ou break, é necessário colocar um ponto e vírgula antes dessa expressão.
+
+```
+function myFunction() {
+  if (condition) {
+    return 1;
+  }
+  return 2;
+}
+```
+<br><br>
+
