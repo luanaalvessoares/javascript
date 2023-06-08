@@ -220,3 +220,15 @@ A geolocalização em JavaScript é uma funcionalidade que permite obter a local
 Para usar a geolocalização em JavaScript, você precisa seguir as seguintes etapas:
 <br>
 
+**Verificar a disponibilidade do recurso:**
+Antes de usar a geolocalização, verifique se o navegador do usuário suporta essa funcionalidade. Você pode fazer isso verificando se o objeto `navigator.geolocation` está presente no navegador.
+
+```
+if ('geolocation' in navigator) {
+  // A geolocalização é suportada
+} else {
+  // A geolocalização não é suportada
+}
+```
+<br><br>
+
