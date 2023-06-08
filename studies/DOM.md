@@ -285,3 +285,20 @@ navigator.geolocation.getCurrentPosition(successCallback, errorCallback, options
 ```
 <br><br>
 
+Agora veja um exemplo completo que mostra como obter a localização do usuário e exibir a latitude e longitude no console:
+
+```
+if ('geolocation' in navigator) {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    console.log('Latitude:', latitude);
+    console.log('Longitude:', longitude);
+  }, function(error) {
+    console.error('Erro ao obter a localização:', error);
+  });
+} else {
+  console.error('Geolocalização não é suportada no navegador.');
+}
+```
+<br><br>
