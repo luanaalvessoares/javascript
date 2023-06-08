@@ -304,3 +304,12 @@ if ('geolocation' in navigator) {
 <br><br>
 
 **Lembre-se de que, para obter a localização do usuário, é necessário que o usuário conceda permissão ao navegador para compartilhar essa informação.**
+<br><br><hr>
+
+## Validação nativa
+A validação nativa em JavaScript refere-se ao uso das funcionalidades de validação fornecidas pelo próprio navegador, sem a necessidade de bibliotecas ou plugins adicionais. Com a validação nativa, você pode verificar se os dados inseridos pelo usuário em um formulário atendem aos critérios desejados antes de enviar os dados para o servidor.
+<br>
+
+Existem várias técnicas de validação nativa disponíveis em JavaScript, incluindo validação de tipos de entrada, validação de formato, validação de campos obrigatórios, entre outras. Vamos ver sobre cada uma delas em detalhes:
+<br>
+
