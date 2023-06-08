@@ -302,3 +302,5 @@ if ('geolocation' in navigator) {
 }
 ```
 <br><br>
+
+**Lembre-se de que, para obter a localização do usuário, é necessário que o usuário conceda permissão ao navegador para compartilhar essa informação.**
