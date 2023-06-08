@@ -37,3 +37,19 @@ Em uma declaração de função imediatamente invocada (IIFE), o ponto e vírgul
 ```
 <br><br>
 
+**Loops for/of e for/in:**
+Ao usar loops for/of ou for/in, é recomendado o uso de ponto e vírgula após cada expressão do loop.
+
+```
+const array = [1, 2, 3];
+for (const element of array) {
+  // código do loop
+}
+
+const obj = { a: 1, b: 2, c: 3 };
+for (const key in obj) {
+  // código do loop
+}
+```
+<br><br>
+
