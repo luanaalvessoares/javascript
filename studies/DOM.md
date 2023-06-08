@@ -211,3 +211,12 @@ _Este código irá imprimir a tecla de acesso definida para o elemento no consol
 <br><br>
 
 **É importante observar que o comportamento exato da tecla de acesso pode variar entre navegadores e sistemas operacionais. Além disso, algumas teclas de acesso podem entrar em conflito com atalhos do navegador ou do sistema, portanto, é recomendável evitar o uso de teclas comuns ou reservadas.**
+<br><br><hr>
+
+## Geolocalização
+A geolocalização em JavaScript é uma funcionalidade que permite obter a localização geográfica atual do dispositivo do usuário, como latitude e longitude, usando o navegador. Essa funcionalidade é baseada no uso do API de Geolocalização do HTML5, que está disponível na maioria dos navegadores modernos.
+<br>
+
+Para usar a geolocalização em JavaScript, você precisa seguir as seguintes etapas:
+<br>
+
