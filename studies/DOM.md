@@ -271,3 +271,17 @@ navigator.geolocation.getCurrentPosition(function(position) {
 ```
 <br><br>
 
+**Opções adicionais:**
+Você também pode fornecer opções adicionais ao chamar o método `getCurrentPosition()`, como precisão desejada, tempo limite, entre outros. Essas opções são especificadas em um objeto como argumento opcional.
+
+```
+const options = {
+  enableHighAccuracy: true, // Habilita a alta precisão (GPS)
+  timeout: 5000, // Tempo limite de 5 segundos
+  maximumAge: 0 // Não utiliza uma posição em cache
+};
+
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback, options);
+```
+<br><br>
+
