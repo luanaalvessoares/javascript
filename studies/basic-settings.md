@@ -66,3 +66,7 @@ function myFunction() {
 ```
 <br><br>
 
+**É importante notar que o JavaScript possui um mecanismo chamado "inserção automática de ponto e vírgula" (Automatic Semicolon Insertion - ASI), que adiciona automaticamente pontos e vírgulas em certas situações onde eles são omitidos. No entanto, confiar exclusivamente no ASI pode levar a erros sutis no código, portanto, é recomendado incluir explicitamente os pontos e vírgulas nos lugares apropriados.**
+<br>
+
+**_Embora o ponto e vírgula seja obrigatório nos casos mencionados acima, é comum e recomendado também utilizá-lo ao final de cada instrução como boa prática de codificação, para evitar problemas e ambiguidades em situações futuras._**
