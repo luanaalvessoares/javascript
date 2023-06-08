@@ -313,3 +313,13 @@ A validação nativa em JavaScript refere-se ao uso das funcionalidades de valid
 Existem várias técnicas de validação nativa disponíveis em JavaScript, incluindo validação de tipos de entrada, validação de formato, validação de campos obrigatórios, entre outras. Vamos ver sobre cada uma delas em detalhes:
 <br>
 
+**Validação de tipos de entrada:**
+O navegador possui recursos para validar automaticamente os tipos de entrada comuns, como números, datas e emails. Por exemplo, se você tiver um campo de entrada numérica, o navegador garantirá que apenas números sejam inseridos. Se você tiver um campo de entrada de email, o navegador verificará se o valor inserido tem o formato de um email válido.
+
+```
+<input type="number" />
+<input type="date" />
+<input type="email" />
+```
+<br><br>
+
