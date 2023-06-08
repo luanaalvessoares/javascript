@@ -374,3 +374,4 @@ function validarFormulario() {
 _Neste exemplo, a função `validarFormulario()` é chamada quando o formulário é enviado. Ela verifica se o campo de nome foi preenchido e exibe uma mensagem de alerta se estiver vazio._
 <br><br>
 
+**É importante notar que a validação no lado do cliente é útil para melhorar a experiência do usuário, mas não deve ser a única forma de validação. A validação também deve ser realizada no lado do servidor para garantir que os dados sejam devidamente verificados antes de serem processados ou armazenados.**
