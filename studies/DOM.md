@@ -347,3 +347,30 @@ Você pode usar o atributo `required` em campos de formulário para garantir que
 ```
 <br><br>
 
+**Validação personalizada:**
+Além das opções de validação mencionadas acima, você também pode adicionar validações personalizadas usando JavaScript. Isso envolve o uso de eventos, como `submit` e `input`, para capturar os dados inseridos pelo usuário e executar suas próprias verificações personalizadas.
+
+```
+<form onsubmit="return validarFormulario()">
+  <input type="text" id="nome" />
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+function validarFormulario() {
+  const nome = document.getElementById('nome').value;
+  
+  if (nome === '') {
+    alert('Por favor, preencha o nome.');
+    return false; // Impede o envio do formulário
+  }
+  
+  // Outras validações personalizadas...
+  
+  return true; // Permite o envio do formulário
+}
+</script>
+```
+_Neste exemplo, a função `validarFormulario()` é chamada quando o formulário é enviado. Ela verifica se o campo de nome foi preenchido e exibe uma mensagem de alerta se estiver vazio._
+<br><br>
+
