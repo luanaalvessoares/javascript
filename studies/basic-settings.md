@@ -19,3 +19,11 @@ function minhaFuncao() {
 Em JavaScript, o ponto e vírgula (;) é usado para separar instruções ou comandos individuais. Embora o ponto e vírgula seja opcional em muitos casos, existem situações em que ele é obrigatório para evitar comportamentos inesperados no código. Vejamos abaixo os casos em que o ponto e vírgula é obrigatório:
 <br>
 
+**Separação de instruções em uma linha:**
+O ponto e vírgula é usado para separar múltiplas instruções em uma única linha. Se você tiver várias instruções em uma linha, cada uma delas deve ser finalizada com um ponto e vírgula.
+
+```
+const a = 5; const b = 10; const c = a + b;
+```
+<br><br>
+
