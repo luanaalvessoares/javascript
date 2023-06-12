@@ -414,3 +414,12 @@ O localStorage é uma parte do Web Storage API em JavaScript que permite armazen
 O localStorage permite que você armazene pares de chave-valor como strings no navegador. Os dados armazenados no localStorage permanecem disponíveis mesmo quando o navegador é fechado e reaberto. Eles só são removidos se forem explicitamente excluídos ou se o cache do navegador for limpo.
 <br>
 
+Aqui estão os principais aspectos do localStorage:
+
+- Armazenamento de dados: O localStorage é usado para armazenar dados persistentes no navegador. Ele é útil para armazenar informações do usuário, configurações, preferências e outros dados relevantes.
+
+- Capacidade de armazenamento: O localStorage oferece uma capacidade de armazenamento maior em comparação com outros mecanismos de armazenamento do lado do cliente, como os cookies. Geralmente, você pode armazenar até 5 MB de dados no localStorage.
+
+- Escopo de armazenamento: Os dados armazenados no localStorage são compartilhados entre todas as abas ou janelas do mesmo domínio. Isso significa que, se você definir um item no localStorage em uma aba, poderá acessá-lo em outra aba do mesmo site.
+<br><br>
+
