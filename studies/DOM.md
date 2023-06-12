@@ -501,3 +501,7 @@ Métodos:
 - `key(index)`: retorna a chave no índice especificado no sessionStorage.
 <br>
 
+Propriedades:
+- `length`: retorna o número de itens armazenados no sessionStorage.
+<br><br>
+
