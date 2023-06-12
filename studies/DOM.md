@@ -375,3 +375,12 @@ _Neste exemplo, a função `validarFormulario()` é chamada quando o formulário
 <br><br>
 
 **É importante notar que a validação no lado do cliente é útil para melhorar a experiência do usuário, mas não deve ser a única forma de validação. A validação também deve ser realizada no lado do servidor para garantir que os dados sejam devidamente verificados antes de serem processados ou armazenados.**
+<br><br><hr>
+
+## Web Storage
+O Web Storage é uma API em JavaScript que permite armazenar dados de forma persistente no navegador da web. Ele fornece uma maneira simples de armazenar e recuperar informações do lado do cliente, sem a necessidade de comunicação com o servidor.
+<br>
+
+Existem duas formas principais de Web Storage: localStorage e sessionStorage. Ambas oferecem funcionalidades semelhantes, mas têm algumas diferenças importantes.
+<br>
+
