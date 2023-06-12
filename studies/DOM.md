@@ -439,3 +439,19 @@ Propriedades:
 
 Veja alguns exemplos de uso do localStorage:
 
+**Armazenando e recuperando valores**
+
+```
+// Armazenando valores no localStorage
+localStorage.setItem('username', 'john123');
+localStorage.setItem('theme', 'dark');
+
+// Recuperando valores armazenados
+const username = localStorage.getItem('username');
+const theme = localStorage.getItem('theme');
+
+console.log(username); // Saída: "john123"
+console.log(theme); // Saída: "dark"
+```
+<br><br>
+
