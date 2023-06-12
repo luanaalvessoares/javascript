@@ -404,3 +404,4 @@ Propriedades:
 - `length`: retorna o número de itens armazenados.
 <br><br>
 
+**O Web Storage é útil para armazenar pequenos dados no lado do cliente, como configurações do usuário, preferências, histórico de navegação, entre outros. No entanto, é importante observar que os dados armazenados no Web Storage são acessíveis por qualquer script JavaScript que seja executado no contexto da página, portanto, evite armazenar informações confidenciais ou sensíveis.**
