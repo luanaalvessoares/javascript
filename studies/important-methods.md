@@ -306,3 +306,21 @@ fetch('https://api.example.com/data', {
 ```
 <br><br>
 
+**Headers e opções**
+Você pode fornecer headers personalizados e outras opções para a requisição usando o objeto de opções.
+
+```
+fetch('https://api.example.com/data', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer token123'
+  },
+  mode: 'cors',
+  cache: 'no-cache'
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.log(error));
+```
+<br><br>
+
