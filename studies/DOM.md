@@ -390,3 +390,14 @@ O localStorage permite armazenar dados de forma persistente no navegador, mesmo 
 O sessionStorage, por outro lado, armazena os dados apenas durante a sessão do navegador. Os dados do sessionStorage são excluídos quando o navegador é fechado ou a aba é fechada. Cada aba ou janela do navegador tem seu próprio espaço de armazenamento sessionStorage isolado.
 <br>
 
+A API do Web Storage oferece os seguintes métodos e propriedades:
+
+Métodos:
+- `setItem(key, value)`: adiciona um par chave-valor ao armazenamento.
+- `getItem(key)`: recupera o valor associado à chave especificada.
+- `removeItem(key)`: remove um item específico do armazenamento.
+- `clear()`: remove todos os itens do armazenamento.
+- `key(index)`: retorna a chave no índice especificado.
+<br>
+
+
