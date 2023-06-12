@@ -359,3 +359,26 @@ setTimeout(() => controller.abort(), 5000);
 ```
 <br><br>
 
+**Lendo arquivos**
+O Fetch não é nativamente projetado para ler arquivos do sistema de arquivos local do cliente. No entanto, é possível usar o Fetch para carregar arquivos remotos, como arquivos de texto, JSON, XML, imagens, vídeos, entre outros.
+
+Veja um exemplo de como usar o Fetch para carregar um arquivo de texto:
+
+```
+fetch('arquivo.txt')
+  .then(response => {
+    if (response.ok) {
+      return response.text();
+    }
+    throw new Error('Erro ao carregar o arquivo');
+  })
+  .then(data => {
+    console.log(data); // Conteúdo do arquivo de texto
+  })
+  .catch(error => {
+    console.log(error);
+  });
+```
+_Nesse exemplo, estamos fazendo uma requisição para carregar o arquivo `arquivo.txt`. A resposta do Fetch é tratada no primeiro `.then()`, onde verificamos se a resposta foi bem-sucedida (`response.ok`) e, em seguida, chamamos o método `.text()` para obter o conteúdo do arquivo como uma string._
+<br><br>
+
