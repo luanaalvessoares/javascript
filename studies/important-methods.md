@@ -259,3 +259,12 @@ _Neste exemplo, a função `callback` compara o comprimento de cada `palavra` co
 <br><br>
 
 **O método `reduce()` é flexível e pode ser usado para realizar várias operações de redução em um array, como soma, multiplicação, concatenação, filtragem e muito mais. Ele é particularmente útil quando você precisa reduzir um conjunto de dados a um único valor com base em uma lógica personalizada.**
+<br><br><hr>
+
+## Fetch
+O Fetch é uma API do JavaScript que fornece uma maneira fácil e flexível de fazer requisições de rede assíncronas, como buscar recursos de um servidor. Ele substitui o antigo XMLHttpRequest e oferece uma sintaxe mais moderna e baseada em Promises.
+<br>
+
+O Fetch é amplamente usado para realizar requisições HTTP, como GET, POST, PUT, DELETE e outras. Aqui está uma explicação detalhada sobre o Fetch, incluindo seus métodos, propriedades e exemplos:
+<br>
+
