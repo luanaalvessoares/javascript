@@ -405,3 +405,12 @@ Propriedades:
 <br><br>
 
 **O Web Storage é útil para armazenar pequenos dados no lado do cliente, como configurações do usuário, preferências, histórico de navegação, entre outros. No entanto, é importante observar que os dados armazenados no Web Storage são acessíveis por qualquer script JavaScript que seja executado no contexto da página, portanto, evite armazenar informações confidenciais ou sensíveis.**
+<br><br><hr>
+
+## Local Storage
+O localStorage é uma parte do Web Storage API em JavaScript que permite armazenar dados localmente no navegador da web. Ele fornece uma maneira simples de armazenar e recuperar informações persistentes no lado do cliente.
+<br>
+
+O localStorage permite que você armazene pares de chave-valor como strings no navegador. Os dados armazenados no localStorage permanecem disponíveis mesmo quando o navegador é fechado e reaberto. Eles só são removidos se forem explicitamente excluídos ou se o cache do navegador for limpo.
+<br>
+
