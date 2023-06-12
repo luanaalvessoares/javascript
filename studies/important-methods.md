@@ -343,3 +343,19 @@ fetch('https://api.example.com/data')
 ```
 <br><br>
 
+**Cancelando uma requisição**
+Você também pode cancelar uma requisição abortando-a usando o método `.abort()`.
+
+```
+const controller = new AbortController();
+
+fetch('https://api.example.com/data', { signal: controller.signal })
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.log(error));
+
+// Cancelando a requisição após 5 segundos
+setTimeout(() => controller.abort(), 5000);
+```
+<br><br>
+
