@@ -478,3 +478,9 @@ console.log(localStorage.length); // Saída: 0
 <br><br>
 
 **O localStorage é amplamente utilizado para armazenar e recuperar dados persistentes no navegador. No entanto, tenha em mente que os dados armazenados no localStorage são acessíveis por qualquer script JavaScript que seja executado no contexto da página, portanto, evite armazenar informações confidenciais ou sensíveis no localStorage.**
+<br><br><hr>
+
+## Session Storage
+O sessionStorage é outra parte do Web Storage API em JavaScript que permite armazenar dados localmente no navegador da web. Assim como o localStorage, ele oferece uma maneira simples de armazenar e recuperar informações no lado do cliente. No entanto, o sessionStorage tem algumas diferenças importantes em relação ao localStorage.
+<br>
+
