@@ -477,3 +477,4 @@ console.log(localStorage.length); // Saída: 0
 ```
 <br><br>
 
+**O localStorage é amplamente utilizado para armazenar e recuperar dados persistentes no navegador. No entanto, tenha em mente que os dados armazenados no localStorage são acessíveis por qualquer script JavaScript que seja executado no contexto da página, portanto, evite armazenar informações confidenciais ou sensíveis no localStorage.**
