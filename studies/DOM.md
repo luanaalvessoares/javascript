@@ -535,3 +535,14 @@ console.log(theme); // Saída: null
 ```
 <br><br>
 
+**Limpeza de todos os itens**
+
+```
+// Removendo todos os itens do sessionStorage
+sessionStorage.clear();
+
+// Verificando o número de itens
+console.log(sessionStorage.length); // Saída: 0
+```
+<br><br>
+
