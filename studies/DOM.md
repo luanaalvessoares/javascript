@@ -384,3 +384,9 @@ O Web Storage é uma API em JavaScript que permite armazenar dados de forma pers
 Existem duas formas principais de Web Storage: localStorage e sessionStorage. Ambas oferecem funcionalidades semelhantes, mas têm algumas diferenças importantes.
 <br>
 
+O localStorage permite armazenar dados de forma persistente no navegador, mesmo quando o navegador é fechado e reaberto. Os dados armazenados no localStorage permanecem disponíveis até que sejam explicitamente removidos ou o cache do navegador seja limpo. Os dados do localStorage são compartilhados entre todas as abas ou janelas do mesmo domínio.
+<br>
+
+O sessionStorage, por outro lado, armazena os dados apenas durante a sessão do navegador. Os dados do sessionStorage são excluídos quando o navegador é fechado ou a aba é fechada. Cada aba ou janela do navegador tem seu próprio espaço de armazenamento sessionStorage isolado.
+<br>
+
