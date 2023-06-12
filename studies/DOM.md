@@ -484,3 +484,10 @@ console.log(localStorage.length); // Saída: 0
 O sessionStorage é outra parte do Web Storage API em JavaScript que permite armazenar dados localmente no navegador da web. Assim como o localStorage, ele oferece uma maneira simples de armazenar e recuperar informações no lado do cliente. No entanto, o sessionStorage tem algumas diferenças importantes em relação ao localStorage.
 <br>
 
+Veja os principais aspectos do sessionStorage:
+
+- Armazenamento temporário: O sessionStorage é usado para armazenar dados temporários no navegador. Os dados armazenados no sessionStorage permanecem disponíveis apenas durante a sessão atual do navegador. Quando o navegador é fechado, os dados são removidos automaticamente.
+
+- Escopo de armazenamento: Assim como o localStorage, o sessionStorage compartilha os dados entre todas as abas ou janelas do mesmo domínio. No entanto, a diferença é que cada sessão do navegador possui seu próprio espaço de armazenamento sessionStorage. Isso significa que os dados armazenados em uma sessão não são acessíveis em outras sessões.
+<br><br>
+
