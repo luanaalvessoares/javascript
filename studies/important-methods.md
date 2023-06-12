@@ -268,3 +268,23 @@ O Fetch é uma API do JavaScript que fornece uma maneira fácil e flexível de f
 O Fetch é amplamente usado para realizar requisições HTTP, como GET, POST, PUT, DELETE e outras. Aqui está uma explicação detalhada sobre o Fetch, incluindo seus métodos, propriedades e exemplos:
 <br>
 
+**Fazendo uma requisição básica**
+Para fazer uma requisição com o Fetch, você precisa fornecer a URL do recurso que deseja buscar. O Fetch retorna uma Promise que pode ser tratada usando os métodos `.then()` e `.catch()`.
+
+```
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Erro na requisição');
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+```
+<br><br>
+
