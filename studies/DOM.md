@@ -433,3 +433,9 @@ Métodos:
 - `key(index)`: retorna a chave no índice especificado.
 <br>
 
+Propriedades:
+- `length`: retorna o número de itens armazenados no localStorage.
+<br><br>
+
+Veja alguns exemplos de uso do localStorage:
+
