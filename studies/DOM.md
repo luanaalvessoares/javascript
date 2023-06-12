@@ -423,3 +423,13 @@ Aqui estão os principais aspectos do localStorage:
 - Escopo de armazenamento: Os dados armazenados no localStorage são compartilhados entre todas as abas ou janelas do mesmo domínio. Isso significa que, se você definir um item no localStorage em uma aba, poderá acessá-lo em outra aba do mesmo site.
 <br><br>
 
+A API do localStorage oferece os seguintes métodos e propriedades:
+
+Métodos:
+- `setItem(key, value)`: adiciona um par chave-valor ao armazenamento localStorage.
+- `getItem(key)`: recupera o valor associado à chave especificada.
+- `removeItem(key)`: remove um item específico do armazenamento localStorage.
+- `clear()`: remove todos os itens do armazenamento localStorage.
+- `key(index)`: retorna a chave no índice especificado.
+<br>
+
