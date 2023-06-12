@@ -491,3 +491,13 @@ Veja os principais aspectos do sessionStorage:
 - Escopo de armazenamento: Assim como o localStorage, o sessionStorage compartilha os dados entre todas as abas ou janelas do mesmo domínio. No entanto, a diferença é que cada sessão do navegador possui seu próprio espaço de armazenamento sessionStorage. Isso significa que os dados armazenados em uma sessão não são acessíveis em outras sessões.
 <br><br>
 
+A API do sessionStorage oferece os mesmos métodos e propriedades que o localStorage:
+
+Métodos:
+- `setItem(key, value)`: adiciona um par chave-valor ao armazenamento sessionStorage.
+- `getItem(key)`: recupera o valor associado à chave especificada no sessionStorage.
+- `removeItem(key)`: remove um item específico do armazenamento sessionStorage.
+- `clear()`: remove todos os itens do armazenamento sessionStorage.
+- `key(index)`: retorna a chave no índice especificado no sessionStorage.
+<br>
+
