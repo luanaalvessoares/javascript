@@ -455,3 +455,15 @@ console.log(theme); // Saída: "dark"
 ```
 <br><br>
 
+**Removendo um item**
+
+```
+// Removendo um item específico
+localStorage.removeItem('theme');
+
+// Verificando se o item foi removido
+const theme = localStorage.getItem('theme');
+console.log(theme); // Saída: null
+```
+<br><br>
+
