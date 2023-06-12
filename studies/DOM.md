@@ -546,3 +546,6 @@ console.log(sessionStorage.length); // Saída: 0
 ```
 <br><br>
 
+**_O sessionStorage é útil para armazenar dados temporários durante a sessão do navegador. É comumente usado para armazenar informações temporárias, como dados de formulários, estados de aplicativos temporários e outras informações que não precisam ser persistentes entre as sessões do usuário._**
+<br>
+
