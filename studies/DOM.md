@@ -400,4 +400,7 @@ Métodos:
 - `key(index)`: retorna a chave no índice especificado.
 <br>
 
+Propriedades:
+- `length`: retorna o número de itens armazenados.
+<br><br>
 
