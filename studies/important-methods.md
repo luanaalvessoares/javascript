@@ -288,3 +288,21 @@ fetch('https://api.example.com/data')
 ```
 <br><br>
 
+**Métodos HTTP**
+O Fetch suporta diferentes métodos HTTP, permitindo que você envie dados para o servidor usando POST, PUT, DELETE, entre outros.
+
+```
+// Exemplo de uma requisição POST
+fetch('https://api.example.com/data', {
+  method: 'POST',
+  body: JSON.stringify({ name: 'John', age: 30 }),
+  headers: {
+    'Content-Type': 'application/json'
+  }
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.log(error));
+```
+<br><br>
+
