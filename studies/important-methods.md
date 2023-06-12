@@ -402,3 +402,4 @@ fetch('dados.json')
 _Nesse caso, estamos carregando o arquivo `dados.json` e usando o método `.json()` para converter o conteúdo do arquivo em um objeto JavaScript._
 <br><br>
 
+**Lembrando que esses exemplos são para carregar arquivos remotos que estão acessíveis através de uma URL. Para ler arquivos locais no sistema de arquivos do cliente, você precisará de permissões específicas e usar APIs adicionais, como a API do File, FileReader ou a API de Arquivos JavaScript (File System API). Essas APIs permitem que você selecione e leia arquivos diretamente do sistema de arquivos local do cliente.**
