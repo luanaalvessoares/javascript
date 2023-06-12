@@ -382,3 +382,23 @@ fetch('arquivo.txt')
 _Nesse exemplo, estamos fazendo uma requisição para carregar o arquivo `arquivo.txt`. A resposta do Fetch é tratada no primeiro `.then()`, onde verificamos se a resposta foi bem-sucedida (`response.ok`) e, em seguida, chamamos o método `.text()` para obter o conteúdo do arquivo como uma string._
 <br><br>
 
+Se você quiser carregar um arquivo JSON, você pode usar o método `.json()` em vez de `.text()`:
+
+```
+fetch('dados.json')
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Erro ao carregar o arquivo JSON');
+  })
+  .then(data => {
+    console.log(data); // Conteúdo do arquivo JSON
+  })
+  .catch(error => {
+    console.log(error);
+  });
+```
+_Nesse caso, estamos carregando o arquivo `dados.json` e usando o método `.json()` para converter o conteúdo do arquivo em um objeto JavaScript._
+<br><br>
+
