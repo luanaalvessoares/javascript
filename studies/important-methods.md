@@ -324,3 +324,22 @@ fetch('https://api.example.com/data', {
 ```
 <br><br>
 
+**Tratando a resposta**
+A resposta do Fetch é um objeto Response, que possui várias propriedades e métodos úteis para manipular a resposta.
+
+```
+fetch('https://api.example.com/data')
+.then(response => {
+  console.log(response.status); // Status da resposta (200, 404, etc.)
+  console.log(response.headers.get('Content-Type')); // Tipo de conteúdo
+  return response.json(); // Transformando a resposta em JSON
+})
+.then(data => {
+  console.log(data);
+})
+.catch(error => {
+  console.log(error);
+});
+```
+<br><br>
+
