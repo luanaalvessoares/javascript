@@ -505,3 +505,21 @@ Propriedades:
 - `length`: retorna o número de itens armazenados no sessionStorage.
 <br><br>
 
+Veja alguns exemplos de uso do sessionStorage:
+
+**Armazenando e recuperando valores**
+
+```
+// Armazenando valores no sessionStorage
+sessionStorage.setItem('username', 'john123');
+sessionStorage.setItem('theme', 'dark');
+
+// Recuperando valores armazenados
+const username = sessionStorage.getItem('username');
+const theme = sessionStorage.getItem('theme');
+
+console.log(username); // Saída: "john123"
+console.log(theme); // Saída: "dark"
+```
+<br><br>
+
